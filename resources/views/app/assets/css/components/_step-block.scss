@@ -1,0 +1,442 @@
+@mixin step-calc($size, $increase, $decrease){
+	&.active{
+		width: calc(#{$size} + #{$increase});
+	}
+	&.inactive{
+		width: calc(#{$size} - #{$decrease});
+	}
+}
+$height-step-item-bot : 205px;
+$height-title-btn : 134px;
+$y-thumbnail : 19%;
+.step-block{
+	position: relative;
+	display: block;
+	font-size: 0;
+	text-align: center;
+	background-image: radial-gradient(circle, #fef9e9, #fdf6dd, #fcf3d2, #fbefc6, #faecbb);
+	&:after{
+		position: absolute;
+		bottom : 0;
+		left : 0;
+		right : 0;
+		height : 137px;
+		content : '';
+		background-color: #fff;
+		@include TransitionWithDurationAndEase(0.25s, $EasingSineInOut);
+	}
+	&:before{
+		position: absolute;
+		bottom : 0;
+		left : 0;
+		right : 0;
+		content : '';
+		height: $height-title-btn;
+		opacity: 0;
+		background-image: radial-gradient(circle, #f4cd65, #f4d069, #f4d36e, #f5d572, #f5d877, #f5d877, #f5d877, #f5d877, #f5d572, #f4d36e, #f4d069, #f4cd65);
+		@include TransitionWithDurationAndEase(0.25s, $EasingSineInOut);
+	}
+	@include NumberChild(2,'.step-item'){
+		$size : 50%;
+		$increase : 18%;
+		$decrease : 18%;
+		width: $size;
+		@include step-calc($size, $increase, $decrease);
+	}
+	@include NumberChild(3,'.step-item'){
+		$size : 33.334%;
+		$increase : 18%;
+		$decrease : 18%/2;
+		width: $size;
+		@include step-calc($size, $increase, $decrease);
+	}
+	@include NumberChild(4,'.step-item'){
+		$size : 25%;
+		$increase : 18%;
+		$decrease : 18%/3;
+		width: $size;
+		@include step-calc($size, $increase, $decrease);
+	}
+	&.in-effect{
+		&:after{
+			opacity: 0;
+		}
+		&:before{
+			opacity: 1;
+		}
+		.step-item{
+			&__desc-icon{
+				top : 0.5%;
+				flex-direction: column-reverse;
+				.icon{
+					&:before{
+						border-color: $color-green;
+					}
+				}
+			}
+			&__bot{
+				background-color: transparent;
+			}
+		}
+	}
+}
+.step-item{
+	width: 100%;
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+	height: 670px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	@include TransitionWithDurationAndEase(0.35s, $EasingSineInOut);
+	$root : &;
+	&.inactive{
+		#{$root}{
+			&__thumbnail{
+				left : -25%;
+				right : -25%;
+			}
+			&__desc-icon{
+				.desc{
+					font-size: 0px;
+					opacity: 0;
+					visibility: hidden;
+				}
+			}
+			&__bot{
+				.title-btn{
+					.regular,.bold{
+						color : #46a03c;
+					}
+					.btn-common{
+						background-color: #46a03c;
+						color : #fff;
+					}
+				}
+			}
+		}
+	}
+	&.active{
+		#{$root}{
+			&__desc-icon{
+				.desc{
+					color : #46a03c;
+				}
+			}
+			&__thumbnail{
+				img{
+					$scale : 0.9;
+					-webkit-transform: scale($scale, $scale);
+					-moz-transform: scale($scale, $scale);
+					-ms-transform: scale($scale, $scale);
+					-o-transform: scale($scale, $scale);
+					transform: scale($scale, $scale);
+					@media screen and ($res-1200){
+						$scale : 0.65;
+						-webkit-transform: scale($scale, $scale);
+						-moz-transform: scale($scale, $scale);
+						-ms-transform: scale($scale, $scale);
+						-o-transform: scale($scale, $scale);
+						transform: scale($scale, $scale);
+					}
+				}
+			}
+			&__bot{
+				.title-btn{
+					.regular,.bold{
+						color : #fff;
+					}
+					.btn-common{
+						background-color: #fff;
+						color : #46a03c;
+					}
+					&:before{
+						opacity: 1;
+					}
+				}
+			}
+		}
+	}
+	&__wrapper{
+		position: relative;
+		height: 100%;
+		width: 100%;
+		overflow: hidden;
+	}
+	.ufo-float{
+		position: absolute;
+		top : 20%;
+		right : 0;
+		bottom : calc(#{$y-thumbnail} + 3%);
+		left : 0;
+		$size-item : 35%;
+		&__item{
+			position: absolute;
+			width: $size-item;
+			top : 40%;
+			left : 30%;
+			opacity: 0;
+			visibility: hidden;
+			.thumbnail{
+				display: block;
+				max-width: 100%;
+				margin: 0 auto;
+			}
+			.detail{
+				margin: 0px;
+				padding-top: 5px;
+				@include Roboto;
+				color: $color-green;
+				font-size: rem(13);
+				line-height: 1.35;
+				text-align: center;
+				@media screen and ($res-1200){
+					font-size: rem(12);
+				}
+				p{
+					margin: 0;
+				}
+				ul{
+					list-style: none;
+					text-align: left;
+					width: 80%;
+					padding-left: 10%;
+					padding-top: 4px;
+					margin: auto;
+					li{
+						display: block;
+						&:before{
+							content: "\2022";
+							color: $color-green;
+							font-weight: bold;
+							display: inline-block;
+							width: 1em;
+							margin-left: -1em;
+						}
+					}
+				}
+				b{
+					@include Roboto-black;
+				}
+			}
+		}
+	}
+	&__thumbnail{
+		position: absolute;
+		bottom : $y-thumbnail;
+		left: 0;
+		right : 0;
+		z-index: 2;
+		cursor: pointer;
+		margin: auto;
+		@include TransitionWithDurationAndEase(0.35s, $EasingSineInOut);
+		img{
+			max-width: 100%;
+			@include TransitionWithDurationAndEase(0.25s, $EasingSineInOut);
+		}
+	}
+	&__desc-icon{
+		position: absolute;
+		left : 0;
+		right : 0;
+		top : 14%;
+		display: flex;
+		flex-direction: column;
+		@include TransitionWithDurationAndEase(0.25s, $EasingSineInOut);
+		.desc{
+			margin: 0;
+			@include Roboto-Italic;
+			font-size: 24px;
+			line-height: 1.2;
+			text-align: center;
+			color : #888888;
+			width: 100%;
+			@include TransitionWithDurationAndEase(0.25s, $EasingSineInOut);
+			@media screen and ($res-1200){
+				font-size: 18px;
+			}
+		}
+		.icon{
+			display: block;
+			position: relative;
+			text-align: center;
+			width: 100%;
+			padding:  18px 0px;
+			&.hidden-border {
+				&:before{
+					opacity: 0;
+				}
+			}
+			&:before{
+				content : '';
+				display: block;
+				position: absolute;
+				left : 0;
+				right : 0;
+				top : 0;
+				bottom : 0;
+				border-bottom: 3px dotted $color-gold;
+				margin: auto;
+				z-index: 0;
+				height: 0px;
+			}
+			img{
+				position: relative;
+				z-index: 1;
+			}
+		}
+	}
+	&__bot{
+		display: block;
+		background-color: #fff;
+		position: absolute;
+		bottom : 0;
+		left : 0;
+		right : 0;
+		height: $height-step-item-bot;
+		z-index: 1;
+		font-size: 0;
+		@include TransitionWithDurationAndEase(0.25s, $EasingSineInOut);
+		&:after{
+			display: inline-block;
+			vertical-align: bottom;
+			height: 100%;
+			width: 0px;
+			content : '';
+		}
+		.title-btn{
+			display: inline-block;
+			position: relative;
+			vertical-align: bottom;
+			padding-bottom: 27px;
+			padding-top: 10px;
+			width: 100%;
+			height: $height-title-btn;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+			@include TransitionWithDurationAndEase(0.25s, $EasingSineInOut);
+			h4{
+				margin: 0px;
+			}
+			&:before{
+				content : '';
+				display: block;
+				width: 100%;
+				height: 100%;
+				opacity: 0;
+				z-index: -1;
+				position: absolute;
+				top : 0;
+				bottom : 0;
+				@include TransitionWithDurationAndEase(0.25s, $EasingSineInOut);
+			}
+			&.bg-pink{
+				&:before{
+					background-color: #f9b5b4;
+				}
+			}
+			&.bg-green{
+				&:before{
+					background-color: #6ab85b;
+				}
+			}
+			&.bg-orange{
+				&:before{
+					background-color: #fbb161;
+				}
+			}
+			.regular{
+				@include Roboto;
+				font-size: 17px;
+				line-height: 1.35;
+				color : $color-gold;
+				@include TransitionWithDurationAndEase(0.25s, $EasingSineInOut);
+			}
+			.bold{
+				@include Roboto-black;
+				color : $color-gold;
+				font-size: 22px;
+				line-height: 1.35;
+				@include TransitionWithDurationAndEase(0.25s, $EasingSineInOut);
+			}
+			.btn-block{
+				padding-top: 10px;
+			}
+		}
+	}
+	&:last-child{
+		#{$root}__desc-icon{
+			.icon{
+				&:before{
+					right : 50%;
+					left : 2px;
+				}
+			}
+		}
+		.line{
+			display: none;
+		}
+	}
+	&:first-child{
+		#{$root}__desc-icon{
+			.icon{
+				&:before{
+					left : 50%;
+					right : 2px;
+				}
+			}
+		}
+	}
+	.line{
+		$y-box : 5%;
+		$size-box : 15px;
+		$border-height : 2px;
+		position: absolute;
+		top : 0;
+		bottom : 0;
+		right : 0;
+		z-index: 3;
+		width: $border-height;
+		$space : 2px;
+		$color : #fff;
+		&:before{
+			position: absolute;
+			top : 0;
+			height: calc(#{$y-box} - #{$space});
+			left : 0;
+			right : 0;
+			background-color: $color;
+			content : '';
+			display: block;
+		}
+		&:after{
+			position: absolute;
+			top : calc( #{$y-box} + #{$size-box} + #{$space});
+			bottom: 0;
+			left : 0;
+			right : 0;
+			background-color: $color;
+			content : '';
+			display: block;
+		}
+		.triangle{
+			top : $y-box;
+			right : -6.4px;
+			position: absolute;
+			width: 15px;
+			height: 15px;
+			display: block;
+			background-color: transparent;
+			border-top : $border-height solid $color;
+			border-right: $border-height solid $color;
+			$deg : 45deg;
+			-webkit-transform: rotate($deg);
+			-moz-transform: rotate($deg);
+			-ms-transform: rotate($deg);
+			-o-transform: rotate($deg);
+			transform: rotate($deg);
+		}
+	}
+}

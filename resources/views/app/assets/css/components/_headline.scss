@@ -1,0 +1,56 @@
+.headline-block{
+    padding-bottom: 20px;
+    max-width: 690px;
+    margin: 0 auto;
+}
+.headline{
+    &__bold{
+        @include Roboto-black;
+        font-size: 37px;
+        line-height: 1.25;
+        margin: 0;
+        color : $color-green;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    &__regular{
+        margin: 0;
+        @include Roboto;
+        font-size: 27px;
+        line-height: 1.35;
+        color : $color-green;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    &__desc{
+        @include Roboto;
+        font-size: 17px;
+        line-height: 1.4;
+        text-align: center;
+        color : #888888;
+        display: block;
+        margin: 10px 0px;
+    }
+    @media screen and ($res-1200){
+        &__bold{
+            font-size: 30px;
+        }
+        &__regular{
+            font-size: 19px;
+        }
+        &__desc{
+            font-size: 15px;
+        }
+    }
+    @media screen and ($res-tablet){
+        &__bold{
+            font-size: 25px;
+        }
+        &__regular{
+            font-size: 17px;
+        }
+        &__desc{
+            font-size: 13px;
+        }
+    }
+}

@@ -1,0 +1,489 @@
+{
+	"accessory_parts": [
+		{
+			"title": "Thảm trải sàn",
+			"description": "Màn hình cảm ứng 8 inch độ phân giải cao và góc nhìn rộng, mang lại hình ảnh sắc nét cùng thao tác cảm ứng mượt mà như trên máy tính bảng. Hệ thống đồng bộ với Smartphone sử dụng hệ điều hành iOS và Android qua kết nối USB, giúp bạn tương tác hiệu quả và tận hưởng hành trình dễ dàng hơn bao giờ hết.",
+			"thumbnail": "assets/images/parts/accessory/thumb-1.jpg",
+			"image": "assets/images/parts/accessory/img-1.jpg"
+		},
+		{
+			"title": "Viền che mưa",
+			"description": "Màn hình cảm ứng 8 inch độ phân giải cao và góc nhìn rộng, mang lại hình ảnh sắc nét cùng thao tác cảm ứng mượt mà như trên máy tính bảng. Hệ thống đồng bộ với Smartphone sử dụng hệ điều hành iOS và Android qua kết nối USB, giúp bạn tương tác hiệu quả và tận hưởng hành trình dễ dàng hơn bao giờ hết.",
+			"thumbnail": "assets/images/parts/accessory/thumb-2.jpg",
+			"image": "assets/images/parts/accessory/img-2.jpg"
+		},
+		{
+			"title": "Trải cốp sau",
+			"description": "Màn hình cảm ứng 8 inch độ phân giải cao và góc nhìn rộng, mang lại hình ảnh sắc nét cùng thao tác cảm ứng mượt mà như trên máy tính bảng. Hệ thống đồng bộ với Smartphone sử dụng hệ điều hành iOS và Android qua kết nối USB, giúp bạn tương tác hiệu quả và tận hưởng hành trình dễ dàng hơn bao giờ hết.",
+			"thumbnail": "assets/images/parts/accessory/thumb-3.jpg",
+			"image": "assets/images/parts/accessory/img-3.jpg"
+		},
+		{
+			"title": "Nẹp bước chân phát sáng phía trước/sau",
+			"description": "Màn hình cảm ứng 8 inch độ phân giải cao và góc nhìn rộng, mang lại hình ảnh sắc nét cùng thao tác cảm ứng mượt mà như trên máy tính bảng. Hệ thống đồng bộ với Smartphone sử dụng hệ điều hành iOS và Android qua kết nối USB, giúp bạn tương tác hiệu quả và tận hưởng hành trình dễ dàng hơn bao giờ hết.",
+			"thumbnail": "assets/images/parts/accessory/thumb-1.jpg",
+			"image": "assets/images/parts/accessory/img-1.jpg"
+		}
+	],
+	"accessory": {
+		"section_background": "assets/images/s-accessory/bg.jpg",
+		"section_background_mobile": "assets/images/s-accessory/bg-mb@2x.jpg",
+		"section_title": "PHỤ KIỆN TUỲ CHỌN<br>CHÍNH HÃNG",
+		"section_description": "Bạn có thể tùy chọn cho chiếc xe những phụ kiện chính hãng, giúp chiếc xe trở nên phong cách và cá tính hơn, hay đơn giản là bổ sung thêm những chi tiết tiện ích, hữu dụng cho mọi nhu cầu di chuyển."
+	},
+	"color": {
+		"section_background": "assets/images/s-color/bg.jpg",
+		"section_background_mobile": "assets/images/s-color/bg-mb@2x.jpg"
+	},
+	"exterior_parts": [
+		{
+			"title": "Cụm đèn trước Full LED sắc sảo",
+			"description": "Màn hình cảm ứng 8 inch độ phân giải cao và góc nhìn rộng, mang lại hình ảnh sắc nét cùng thao tác cảm ứng mượt mà như trên máy tính bảng. Hệ thống đồng bộ với Smartphone sử dụng hệ điều hành iOS và Android qua kết nối USB, giúp bạn tương tác hiệu quả và tận hưởng hành trình dễ dàng hơn bao giờ hết.",
+			"thumbnail": "assets/images/parts/exterior/thumb-1.jpg",
+			"image": "assets/images/parts/exterior/img-1.jpg"
+		},
+		{
+			"title": "Cụm đèn hậu LED tinh xảo",
+			"description": "Màn hình cảm ứng 8 inch độ phân giải cao và góc nhìn rộng, mang lại hình ảnh sắc nét cùng thao tác cảm ứng mượt mà như trên máy tính bảng. Hệ thống đồng bộ với Smartphone sử dụng hệ điều hành iOS và Android qua kết nối USB, giúp bạn tương tác hiệu quả và tận hưởng hành trình dễ dàng hơn bao giờ hết.",
+			"thumbnail": "assets/images/parts/exterior/thumb-2.jpg",
+			"image": "assets/images/parts/exterior/img-2.jpg"
+		},
+		{
+			"title": "Ăng-ten vây cá mập",
+			"description": "Màn hình cảm ứng 8 inch độ phân giải cao và góc nhìn rộng, mang lại hình ảnh sắc nét cùng thao tác cảm ứng mượt mà như trên máy tính bảng. Hệ thống đồng bộ với Smartphone sử dụng hệ điều hành iOS và Android qua kết nối USB, giúp bạn tương tác hiệu quả và tận hưởng hành trình dễ dàng hơn bao giờ hết.",
+			"thumbnail": "assets/images/parts/exterior/thumb-3.jpg",
+			"image": "assets/images/parts/exterior/img-3.jpg"
+		},
+		{
+			"title": "Tay nắm cửa cảm biến",
+			"description": "Màn hình cảm ứng 8 inch độ phân giải cao và góc nhìn rộng, mang lại hình ảnh sắc nét cùng thao tác cảm ứng mượt mà như trên máy tính bảng. Hệ thống đồng bộ với Smartphone sử dụng hệ điều hành iOS và Android qua kết nối USB, giúp bạn tương tác hiệu quả và tận hưởng hành trình dễ dàng hơn bao giờ hết.",
+			"thumbnail": "assets/images/parts/exterior/thumb-1.jpg",
+			"image": "assets/images/parts/exterior/img-1.jpg"
+		},
+		{
+			"title": "Đèn sương mù dạng LED",
+			"description": "Màn hình cảm ứng 8 inch độ phân giải cao và góc nhìn rộng, mang lại hình ảnh sắc nét cùng thao tác cảm ứng mượt mà như trên máy tính bảng. Hệ thống đồng bộ với Smartphone sử dụng hệ điều hành iOS và Android qua kết nối USB, giúp bạn tương tác hiệu quả và tận hưởng hành trình dễ dàng hơn bao giờ hết.",
+			"thumbnail": "assets/images/parts/exterior/thumb-2.jpg",
+			"image": "assets/images/parts/exterior/img-2.jpg"
+		},
+		{
+			"title": "Gương chiếu hậu tự động",
+			"description": "Màn hình cảm ứng 8 inch độ phân giải cao và góc nhìn rộng, mang lại hình ảnh sắc nét cùng thao tác cảm ứng mượt mà như trên máy tính bảng. Hệ thống đồng bộ với Smartphone sử dụng hệ điều hành iOS và Android qua kết nối USB, giúp bạn tương tác hiệu quả và tận hưởng hành trình dễ dàng hơn bao giờ hết.",
+			"thumbnail": "assets/images/parts/exterior/thumb-3.jpg",
+			"image": "assets/images/parts/exterior/img-3.jpg"
+		},
+		{
+			"title": "La-zăng 18 inch phá cách",
+			"description": "Màn hình cảm ứng 8 inch độ phân giải cao và góc nhìn rộng, mang lại hình ảnh sắc nét cùng thao tác cảm ứng mượt mà như trên máy tính bảng. Hệ thống đồng bộ với Smartphone sử dụng hệ điều hành iOS và Android qua kết nối USB, giúp bạn tương tác hiệu quả và tận hưởng hành trình dễ dàng hơn bao giờ hết.",
+			"thumbnail": "assets/images/parts/exterior/thumb-2.jpg",
+			"image": "assets/images/parts/exterior/img-2.jpg"
+		},
+		{
+			"title": "Ống xà kép hiện đại",
+			"description": "Màn hình cảm ứng 8 inch độ phân giải cao và góc nhìn rộng, mang lại hình ảnh sắc nét cùng thao tác cảm ứng mượt mà như trên máy tính bảng. Hệ thống đồng bộ với Smartphone sử dụng hệ điều hành iOS và Android qua kết nối USB, giúp bạn tương tác hiệu quả và tận hưởng hành trình dễ dàng hơn bao giờ hết.",
+			"thumbnail": "assets/images/parts/exterior/thumb-2.jpg",
+			"image": "assets/images/parts/exterior/img-2.jpg"
+		}
+	],
+	"exterior": {
+		"section_background": "assets/images/s-exterior/bg.jpg",
+		"section_background_mobile": "assets/images/s-exterior/bg-mb@2x.jpg",
+		"section_title": "TOẢ SÁNG<br>DIỆN MẠO CUỐN HÚT",
+		"section_description": "Sở hữu phong cách thiết kế hiện đại, độc đáo và sang trọng, Honda Accord toả sức hút của người kiến tạo tương lai."
+	},
+	"gallery_images": [
+		{
+			"thumbnail": "assets/images/s-gallery/gallery-photo.jpg",
+			"image": "assets/images/s-gallery/img-3.jpg",
+			"video": "",
+			"order": ""
+		},
+		{
+			"thumbnail": "assets/images/s-gallery/gallery-photo.jpg",
+			"image": "assets/images/s-gallery/img-3.jpg",
+			"video": "",
+			"order": ""
+		},
+		{
+			"thumbnail": "assets/images/s-gallery/gallery-photo.jpg",
+			"image": "assets/images/s-gallery/img-3.jpg",
+			"video": "",
+			"order": ""
+		},
+		{
+			"thumbnail": "assets/images/s-gallery/gallery-photo.jpg",
+			"image": "assets/images/s-gallery/img-3.jpg",
+			"video": "",
+			"order": ""
+		},
+		{
+			"thumbnail": "assets/images/s-gallery/gallery-photo.jpg",
+			"image": "assets/images/s-gallery/img-3.jpg",
+			"video": "",
+			"order": ""
+		},
+		{
+			"thumbnail": "assets/images/s-gallery/gallery-photo.jpg",
+			"image": "assets/images/s-gallery/img-3.jpg",
+			"video": "",
+			"order": ""
+		},
+		{
+			"thumbnail": "assets/images/s-gallery/gallery-photo.jpg",
+			"image": "assets/images/s-gallery/img-3.jpg",
+			"video": "",
+			"order": ""
+		},
+		{
+			"thumbnail": "assets/images/s-gallery/gallery-photo.jpg",
+			"image": "assets/images/s-gallery/img-3.jpg",
+			"video": "",
+			"order": ""
+		},
+		{
+			"thumbnail": "assets/images/s-gallery/gallery-photo.jpg",
+			"image": "assets/images/s-gallery/img-3.jpg",
+			"video": "",
+			"order": ""
+		},
+		{
+			"thumbnail": "assets/images/s-gallery/gallery-photo.jpg",
+			"image": "assets/images/s-gallery/img-3.jpg",
+			"video": "",
+			"order": ""
+		},
+		{
+			"thumbnail": "assets/images/s-gallery/gallery-photo.jpg",
+			"image": "assets/images/s-gallery/img-3.jpg",
+			"video": "",
+			"order": ""
+		}
+	],
+	"gallery_videos": [
+		{
+			"thumbnail": "assets/images/s-gallery/video-2.jpg",
+			"image": "",
+			"video": "tUBaL4G96Tg",
+			"order": ""
+		},
+		{
+			"thumbnail": "assets/images/s-gallery/video-2.jpg",
+			"image": "",
+			"video": "tUBaL4G96Tg",
+			"order": ""
+		},
+		{
+			"thumbnail": "assets/images/s-gallery/video-2.jpg",
+			"image": "",
+			"video": "tUBaL4G96Tg",
+			"order": ""
+		},
+		{
+			"thumbnail": "assets/images/s-gallery/video-2.jpg",
+			"image": "",
+			"video": "tUBaL4G96Tg",
+			"order": ""
+		}
+	],
+	"assetPath": "assets",
+	"assets_url": "assets",
+	"title": "Climax - The Best Creatology Agency",
+	"css_style_inline": false,
+	"menu": [
+		{
+			"title": "About Us",
+			"url": "/about-us.html"
+		},
+		{
+			"title": "Our Work",
+			"url": "/our-work.html"
+		},
+		{
+			"title": "Services",
+			"url": "/services.html"
+		},
+		{
+			"title": "Carees",
+			"url": "/carees.html"
+		},
+		{
+			"title": "Contact",
+			"url": "/contact.html"
+		}
+	],
+	"heroBanner": [
+		{
+			"title": "title 1",
+			"description": "description 1",
+			"image": "assets/images/dummy/article-img-1.jpg"
+		},
+		{
+			"title": "title 2",
+			"description": "description 2",
+			"image": "assets/images/dummy/article-img-1.jpg"
+		},
+		{
+			"title": "title 3",
+			"description": "description 3",
+			"image": "assets/images/dummy/article-img-1.jpg"
+		}
+	],
+	"interior_parts": [
+		{
+			"title": "Màn hình cảm ứng 8 inch độ phân giải cao",
+			"description": "Màn hình cảm ứng 8 inch độ phân giải cao và góc nhìn rộng, mang lại hình ảnh sắc nét cùng thao tác cảm ứng mượt mà như trên máy tính bảng. Hệ thống đồng bộ với Smartphone sử dụng hệ điều hành iOS và Android qua kết nối USB, giúp bạn tương tác hiệu quả và tận hưởng hành trình dễ dàng hơn bao giờ hết.",
+			"thumbnail": "assets/images/parts/interior/thumb-1.jpg",
+			"image": "assets/images/parts/interior/img-1.jpg"
+		},
+		{
+			"title": "Gương chiếu hậu chống chói",
+			"description": "Màn hình cảm ứng 8 inch độ phân giải cao và góc nhìn rộng, mang lại hình ảnh sắc nét cùng thao tác cảm ứng mượt mà như trên máy tính bảng. Hệ thống đồng bộ với Smartphone sử dụng hệ điều hành iOS và Android qua kết nối USB, giúp bạn tương tác hiệu quả và tận hưởng hành trình dễ dàng hơn bao giờ hết.",
+			"thumbnail": "assets/images/parts/interior/thumb-2.jpg",
+			"image": "assets/images/parts/interior/img-2.jpg"
+		},
+		{
+			"title": "Cụm đồng hồ điện tử sắc nét",
+			"description": "Màn hình cảm ứng 8 inch độ phân giải cao và góc nhìn rộng, mang lại hình ảnh sắc nét cùng thao tác cảm ứng mượt mà như trên máy tính bảng. Hệ thống đồng bộ với Smartphone sử dụng hệ điều hành iOS và Android qua kết nối USB, giúp bạn tương tác hiệu quả và tận hưởng hành trình dễ dàng hơn bao giờ hết.",
+			"thumbnail": "assets/images/parts/interior/thumb-3.jpg",
+			"image": "assets/images/parts/interior/img-3.jpg"
+		},
+		{
+			"title": "Vô lăng bọc da tích hợp",
+			"description": "Màn hình cảm ứng 8 inch độ phân giải cao và góc nhìn rộng, mang lại hình ảnh sắc nét cùng thao tác cảm ứng mượt mà như trên máy tính bảng. Hệ thống đồng bộ với Smartphone sử dụng hệ điều hành iOS và Android qua kết nối USB, giúp bạn tương tác hiệu quả và tận hưởng hành trình dễ dàng hơn bao giờ hết.",
+			"thumbnail": "assets/images/parts/interior/thumb-1.jpg",
+			"image": "assets/images/parts/interior/img-1.jpg"
+		},
+		{
+			"title": "Hệ thống điều hoà tự động",
+			"description": "Màn hình cảm ứng 8 inch độ phân giải cao và góc nhìn rộng, mang lại hình ảnh sắc nét cùng thao tác cảm ứng mượt mà như trên máy tính bảng. Hệ thống đồng bộ với Smartphone sử dụng hệ điều hành iOS và Android qua kết nối USB, giúp bạn tương tác hiệu quả và tận hưởng hành trình dễ dàng hơn bao giờ hết.",
+			"thumbnail": "assets/images/parts/interior/thumb-2.jpg",
+			"image": "assets/images/parts/interior/img-2.jpg"
+		},
+		{
+			"title": "Cửa sổ trời",
+			"description": "Màn hình cảm ứng 8 inch độ phân giải cao và góc nhìn rộng, mang lại hình ảnh sắc nét cùng thao tác cảm ứng mượt mà như trên máy tính bảng. Hệ thống đồng bộ với Smartphone sử dụng hệ điều hành iOS và Android qua kết nối USB, giúp bạn tương tác hiệu quả và tận hưởng hành trình dễ dàng hơn bao giờ hết.",
+			"thumbnail": "assets/images/parts/interior/thumb-3.jpg",
+			"image": "assets/images/parts/interior/img-3.jpg"
+		},
+		{
+			"title": "Khoang hành lý dung tích 573 lít ",
+			"description": "Màn hình cảm ứng 8 inch độ phân giải cao và góc nhìn rộng, mang lại hình ảnh sắc nét cùng thao tác cảm ứng mượt mà như trên máy tính bảng. Hệ thống đồng bộ với Smartphone sử dụng hệ điều hành iOS và Android qua kết nối USB, giúp bạn tương tác hiệu quả và tận hưởng hành trình dễ dàng hơn bao giờ hết.",
+			"thumbnail": "assets/images/parts/interior/thumb-2.jpg",
+			"image": "assets/images/parts/interior/img-2.jpg"
+		},
+		{
+			"title": "Hộc đựng đồ tiện lợi",
+			"description": "Màn hình cảm ứng 8 inch độ phân giải cao và góc nhìn rộng, mang lại hình ảnh sắc nét cùng thao tác cảm ứng mượt mà như trên máy tính bảng. Hệ thống đồng bộ với Smartphone sử dụng hệ điều hành iOS và Android qua kết nối USB, giúp bạn tương tác hiệu quả và tận hưởng hành trình dễ dàng hơn bao giờ hết.",
+			"thumbnail": "assets/images/parts/interior/thumb-2.jpg",
+			"image": "assets/images/parts/interior/img-2.jpg"
+		},
+		{
+			"title": "Hàng ghế sau êm ái",
+			"description": "Màn hình cảm ứng 8 inch độ phân giải cao và góc nhìn rộng, mang lại hình ảnh sắc nét cùng thao tác cảm ứng mượt mà như trên máy tính bảng. Hệ thống đồng bộ với Smartphone sử dụng hệ điều hành iOS và Android qua kết nối USB, giúp bạn tương tác hiệu quả và tận hưởng hành trình dễ dàng hơn bao giờ hết.",
+			"thumbnail": "assets/images/parts/interior/thumb-2.jpg",
+			"image": "assets/images/parts/interior/img-2.jpg"
+		},
+		{
+			"title": "Cửa gió điều hoà kết hợp cổng sạc tiện ích",
+			"description": "Màn hình cảm ứng 8 inch độ phân giải cao và góc nhìn rộng, mang lại hình ảnh sắc nét cùng thao tác cảm ứng mượt mà như trên máy tính bảng. Hệ thống đồng bộ với Smartphone sử dụng hệ điều hành iOS và Android qua kết nối USB, giúp bạn tương tác hiệu quả và tận hưởng hành trình dễ dàng hơn bao giờ hết.",
+			"thumbnail": "assets/images/parts/interior/thumb-2.jpg",
+			"image": "assets/images/parts/interior/img-2.jpg"
+		},
+		{
+			"title": "Hàng ghế sau tiện lợi",
+			"description": "Màn hình cảm ứng 8 inch độ phân giải cao và góc nhìn rộng, mang lại hình ảnh sắc nét cùng thao tác cảm ứng mượt mà như trên máy tính bảng. Hệ thống đồng bộ với Smartphone sử dụng hệ điều hành iOS và Android qua kết nối USB, giúp bạn tương tác hiệu quả và tận hưởng hành trình dễ dàng hơn bao giờ hết.",
+			"thumbnail": "assets/images/parts/interior/thumb-2.jpg",
+			"image": "assets/images/parts/interior/img-2.jpg"
+		},
+		{
+			"title": "Ghế lái điều chỉnh điện 8 hướng",
+			"description": "Màn hình cảm ứng 8 inch độ phân giải cao và góc nhìn rộng, mang lại hình ảnh sắc nét cùng thao tác cảm ứng mượt mà như trên máy tính bảng. Hệ thống đồng bộ với Smartphone sử dụng hệ điều hành iOS và Android qua kết nối USB, giúp bạn tương tác hiệu quả và tận hưởng hành trình dễ dàng hơn bao giờ hết.",
+			"thumbnail": "assets/images/parts/interior/thumb-2.jpg",
+			"image": "assets/images/parts/interior/img-2.jpg"
+		},
+		{
+			"title": "Đèn đọc sách tiện ích",
+			"description": "Màn hình cảm ứng 8 inch độ phân giải cao và góc nhìn rộng, mang lại hình ảnh sắc nét cùng thao tác cảm ứng mượt mà như trên máy tính bảng. Hệ thống đồng bộ với Smartphone sử dụng hệ điều hành iOS và Android qua kết nối USB, giúp bạn tương tác hiệu quả và tận hưởng hành trình dễ dàng hơn bao giờ hết.",
+			"thumbnail": "assets/images/parts/interior/thumb-2.jpg",
+			"image": "assets/images/parts/interior/img-2.jpg"
+		},
+		{
+			"title": "Rèm che nắng hàng ghế sau",
+			"description": "Màn hình cảm ứng 8 inch độ phân giải cao và góc nhìn rộng, mang lại hình ảnh sắc nét cùng thao tác cảm ứng mượt mà như trên máy tính bảng. Hệ thống đồng bộ với Smartphone sử dụng hệ điều hành iOS và Android qua kết nối USB, giúp bạn tương tác hiệu quả và tận hưởng hành trình dễ dàng hơn bao giờ hết.",
+			"thumbnail": "assets/images/parts/interior/thumb-2.jpg",
+			"image": "assets/images/parts/interior/img-2.jpg"
+		},
+		{
+			"title": "Cổng sạc và kết nối tiện ích",
+			"description": "Màn hình cảm ứng 8 inch độ phân giải cao và góc nhìn rộng, mang lại hình ảnh sắc nét cùng thao tác cảm ứng mượt mà như trên máy tính bảng. Hệ thống đồng bộ với Smartphone sử dụng hệ điều hành iOS và Android qua kết nối USB, giúp bạn tương tác hiệu quả và tận hưởng hành trình dễ dàng hơn bao giờ hết.",
+			"thumbnail": "assets/images/parts/interior/thumb-2.jpg",
+			"image": "assets/images/parts/interior/img-2.jpg"
+		}
+	],
+	"interior": {
+		"section_background": "assets/images/s-interior/bg.jpg",
+		"section_background_mobile": "assets/images/s-interior/bg-mb.jpg",
+		"section_title": "NÂNG TẦM KHÔNG GIAN<br>KIẾN TẠO TƯƠNG LAI",
+		"section_description": "Những đường nét nội thất được chú trọng đến từng chi tiết để tạo nên sự đồng điệu trong ngôn ngữ thiết kế, mang lại sự tiện nghi và thoải mái tối đa cho chủ sở hữu."
+	},
+	"banner": {
+		"banner": "assets/images/s-intro/hero-banner.jpg",
+		"banner_mobile": "assets/images/s-intro/hero-banner-mb@2x.jpg",
+		"popup_type": "image",
+		"popup_image": "assets/images/global/popup-intro.jpg",
+		"popup_video": "",
+		"explore_link": "https://www.honda.com.vn/",
+		"trial_link": "https://www.honda.com.vn/"
+	},
+	"message": {
+		"section_background": "assets/images/s-message/background.jpg",
+		"section_background_mobile": "assets/images/s-message/bg-mb@2x.jpg",
+		"section_title": "ĐỊNH ĐẲNG CẤP<br>TẠO TƯƠNG LAI",
+		"section_description": "Người tiên phong luôn mang trong mình một niềm tin mãnh liệt và khao khát bứt phá mọi giới hạn.<br>Hãy cùng Honda Accord kiến tạo những hành trình mới từ hôm nay."
+	},
+	"operation": {
+		"section_background": "assets/images/s-operation/bg.jpg",
+		"section_background_mobile": "assets/images/s-operation/bg-mb@2x.jpg",
+		"section_title": "MẠNH MẼ<br>KIẾN TẠO TƯƠNG LAI",
+		"section_description": "Đầy mạnh mẽ, thú vị mà hiệu quả đến ngạc nhiên,<br>Accord là người bạn đồng hành hoàn hảo mang lại từng cung bậc cảm xúc trên mọi hành trình."
+	},
+	"operation_parts": [
+		{
+			"title": "Hộp số vô cấp",
+			"description": "Màn hình cảm ứng 8 inch độ phân giải cao và góc nhìn rộng, mang lại hình ảnh sắc nét cùng thao tác cảm ứng mượt mà như trên máy tính bảng. Hệ thống đồng bộ với Smartphone sử dụng hệ điều hành iOS và Android qua kết nối USB, giúp bạn tương tác hiệu quả và tận hưởng hành trình dễ dàng hơn bao giờ hết.",
+			"thumbnail": "assets/images/parts/operation/thumb-1.jpg",
+			"image": "assets/images/parts/operation/img-1.jpg"
+		},
+		{
+			"title": "Hệ thống khung gầm và hệ thống treo mới",
+			"description": "Màn hình cảm ứng 8 inch độ phân giải cao và góc nhìn rộng, mang lại hình ảnh sắc nét cùng thao tác cảm ứng mượt mà như trên máy tính bảng. Hệ thống đồng bộ với Smartphone sử dụng hệ điều hành iOS và Android qua kết nối USB, giúp bạn tương tác hiệu quả và tận hưởng hành trình dễ dàng hơn bao giờ hết.",
+			"thumbnail": "assets/images/parts/operation/thumb-2.jpg",
+			"image": "assets/images/parts/operation/img-2.jpg"
+		},
+		{
+			"title": "Chế độ láy Sport đầy phấn khích",
+			"description": "Màn hình cảm ứng 8 inch độ phân giải cao và góc nhìn rộng, mang lại hình ảnh sắc nét cùng thao tác cảm ứng mượt mà như trên máy tính bảng. Hệ thống đồng bộ với Smartphone sử dụng hệ điều hành iOS và Android qua kết nối USB, giúp bạn tương tác hiệu quả và tận hưởng hành trình dễ dàng hơn bao giờ hết.",
+			"thumbnail": "assets/images/parts/operation/thumb-3.jpg",
+			"image": "assets/images/parts/operation/img-3.jpg"
+		},
+		{
+			"title": "Chế độ lái tiết kiệm ECON Mode",
+			"description": "Màn hình cảm ứng 8 inch độ phân giải cao và góc nhìn rộng, mang lại hình ảnh sắc nét cùng thao tác cảm ứng mượt mà như trên máy tính bảng. Hệ thống đồng bộ với Smartphone sử dụng hệ điều hành iOS và Android qua kết nối USB, giúp bạn tương tác hiệu quả và tận hưởng hành trình dễ dàng hơn bao giờ hết.",
+			"thumbnail": "assets/images/parts/operation/thumb-1.jpg",
+			"image": "assets/images/parts/operation/img-1.jpg"
+		},
+		{
+			"title": "Chế độ ga tự động",
+			"description": "Màn hình cảm ứng 8 inch độ phân giải cao và góc nhìn rộng, mang lại hình ảnh sắc nét cùng thao tác cảm ứng mượt mà như trên máy tính bảng. Hệ thống đồng bộ với Smartphone sử dụng hệ điều hành iOS và Android qua kết nối USB, giúp bạn tương tác hiệu quả và tận hưởng hành trình dễ dàng hơn bao giờ hết.",
+			"thumbnail": "assets/images/parts/operation/thumb-2.jpg",
+			"image": "assets/images/parts/operation/img-2.jpg"
+		},
+		{
+			"title": "Chế độ khởi động từ xa",
+			"description": "Màn hình cảm ứng 8 inch độ phân giải cao và góc nhìn rộng, mang lại hình ảnh sắc nét cùng thao tác cảm ứng mượt mà như trên máy tính bảng. Hệ thống đồng bộ với Smartphone sử dụng hệ điều hành iOS và Android qua kết nối USB, giúp bạn tương tác hiệu quả và tận hưởng hành trình dễ dàng hơn bao giờ hết.",
+			"thumbnail": "assets/images/parts/operation/thumb-3.jpg",
+			"image": "assets/images/parts/operation/img-3.jpg"
+		},
+		{
+			"title": "Lẫy chuyển số thể thao",
+			"description": "Màn hình cảm ứng 8 inch độ phân giải cao và góc nhìn rộng, mang lại hình ảnh sắc nét cùng thao tác cảm ứng mượt mà như trên máy tính bảng. Hệ thống đồng bộ với Smartphone sử dụng hệ điều hành iOS và Android qua kết nối USB, giúp bạn tương tác hiệu quả và tận hưởng hành trình dễ dàng hơn bao giờ hết.",
+			"thumbnail": "assets/images/parts/operation/thumb-2.jpg",
+			"image": "assets/images/parts/operation/img-2.jpg"
+		},
+		{
+			"title": "Trợ lực lái điện",
+			"description": "Màn hình cảm ứng 8 inch độ phân giải cao và góc nhìn rộng, mang lại hình ảnh sắc nét cùng thao tác cảm ứng mượt mà như trên máy tính bảng. Hệ thống đồng bộ với Smartphone sử dụng hệ điều hành iOS và Android qua kết nối USB, giúp bạn tương tác hiệu quả và tận hưởng hành trình dễ dàng hơn bao giờ hết.",
+			"thumbnail": "assets/images/parts/operation/thumb-2.jpg",
+			"image": "assets/images/parts/operation/img-2.jpg"
+		},
+		{
+			"title": "Chế độ khởi động bằng nút bấm thông minh",
+			"description": "Màn hình cảm ứng 8 inch độ phân giải cao và góc nhìn rộng, mang lại hình ảnh sắc nét cùng thao tác cảm ứng mượt mà như trên máy tính bảng. Hệ thống đồng bộ với Smartphone sử dụng hệ điều hành iOS và Android qua kết nối USB, giúp bạn tương tác hiệu quả và tận hưởng hành trình dễ dàng hơn bao giờ hết.",
+			"thumbnail": "assets/images/parts/operation/thumb-2.jpg",
+			"image": "assets/images/parts/operation/img-2.jpg"
+		}
+	],
+	"safety_parts": [
+		{
+			"title": "Hệ thống cảnh báo chống buồng ngủ",
+			"description": "Màn hình cảm ứng 8 inch độ phân giải cao và góc nhìn rộng, mang lại hình ảnh sắc nét cùng thao tác cảm ứng mượt mà như trên máy tính bảng. Hệ thống đồng bộ với Smartphone sử dụng hệ điều hành iOS và Android qua kết nối USB, giúp bạn tương tác hiệu quả và tận hưởng hành trình dễ dàng hơn bao giờ hết.",
+			"thumbnail": "assets/images/parts/safe/thumb-1.jpg",
+			"image": "assets/images/parts/safe/img-1.jpg"
+		},
+		{
+			"title": "Chế độ quan sát làn đường",
+			"description": "Màn hình cảm ứng 8 inch độ phân giải cao và góc nhìn rộng, mang lại hình ảnh sắc nét cùng thao tác cảm ứng mượt mà như trên máy tính bảng. Hệ thống đồng bộ với Smartphone sử dụng hệ điều hành iOS và Android qua kết nối USB, giúp bạn tương tác hiệu quả và tận hưởng hành trình dễ dàng hơn bao giờ hết.",
+			"thumbnail": "assets/images/parts/safe/thumb-2.jpg",
+			"image": "assets/images/parts/safe/img-2.jpg"
+		},
+		{
+			"title": "Đèn báo phanh khẩn cấp",
+			"description": "Màn hình cảm ứng 8 inch độ phân giải cao và góc nhìn rộng, mang lại hình ảnh sắc nét cùng thao tác cảm ứng mượt mà như trên máy tính bảng. Hệ thống đồng bộ với Smartphone sử dụng hệ điều hành iOS và Android qua kết nối USB, giúp bạn tương tác hiệu quả và tận hưởng hành trình dễ dàng hơn bao giờ hết.",
+			"thumbnail": "assets/images/parts/safe/thumb-3.jpg",
+			"image": "assets/images/parts/safe/img-3.jpg"
+		},
+		{
+			"title": "Camera lùi 3 góc",
+			"description": "Màn hình cảm ứng 8 inch độ phân giải cao và góc nhìn rộng, mang lại hình ảnh sắc nét cùng thao tác cảm ứng mượt mà như trên máy tính bảng. Hệ thống đồng bộ với Smartphone sử dụng hệ điều hành iOS và Android qua kết nối USB, giúp bạn tương tác hiệu quả và tận hưởng hành trình dễ dàng hơn bao giờ hết.",
+			"thumbnail": "assets/images/parts/safe/thumb-1.jpg",
+			"image": "assets/images/parts/safe/img-1.jpg"
+		},
+		{
+			"title": "Cảm biến va chạm góc trước và cảm biến lùi",
+			"description": "Màn hình cảm ứng 8 inch độ phân giải cao và góc nhìn rộng, mang lại hình ảnh sắc nét cùng thao tác cảm ứng mượt mà như trên máy tính bảng. Hệ thống đồng bộ với Smartphone sử dụng hệ điều hành iOS và Android qua kết nối USB, giúp bạn tương tác hiệu quả và tận hưởng hành trình dễ dàng hơn bao giờ hết.",
+			"thumbnail": "assets/images/parts/safe/thumb-2.jpg",
+			"image": "assets/images/parts/safe/img-2.jpg"
+		},
+		{
+			"title": "Hệ thống hỗ trợ khởi hành ngang dốc (HSA)",
+			"description": "Màn hình cảm ứng 8 inch độ phân giải cao và góc nhìn rộng, mang lại hình ảnh sắc nét cùng thao tác cảm ứng mượt mà như trên máy tính bảng. Hệ thống đồng bộ với Smartphone sử dụng hệ điều hành iOS và Android qua kết nối USB, giúp bạn tương tác hiệu quả và tận hưởng hành trình dễ dàng hơn bao giờ hết.",
+			"thumbnail": "assets/images/parts/safe/thumb-3.jpg",
+			"image": "assets/images/parts/safe/img-3.jpg"
+		},
+		{
+			"title": "Cảm biến gạt mưa tự động",
+			"description": "Màn hình cảm ứng 8 inch độ phân giải cao và góc nhìn rộng, mang lại hình ảnh sắc nét cùng thao tác cảm ứng mượt mà như trên máy tính bảng. Hệ thống đồng bộ với Smartphone sử dụng hệ điều hành iOS và Android qua kết nối USB, giúp bạn tương tác hiệu quả và tận hưởng hành trình dễ dàng hơn bao giờ hết.",
+			"thumbnail": "assets/images/parts/safe/thumb-2.jpg",
+			"image": "assets/images/parts/safe/img-2.jpg"
+		},
+		{
+			"title": "Phanh tay điện tử",
+			"description": "Màn hình cảm ứng 8 inch độ phân giải cao và góc nhìn rộng, mang lại hình ảnh sắc nét cùng thao tác cảm ứng mượt mà như trên máy tính bảng. Hệ thống đồng bộ với Smartphone sử dụng hệ điều hành iOS và Android qua kết nối USB, giúp bạn tương tác hiệu quả và tận hưởng hành trình dễ dàng hơn bao giờ hết.",
+			"thumbnail": "assets/images/parts/safe/thumb-2.jpg",
+			"image": "assets/images/parts/safe/img-2.jpg"
+		},
+		{
+			"title": "Chế độ giữa phanh tự động",
+			"description": "Màn hình cảm ứng 8 inch độ phân giải cao và góc nhìn rộng, mang lại hình ảnh sắc nét cùng thao tác cảm ứng mượt mà như trên máy tính bảng. Hệ thống đồng bộ với Smartphone sử dụng hệ điều hành iOS và Android qua kết nối USB, giúp bạn tương tác hiệu quả và tận hưởng hành trình dễ dàng hơn bao giờ hết.",
+			"thumbnail": "assets/images/parts/safe/thumb-2.jpg",
+			"image": "assets/images/parts/safe/img-2.jpg"
+		},
+		{
+			"title": "Hệ thống cân bằng điện tử",
+			"description": "Màn hình cảm ứng 8 inch độ phân giải cao và góc nhìn rộng, mang lại hình ảnh sắc nét cùng thao tác cảm ứng mượt mà như trên máy tính bảng. Hệ thống đồng bộ với Smartphone sử dụng hệ điều hành iOS và Android qua kết nối USB, giúp bạn tương tác hiệu quả và tận hưởng hành trình dễ dàng hơn bao giờ hết.",
+			"thumbnail": "assets/images/parts/safe/thumb-2.jpg",
+			"image": "assets/images/parts/safe/img-2.jpg"
+		},
+		{
+			"title": "Khung xe thép và công nghệ tương thích với các dạng va chạm",
+			"description": "Màn hình cảm ứng 8 inch độ phân giải cao và góc nhìn rộng, mang lại hình ảnh sắc nét cùng thao tác cảm ứng mượt mà như trên máy tính bảng. Hệ thống đồng bộ với Smartphone sử dụng hệ điều hành iOS và Android qua kết nối USB, giúp bạn tương tác hiệu quả và tận hưởng hành trình dễ dàng hơn bao giờ hết.",
+			"thumbnail": "assets/images/parts/safe/thumb-2.jpg",
+			"image": "assets/images/parts/safe/img-2.jpg"
+		},
+		{
+			"title": "Chế độ khoá cửa tự động",
+			"description": "Màn hình cảm ứng 8 inch độ phân giải cao và góc nhìn rộng, mang lại hình ảnh sắc nét cùng thao tác cảm ứng mượt mà như trên máy tính bảng. Hệ thống đồng bộ với Smartphone sử dụng hệ điều hành iOS và Android qua kết nối USB, giúp bạn tương tác hiệu quả và tận hưởng hành trình dễ dàng hơn bao giờ hết.",
+			"thumbnail": "assets/images/parts/safe/thumb-2.jpg",
+			"image": "assets/images/parts/safe/img-2.jpg"
+		}
+	],
+	"safety": {
+		"section_background": "assets/images/s-safe/bg.jpg",
+		"section_background_mobile": "assets/images/s-safe/bg-mb.jpg",
+		"section_title": "TOẢ SÁNG<br>CHUẨN MỰC AN TOÀN",
+		"section_description": "Không chỉ thoải mái, tiện nghi, Honda Accord mới mang lại sự an tâm tuyệt đối để mỗi hành trình là một trải nghiệm bất tận."
+	},
+	"specification": {
+		"specification": "<table><tr> <th colspan=\"2\">ĐỘNG CƠ/HỘP SỐ</th> </tr> <tr> <td>Kiểu động cơ</td> <td>1.5L DOHC VTEC TURBO, 4 xi lanh thẳng hàng, 16 van</td> </tr> <tr> <td>Hộp số</td> <td>CVT Ứng dụng EARTH DREAMS TECHNOLOGY</td> </tr> <tr> <td>Dung tích xi lanh (cm3)</td> <td>1.498</td> </tr> <tr> <td>Công suất cực đại (Hp/rpm)</td> <td>188/5/500</td> </tr> <tr> <td>Mô men xoắn cự đại (Nm/rpm)</td> <td>260/1.600-5.000</td> </tr> <tr> <td>Dung tích thùng nhiên liệu (lít)</td> <td>56</td> </tr> <tr> <td>Dung tích khoang hành lý (lít)</td> <td>573</td> </tr> <tr> <td>Hệ thống nhiên liệu</td> <td>Phun xăng trực tiếp/PGM-F1</td> </tr> <tr> <td colspan=\"2\"> <strong>Mức tiêu thụ nhiên liệu</strong> <p>Được thử nghiệm bởi Trung tâm Thử nghiệm khí thải phương tiện cơ giới đường bộ (NETC), Cục Đăng kiểm Việt Nam theo tiêu chuẩn QCVN86:2015/BGTVT.<br> Được kiểm tra và cấp giấy chứng nhận bởi Phòng Chứng nhận Chất lượng xe cơ giới (VAQ), Cục Đăng kiểm Việt Nam.<br> Mức độ tiêu thụ nhiên liệu thực tế có thể thay đổi do điều kiện sử dụng, kỹ năng lái xe và tình trạng bảo dưỡng kỹ thuật của xe.</p> </td> </tr> <tr> <td>Mức tiêu thụ nhiên liệu chu trình tổ hợp (lít/100km)</td> <td>6,2</td> </tr><tr> <th colspan=\"2\">ĐỘNG CƠ/HỘP SỐ</th> </tr> <tr> <td>Kiểu động cơ</td> <td>1.5L DOHC VTEC TURBO, 4 xi lanh thẳng hàng, 16 van</td> </tr> <tr> <td>Hộp số</td> <td>CVT Ứng dụng EARTH DREAMS TECHNOLOGY</td> </tr> <tr> <td>Dung tích xi lanh (cm3)</td> <td>1.498</td> </tr> <tr> <td>Công suất cực đại (Hp/rpm)</td> <td>188/5/500</td> </tr> <tr> <td>Mô men xoắn cự đại (Nm/rpm)</td> <td>260/1.600-5.000</td> </tr> <tr> <td>Dung tích thùng nhiên liệu (lít)</td> <td>56</td> </tr> <tr> <td>Dung tích khoang hành lý (lít)</td> <td>573</td> </tr> <tr> <td>Hệ thống nhiên liệu</td> <td>Phun xăng trực tiếp/PGM-F1</td> </tr> <tr> <td colspan=\"2\"> <strong>Mức tiêu thụ nhiên liệu</strong> <p>Được thử nghiệm bởi Trung tâm Thử nghiệm khí thải phương tiện cơ giới đường bộ (NETC), Cục Đăng kiểm Việt Nam theo tiêu chuẩn QCVN86:2015/BGTVT.<br> Được kiểm tra và cấp giấy chứng nhận bởi Phòng Chứng nhận Chất lượng xe cơ giới (VAQ), Cục Đăng kiểm Việt Nam.<br> Mức độ tiêu thụ nhiên liệu thực tế có thể thay đổi do điều kiện sử dụng, kỹ năng lái xe và tình trạng bảo dưỡng kỹ thuật của xe.</p> </td> </tr> <tr> <td>Mức tiêu thụ nhiên liệu chu trình tổ hợp (lít/100km)</td> <td>6,2</td> </tr><tr> <th colspan=\"2\">ĐỘNG CƠ/HỘP SỐ</th> </tr> <tr> <td>Kiểu động cơ</td> <td>1.5L DOHC VTEC TURBO, 4 xi lanh thẳng hàng, 16 van</td> </tr> <tr> <td>Hộp số</td> <td>CVT Ứng dụng EARTH DREAMS TECHNOLOGY</td> </tr> <tr> <td>Dung tích xi lanh (cm3)</td> <td>1.498</td> </tr> <tr> <td>Công suất cực đại (Hp/rpm)</td> <td>188/5/500</td> </tr> <tr> <td>Mô men xoắn cự đại (Nm/rpm)</td> <td>260/1.600-5.000</td> </tr> <tr> <td>Dung tích thùng nhiên liệu (lít)</td> <td>56</td> </tr> <tr> <td>Dung tích khoang hành lý (lít)</td> <td>573</td> </tr> <tr> <td>Hệ thống nhiên liệu</td> <td>Phun xăng trực tiếp/PGM-F1</td> </tr> <tr> <td colspan=\"2\"> <strong>Mức tiêu thụ nhiên liệu</strong> <p>Được thử nghiệm bởi Trung tâm Thử nghiệm khí thải phương tiện cơ giới đường bộ (NETC), Cục Đăng kiểm Việt Nam theo tiêu chuẩn QCVN86:2015/BGTVT.<br> Được kiểm tra và cấp giấy chứng nhận bởi Phòng Chứng nhận Chất lượng xe cơ giới (VAQ), Cục Đăng kiểm Việt Nam.<br> Mức độ tiêu thụ nhiên liệu thực tế có thể thay đổi do điều kiện sử dụng, kỹ năng lái xe và tình trạng bảo dưỡng kỹ thuật của xe.</p> </td> </tr> <tr> <td>Mức tiêu thụ nhiên liệu chu trình tổ hợp (lít/100km)</td> <td>6,2</td> </tr></table>"
+	}
+}

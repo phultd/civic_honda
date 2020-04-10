@@ -1,0 +1,195 @@
+.popup {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 10;
+    background: rgba(#000,0.8);
+    overflow: auto;
+    padding: 0px;
+    -webkit-overflow-scrolling: touch;
+    @include SFProDisplay;
+    display: none;
+    @include screen(tablet) {
+        background: rgba(0, 0, 0, 0.9);
+    }
+    @include screen(mobile) {
+        padding-left: 15px;
+       padding-right: 15px;
+        padding-top: 60px;
+        width: 100vw;
+        //overflow-y: hidden;
+    }
+    &__table {
+        display: table;
+        width: 100%;
+        height: 100%;
+        vertical-align: middle;
+        table-layout: fixed;
+    }
+    &__table-cell {
+        height: 100%;
+        width: 100%;
+        vertical-align: middle;
+        display: table-cell;
+        text-align: center;
+    }
+    &__container {
+        //width: calc(100% - 140px);
+        display: inline-block;
+        position: relative;
+        margin: 0px 70px;
+        @include screen(1366px) {
+            margin : 0;
+            padding : 0 15px;
+            width: 100%;
+        }
+        @include screen(tablet) {
+            margin : 0;
+            padding: 0;
+            width: 100%;
+        }
+    }
+    &__content {
+        overflow: hidden;
+        background : #262626;
+        color: white;
+        //border-radius :30px;
+        box-shadow: 0 5px 50px rgba(0,0,0,.15);
+        @include screen(tablet) {
+            border-radius: 10px;
+            overflow: inherit;
+            margin: 0px 15px;
+            padding-top: 15px;
+        }
+         @include screen(mobile) {
+            margin: 0px;
+        }
+    }
+    &__video {
+        display: inline-block;
+        position: relative;
+        img {
+            opacity: 0;
+        }
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+        }
+    }
+    &__close {
+        display: inline-block;
+        position: absolute;
+        top: -19px;
+        right: -28px;
+        z-index: 3;
+        opacity: 1;
+        font-size: 0;
+        cursor: pointer;
+        transition: 0.3s;
+        width: 80px;
+        height: 80px;
+        @include screen(medium-desktop) {
+            width: 60px;
+            right: 0px;
+            img {
+                max-width: 100%;
+            }
+        }
+        @include screen(mobile) {
+            right : 30px;
+            img {
+                width: 34px;
+                //height: 25px;
+            }
+        }
+        svg {
+            width: 100%;
+            path {
+                fill : #fff;
+            }
+        }
+    }
+    &--fullscreen {
+        background: #fff;
+        width: 100%;
+        height: 100%;
+        .popup__container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+        }
+    }
+    &--slider {
+        &__title {
+            font-weight: 400;
+            //margin: 45px 0;
+            font-size: 48px;
+            @include screen(1700px) {
+                font-size: rem(40);
+                margin-bottom: 0;
+            }
+            @include screen(1367px) {
+            }
+            @include screen(tablet) {
+                font-size: 25px;
+            }
+            @include screen(mobile) {
+                font-size: 18px;
+            }
+            @include screen(361px) {
+                font-size: 16px;
+            } 
+        }
+        .popup__close {
+            @include screen(mobile) {
+                right: -10px;
+                text-align: right;
+                top: -10px;
+            }
+        }
+    }
+    &#popup_enter {
+        .popup__content {
+            overflow: visible;
+            position: relative;
+            display: inline-block;
+            background: transparent;
+        }
+        .popup-enter__img {
+            img {
+               max-width: 100%;
+               max-height: calc(100vh - 150px);
+            }
+            max-width: 100%;
+            margin-bottom: 30px;
+            @include screen(mobile) {
+                margin-bottom: 0px;
+            }
+        }
+        .popup__close {
+            // top: -19px;
+            // right: 1px;
+            @include screen(desktop) {
+                right: -15px;
+            }
+            @include screen(mobile) {
+                right: -10px;
+                text-align: right;
+            }
+        }
+
+    }
+}
+
+#popupRegister {
+    overflow-y: scroll;
+    .popup2__table-cell {
+        vertical-align: top;
+    }
+}

@@ -1,0 +1,24 @@
+.s-interior {
+    background: #FFF;
+    color: white;
+    &__content {
+        background: #262626;
+    }
+    &__parts {
+        position: absolute;
+        left: 9.5%;
+        top: 75%;
+        width: 41.5%;
+    }
+    .tab-pane__right {
+        background: #262626;
+    }
+    @include screen(mobile) {
+        .tab-pane__left {
+            img {
+            width: 100%;
+        }
+        }
+    }
+}
+

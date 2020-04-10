@@ -1,0 +1,19 @@
+.s-color {
+    @include SFProDisplay;
+    padding-top: rem(100);
+    @include screen(mobile) {
+    	margin-top: 0;
+    }
+    .flickity-prev-next-button {
+    	@include screen(mobile) {
+    		display: block;
+    	}
+		&.previous {
+			background: url("../images/icons/ico-prev-red.png") no-repeat center;
+			background-size: contain !important;
+		}
+		&.next {
+			background: url("../images/icons/ico-next-red.png") no-repeat center;
+		}
+	}
+}

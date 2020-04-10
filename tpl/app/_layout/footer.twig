@@ -1,0 +1,26 @@
+<footer class="footer js-snap-item" data-module="footer">
+    <div class="container">
+        <ul class="footer__social text-center">
+			{% if hyperlinks.facebook.url %}
+            <li>
+            	<a href="{{ hyperlinks.facebook.url }}" target="_blank">
+                    {{ source('app/assets/images/icon/facebook.twig') }}
+	            </a>
+	        </li>
+			{% endif %}
+			{% if hyperlinks.youtube.url %}
+            <li class="youtube">
+                <a href="{{ hyperlinks.youtube.url }}" target="_blank">
+                    {{ source('app/assets/images/icon/youtube.twig') }}
+                </a>
+            </li>
+			{% endif %}
+        </ul>
+    </div>
+    <div class="go-to-top text-center">
+    	<a href="#">
+    		<img src="{{ assets_url }}/images/icon/top.png" alt=""> <br/>
+    		VỀ ĐẦU TRANG
+    	</a>
+    </div>
+</footer>

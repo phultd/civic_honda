@@ -1,0 +1,45 @@
+#content-wrapper {
+    width: calc(100% - 200px);
+    padding: 95px 20px 30px;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+	transition: width .3s;
+
+	&.expanded {
+		width: 100%;
+	}
+
+	.card-body {
+		.md-form {
+			margin: 0;
+		}
+	}
+
+	/*
+	* BUTTON SELECT IMAGE
+	*/
+
+	.btn-wysiwyg {
+		vertical-align: top;
+	}
+
+	.image-preview {
+		display: inline-block;
+		margin-left: 20px;
+		margin-top: 0.375rem;
+		position: relative;
+		img {
+			width: 150px;
+			height: 150px;
+			object-fit: cover;
+		}
+		.btn-wysiwyg-remove {
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
+	}
+
+}

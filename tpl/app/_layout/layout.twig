@@ -1,0 +1,125 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>{{ title }}</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ assets_url }}/images/favicons/favicon.ico">
+    <meta name="theme-color" content="#ffffff">
+
+    {% if css_style_inline != true %}
+    <link rel="stylesheet" href="{{assets_url}}/css/app.css">
+    {% else %}
+    <style>
+        {% include 'assets/css/app-compressed.twig' %}
+    </style>
+    {% endif %}
+    <script type="text/javascript">
+        var assets_url = "{{ assets_url }}";
+    </script>
+
+	{% if app_environment == 'production' %}
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-W26R4WB');</script>
+	<!-- End Google Tag Manager -->
+
+	<!-- Facebook Pixel Code -->
+	<script>
+	!function(f,b,e,v,n,t,s)
+	{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+	n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+	if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+	n.queue=[];t=b.createElement(e);t.async=!0;
+	t.src=v;s=b.getElementsByTagName(e)[0];
+	s.parentNode.insertBefore(t,s)}(window,document,'script',
+	'https://connect.facebook.net/en_US/fbevents.js');
+	fbq('init', '2327265690661691');
+	fbq('track', 'PageView');
+	</script>
+	<noscript>
+	<img height="1" width="1"
+	src="https://www.facebook.com/tr?id=2327265690661691&ev=PageView
+	&noscript=1"/>
+	</noscript>
+	<!-- End Facebook Pixel Code -->
+	{% endif %}
+
+</head>
+
+<body>
+
+	{% if app_environment == 'production' %}
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W26R4WB"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+	{% endif %}
+
+    
+    <div class="wrapper snap-scroll" data-module="snap-scroll">
+        {% include '_layout/header.twig' %}
+        <!-- ... the rest of the HTML page ... -->
+        {% block page %}{% endblock %}
+        <!-- ... -->
+
+        {% include '_layout/honda-tools.twig' %}
+        {% include '_layout/loading-process.twig' %}
+        {% include '_layout/footer.twig' %}
+    </div>
+    <script src="{{assets_url}}/js/app.js"></script>
+
+    <script>
+        var totalImages  = $('img').length;
+        var loadedImages = 0;
+
+        function updatePercentage() {
+            loadedImages++;
+
+            var percent = (loadedImages / totalImages) * 100;
+
+            $('.loading-process__text').text(percent.toFixed(0) + '%');
+            $('.loading-process__image__mask').css({
+                bottom: percent + '%'
+            });
+
+            if (percent >= 98) {
+                $('.loading-process').fadeOut();
+                if ( $('.main-menu').length > 0 ) {
+
+                    $('.main-menu').addClass('animation-li');
+                    $('.s-intro').addClass('active');
+                    
+                }
+            }
+        }
+
+        $(window).on('load', function() {
+            if ( $('#popup_enter').length > 0 ) {
+                myApp['openPopup']('#popup_enter');
+            }
+        });
+
+        $('img').each(function (index, element) {
+            if (element.complete) {
+                return updatePercentage();
+            }
+
+            $(element).on('load', function () {
+                updatePercentage();
+            });
+
+            $(element).on('error', function () {
+                updatePercentage();
+            });
+        });
+
+    </script>
+</body>
+
+</html>

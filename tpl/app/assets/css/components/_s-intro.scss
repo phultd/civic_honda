@@ -1,0 +1,93 @@
+.s-intro {
+    background: #000;
+    .section-holder__holder {
+        font-size: 0;
+        line-height: 0;
+        margin-bottom: -1px;
+    }
+    .section-block {
+        &__content {
+            h2 {
+                img {
+                    max-width: 37%;
+                }
+            }
+            h3 {
+                margin-top: rem(13);
+            }
+        }
+    }
+    @include screen(desktop) {
+    	//margin-top: 40px;
+    	.section-block {
+    		&__content {
+    			h2 {
+    				img {
+    					max-width: 400px;
+    				}
+    			}
+    		}
+    	}
+    }
+    @include screen(tablet) {
+    	margin-top: 60px;
+    	.section-block {
+    		&__content {
+    			h2 {
+    				img {
+    					max-width: 300px;
+    				}
+    			}
+    		}
+    		&__title {
+    			font-size: 20px;
+    		}
+    	}
+    }
+    @include screen(mobile) {
+    	margin-top: 48px;
+    	.section-block {
+    		&__content {
+    			h2 {
+    				img {
+    					max-width: 180px;
+    				}
+    			}
+    		}
+    		&__title {
+    			font-size: 14px;
+                margin-top: 5px;
+    		}
+    	}
+    }
+    &.section-block {
+        h2 {
+            img {
+                opacity: 0;
+                transform: translateY(-75px);   
+                transition: all 0.7s ease-out;
+                transition-delay: 1.50s;
+            }
+        }
+        .section-block__title {
+            opacity: 0;
+            transform: translateY(-75px);
+            transition: all 0.7s ease-out;
+            transition-delay: 1.75s;
+        }
+    }
+    &.active {
+        &.section-block {
+            h2 {
+                img {
+                    opacity: 1;
+                    transform: translateY(0px);   
+                }
+            }
+            .section-block__title {
+                opacity: 1;
+                transform: translateY(0px);
+            }
+        }
+    }
+}

@@ -1,0 +1,24 @@
+{% if banner.banner %}
+<section id="intro" class="s-intro section-block section-holder js-snap-item js-navigator-item">
+    <div class="section-holder__container">
+        <div class="section-holder__holder">
+            <img class="hidden-xs  lozad fullscreen-img" src="{{ assets_url }}/images/dummy/1920x971.png" data-src="{{ banner.banner }}" alt="" class="">
+            <img class="visible-xs lozad img-fullscreen" src="{{ assets_url }}/images/dummy/640x466.png" data-src="{{ banner.banner_mobile }}" alt="" class="">
+        </div>
+        <div class="section-block__content ">
+        	<div class="container">
+	        	<h2><img src="{{ assets_url }}/images/s-intro/civic.png" alt="Honda Civic"></h2>
+	        	<h3 class="section-block__title"><i>CHINH PHỤC MỌI HÀNH TRÌNH</i></h3>
+        	</div>
+        </div>
+    </div>
+    <div class="scroll-down-wrapper">
+        <div class="scroll-down-btn text-center">
+            <p class="scroll-down-btn__icon">
+                <img src="{{ assets_url }}/images/icon/mouse.png" alt="">
+            </p>
+            <p>KÉO XUỐNG ĐỂ KHÁM PHÁ</p>
+        </div>
+    </div>
+</section>
+{% endif %}

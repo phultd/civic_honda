@@ -1,0 +1,53 @@
+<section class="journey section-block">
+    <div class="headline-block">
+        <h4 class="headline__regular">HÀNH TRÌNH ORGANIC GOLD</h4>
+        <h4 class="headline__bold">THEO BÉ LỚN KHÔN CÙNG TỰ NHIÊN</h4>
+        <p class="headline__desc">
+            Organic Gold tự hào là nguồn dinh dưỡng thuần khiết đồng hành cùng bé từ lúc trong bụng mẹ đến giai đoạn chào đời và chập chững vào đời.<br/>
+            Khám phá ngay mẹ nhé!
+        </p>
+    </div>
+    <div class="container">
+        <div class="step-block" data-module="step-side">
+            {%  for item in step_blocks %}
+                <div class="step-item js-side-item {{ item.class }}">
+                    <div class="step-item__wrapper">
+                        <div class="step-item__desc-icon">
+                            <p class="desc">
+                                {{ item.desc }}
+                            </p>
+                            <span class="icon">
+                                <img src="{{ assets_url ~ item.icon }}" alt="">
+                            </span>
+                        </div>
+                        <div class="ufo-float">
+                            {% for icon in item.floats %}
+                                <div class="ufo-float__item">
+                                    <img src="{{ assets_url ~ icon.image }}" alt="" class="thumbnail">
+                                    <div class="detail">
+                                        {{ icon.detail }}
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        </div>
+                        <div class="step-item__thumbnail js-side">
+                            <img src="{{ assets_url ~ item.image }}" alt="">
+                        </div>
+                        <div class="step-item__bot">
+                            <div class="title-btn {{ item.bg_btn }}">
+                                <h4 class="regular">{{ item.headline_regular }}</h4>
+                                <h4 class="bold text-uppercase">{{ item.headline_bold }}</h4>
+                                <div class="btn-block">
+                                    <a href="{{ item.href }}" class="btn-common"><span>KHÁM PHÁ NGAY</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="line">
+                        <span class="triangle"></span>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

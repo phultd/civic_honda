@@ -1,0 +1,24 @@
+<section class="s-specifications section-holder  js-snap-item js-navigator-item" id="specifications">
+    <div class="container">
+        <h2 class="title-common">THÔNG SỐ KỸ THUẬT</h2>
+        <div class="s-specifications__content">
+	        <div class="s-specifications__table s-specifications__table--header text-center">
+	            <table>
+	            	<tbody>
+	            		<tr class="bg-grey">
+	            			<td> Danh mục</td>
+	            			<td>E</td>
+	            			<td>G</td>
+	            			<td>RS</td>
+	            		</tr>
+	                </tbody>
+	            </table>
+	        </div>
+	    </div>
+        <div class="s-specifications__content js-custom-scroll" data-module="custom-scroll">
+            <div class="s-specifications__table text-center">
+            	{{ specification.specification|striptags('<div>,<b>,<strong>,<i>,<em>,<u>,<a>,<ul>,<ol>,<li>,<p>,<br>,<span>,<img>,<table>,<tr>,<th>,<td>')|raw }}
+            </div>
+        </div>
+    </div>
+</section>

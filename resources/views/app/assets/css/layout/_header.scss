@@ -1,0 +1,132 @@
+$h-header : 63px;
+.header{
+	background-image: linear-gradient(to right, #d1b14f, #d8ba56, #dec25d, #e5cb64, #ebd46b, #ecd66c, #eed76c, #efd96d, #ecd467, #eace62, #e7c95c, #e4c457);
+	position: fixed;
+	top : 0;
+	left : 0;
+	right : 0;
+	z-index: 10;
+	height: $h-header;
+	-webkit-box-shadow: 0px 2px 5px 1px rgba(201,201,201,1);
+	-moz-box-shadow: 0px 2px 5px 1px rgba(201,201,201,1);
+	box-shadow: 0px 2px 5px 1px rgba(201,201,201,1);
+	.header-container{
+		max-width: 1120px;
+		padding:  0px 15px ;
+		height: 100%;
+		margin: 0 auto;
+		position: relative;
+		ul{
+			list-style: none;
+			height: 100%;
+			width: 100%;
+			font-size: 0;
+			display: table;
+			text-align: center;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+			position: relative;
+			li{
+				display: table-cell;
+				vertical-align: middle;
+				@include Roboto-bold;
+				font-size: 17px;
+				line-height: 1.35;
+				color : #fff;
+				padding-right: 35px;
+				@include TransitionWithDurationAndEase(0.35s, $EasingSineInOut);
+				@media screen and ($res-1200){
+					padding-right: 15px;
+					font-size: 15px;
+				}
+				&.no-hover{
+				}
+				&:not(.no-hover):hover{
+					color: $color-green;
+				}
+				&.active{
+					color: $color-green;
+				}
+				&:last-child{
+					padding-right: 0px;
+				}
+				a{
+					color: inherit;
+				}
+				span{
+					display: block;
+					cursor: pointer;
+					position: relative;
+					padding-top: 9px;
+					padding-bottom: 3px;
+				}
+				.ico-home{
+					background: url("../images/icons/ico-home.png") no-repeat left center;
+					background-size: 25px 29px;
+					padding-left: 26px;
+					@media screen and ($res-tablet){
+						padding-left: 18px;
+						background-size: 20px 24px;
+					}
+				}
+				.ico-search{
+					background: url("../images/icons/ico-search.png") no-repeat right center;
+					background-size: 29px 29px;
+					padding-right: 30px;
+					@media screen and ($res-tablet){
+						padding-right: 18px;
+						background-size: 20px 20px;
+					}
+				}
+				&.search{
+					.search-field{
+						position: absolute;
+						left : 0;
+						right : 0;
+						padding: 21px 10px 10px 10px;
+						bottom : -80px;
+						background-color: #fff;
+						-webkit-box-sizing: border-box;
+						-moz-box-sizing: border-box;
+						box-sizing: border-box;
+						height: 70px;
+						-webkit-box-shadow: 0px 2px 5px 1px rgba(201,201,201,1);
+						-moz-box-shadow: 0px 2px 5px 1px rgba(201,201,201,1);
+						box-shadow: 0px 2px 5px 1px rgba(201,201,201,1);
+						visibility: hidden;
+						opacity: 0;
+						@include TransitionWithDurationAndEase(0.35s, $EasingSineInOut);
+						@media screen and ($res-tablet){
+							left : -15px;
+							right: -15px;
+						}
+						input{
+							width: 100%;
+							-webkit-box-sizing: border-box;
+							-moz-box-sizing: border-box;
+							box-sizing: border-box;
+							border : 0px solid transparent;
+							@include Roboto;
+							font-size: 17px;
+							color : $color-gray;
+							padding: 10px;
+							border-bottom: 1px solid $color-gray;
+						}
+					}
+					&.active{
+						color : #fff;
+						.search-field{
+							bottom : -70px;
+							visibility: visible;
+							opacity: 1;
+						}
+						.ico-search{
+							background: url("../images/icons/ico-exit.png") no-repeat right center;
+						}
+					}
+				}
+			}
+		}
+	}
+}

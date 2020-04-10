@@ -1,0 +1,72 @@
+.top-banner{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    &__item{
+        width: 100%;
+        position: relative;
+        margin-right : 0;
+    }
+    &__bg{
+        display: block;
+        img{
+            width: 100%;
+        }
+    }
+    &__content{
+        position: absolute;
+        top : 0;
+        bottom : 0;
+        left : 0;
+        right : 0;
+    }
+    &__detail{
+        position: relative;
+        display: block;
+        padding-top: 18.5%;
+        padding-left: 18.7%;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        .headline{
+            color : $color-green;
+            margin: 0px;
+            text-transform: uppercase;
+            &--small{
+                @include Roboto;
+                font-size: 27px;
+                margin-top: 7px;
+            }
+            &--big{
+                @include Roboto-bold;
+                font-size: 103px;
+                margin-top: -5px;
+            }
+            &.padl{
+                padding-left: 3.3%;
+            }
+        }
+        @media screen and (max-width: 1200px){
+            padding-top: 16.5%;
+            padding-left: 10.7%;
+            .headline{
+                &--small{
+                    font-size: 27px;
+                }
+                &--big{
+                    font-size: 80px;
+                }
+            }
+        }
+        @media screen and (max-width: 992px){
+            .headline{
+                &--small{
+                    font-size: 22px;
+                }
+                &--big{
+                    font-size: 60px;
+                }
+            }
+        }
+    }
+}

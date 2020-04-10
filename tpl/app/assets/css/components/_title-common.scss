@@ -1,0 +1,26 @@
+.title-common {
+	@include SFProDisplay;
+	font-weight: 100;
+    font-style: normal;
+    font-size: rem(72);
+    color: black;
+    text-align: center;
+    margin-top: rem(85);
+    margin-bottom: rem(22);
+    text-transform: uppercase;
+    &--red {
+    	color: #B91D1D;
+    }
+    @include screen(1367px) {
+        font-size: rem(60);
+        margin-bottom: 5px;
+    }
+    @include screen(tablet) {
+        font-size: 27px;
+        margin-top: 30px;
+    }
+    @include screen(mobile) {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+}

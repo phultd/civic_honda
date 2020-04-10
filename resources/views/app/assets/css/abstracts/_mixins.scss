@@ -1,0 +1,259 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass mixins.
+// -----------------------------------------------------------------------------
+/// Event wrapper
+/// @author Harry Roberts
+/// @param {Bool} $self [false] - Whether or not to include current selector
+/// @link https://twitter.com/csswizardry/status/478938530342006784 Original tweet from Harry Roberts
+
+/* BREAKPOINTS */
+$breakpoints: ( mobile: 768px, tablet: 992px, desktop: 1200px, medium-desktop: 1600px);
+@mixin screen($breakpoint, $mobileFirst: false) {
+    @if $mobileFirst {
+        @if map-has-key($breakpoints, $breakpoint) {
+            @media (min-width: #{map-get($breakpoints, $breakpoint)}) {
+                @content;
+            }
+        }
+        @else {
+            @media (min-width: $breakpoint) {
+                @content;
+            }
+        }
+    }
+    @else {
+        @if map-has-key($breakpoints, $breakpoint) {
+            @media (max-width: map-get($breakpoints, $breakpoint) - 1px) {
+                @content;
+            }
+        }
+        @else {
+            @media (max-width: $breakpoint - 1px) {
+                @content;
+            }
+        }
+    }
+}
+
+@mixin screenHeight($breakpoint, $mobileFirst: false) {
+    @if $mobileFirst {
+        @if map-has-key($breakpoints, $breakpoint) {
+            @media (min-height: #{map-get($breakpoints, $breakpoint)}) {
+                @content;
+            }
+        }
+        @else {
+            @media (min-height: $breakpoint) {
+                @content;
+            }
+        }
+    }
+    @else {
+        @if map-has-key($breakpoints, $breakpoint) {
+            @media (max-height: map-get($breakpoints, $breakpoint) - 1px) {
+                @content;
+            }
+        }
+        @else {
+            @media (max-height: $breakpoint - 1px) {
+                @content;
+            }
+        }
+    }
+}
+
+@mixin on-event($self: false) {
+     @if $self{
+        &,
+        &:active,
+        &:focus,
+        &:hover {
+            @content;
+        }
+    }
+    @else {
+        &:active,
+        &:focus,
+        &:hover {
+            @content;
+        }
+    }
+}
+/// Make a context based selector a little more friendly
+/// @author Hugo Giraudel
+/// @param {String} $context
+@mixin when-inside($context) {
+    #{$context} & {
+        @content;
+    }
+}
+@mixin border-radius($border-radius) {
+     @include prefixer(border-radius, $border-radius, webkit moz spec);
+}
+@mixin font-size($sizeValue: 16, $line: $sizeValue * 1.2) {
+    font-size: ($sizeValue) + px;
+    line-height: ($line) + px;
+    //font-size: ($sizeValue / 16) + rem;
+    //line-height: ($line / 16) + rem;
+}
+@mixin vertical-align {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+@mixin box-shadow($shadow) {
+    -webkit-box-shadow: $shadow;
+    -moz-box-shadow: $shadow;
+    box-shadow: $shadow;
+}
+@mixin transform($transforms) {
+    -moz-transform: $transforms;
+    -o-transform: $transforms;
+    -ms-transform: $transforms;
+    -webkit-transform: $transforms;
+    transform: $transforms;
+}
+// rotate
+@mixin rotate($deg) {
+     @include transform(rotate(#{$deg}deg));
+}
+// scale
+@mixin scale($scale) {
+     @include transform(scale($scale));
+}
+// translate
+@mixin translate($x, $y) {
+     @include transform(translate($x, $y));
+}
+// skew
+@mixin skew($x, $y) {
+     @include transform(skew(#{$x}deg, #{$y}deg));
+}
+//transform origin
+@mixin transform-origin($origin) {
+    moz-transform-origin: $origin;
+    -o-transform-origin: $origin;
+    -ms-transform-origin: $origin;
+    -webkit-transform-origin: $origin;
+    transform-origin: $origin;
+}
+@function stroke($stroke, $color) {
+    $shadow: ();
+    $from: $stroke*-1;
+    @for $i from $from through $stroke {
+         @for $j from $from through $stroke{
+            $shadow: append($shadow, $i*1px $j*1px 0 $color, comma);
+        }
+    }
+    @return $shadow;
+}
+/// Stroke font-character
+/// @param  {Integer} $stroke - Stroke width
+/// @param  {Color}   $color  - Stroke color
+/// @return {Style}           - text-shadow
+@mixin stroke($stroke, $color) {
+    text-shadow: stroke($stroke, $color);
+}
+
+@mixin placeholder {
+    &::-webkit-input-placeholder {@content}
+    &:-moz-placeholder           {@content}
+    &::-moz-placeholder          {@content}
+    &:-ms-input-placeholder      {@content}
+}
+@mixin keyframes($name) {
+     @-webkit-keyframes #{$name}{
+        @content;
+    }
+    @-moz-keyframes #{$name} {
+         @content;
+    }
+    @-ms-keyframes #{$name} {
+         @content;
+    }
+    @keyframes #{$name} {
+         @content;
+    }
+}
+@mixin removeSelectArrow {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+
+    &::-ms-expand {
+        display: none;
+    }
+}
+@mixin fontSize($pixel) {
+    font-size: ($pixel/18)+rem;
+}
+@mixin shadow($shadow) {
+    -webkit-box-shadow: $shadow;
+    -moz-box-shadow: $shadow;
+    box-shadow: $shadow;
+}
+@mixin radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    border-radius: $radius;
+}
+@mixin text-ellipsis($lines-to-show) {
+    display: block;
+    display: -webkit-box;
+    -webkit-line-clamp: $lines-to-show;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+@mixin image-cover {
+    position: absolute;
+    left: -10000%;
+    right: -10000%;
+    top: -10000%;
+    bottom: -10000%;
+    margin: auto;
+    min-width: 1000%;
+    min-height: 1000%;
+    -webkit-transform: scale(0.1);
+    transform: scale(0.1);
+}
+@mixin NumberChild($total, $element){
+    #{$element}:first-child:nth-last-child(#{$total}),
+    #{$element}:first-child:nth-last-child(#{$total}) ~ #{$element} {
+        @content
+    }
+}
+@mixin line-clamp($line, $line-height, $bgFrom : rgba(255, 255, 255, 0), $bgTo : rgba(255, 255, 255, 0)){
+    display            : block;
+    display            : -webkit-box;
+    -webkit-box-orient : vertical;
+    position           : relative;
+
+    line-height        : $line-height;
+    overflow           : hidden;
+    text-overflow      : ellipsis;
+    padding            : 0 !important;
+    -webkit-line-clamp : $line ;
+    max-height : calc(1em * #{$line-height} * #{$line} - 2px);
+    $root : #{&};
+    &:after{
+        content    : '';
+        text-align : right;
+        bottom     : 0;
+        right      : 0;
+        width      : 25%;
+        display    : block;
+        position   : absolute;
+        height     : calc(1em * #{$line-height});
+        background : linear-gradient(to right, $bgFrom, $bgTo 75%);
+    }
+    @supports (-webkit-line-clamp: 1)
+    {
+        &:after{
+            display : none !important;
+        }
+    }
+}

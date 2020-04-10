@@ -1,0 +1,53 @@
+{% if accessory_categories|length > 0 %}
+{% for category in accessory_categories %}
+{% if category.items|length > 0 %}
+
+<section class="popup popup--slider" data-module="popup" id="popup-accessory-{{ loop.index + 1 }}">
+    <div class="popup__bg" onclick="myApp['closePopup']('#popup-accessory-{{ loop.index + 1 }}')"></div>
+    <div class="popup__table">
+        <div class="popup__table-cell">
+            <div class="popup__container">
+                <div class="popup__close">
+                    <img src="{{ assets_url }}/images/icon/close-button.png" alt="">
+                </div>
+                <div class="popup__content" data-module="popup-slider">
+                    <div class="slider slider__rotate">
+                        <div class="container">
+                            {# <h3 class="text-uppercase popup--slider__title">{{ item.title }}</h3> #}
+                            <div class="rotateslider-container">
+                                <!-- Insert your images here -->
+								{% for item in category.items %}
+                                    <div class="rotateslider-item">
+                                        <div class="rotateslider__inner">
+                                            <h3 class="text-uppercase slider__rotate__title popup--slider__title">{{ item.title }}</h3>
+                                            <div class="rotateslider-item__img">
+                                                <img class="lozad" src="{{ assets_url }}/images/dummy/890x502.png" data-src="{{ item.image }}" alt="">
+                                            </div>
+                                            <div class="rotateslider-item__desc">{{ item.description }}</div>
+                                        </div>
+                                    </div>
+								{% endfor %}
+
+                                <!-- Next/prev arrows navigation -->
+                                <div class="js-rotateslider-arrow o-arrow c-arrow-right" data-action="next">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+
+                                <div class="js-rotateslider-arrow o-arrow c-arrow-left" data-action="prev">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <ul class="js-rotateslider-paginator rotateslider-paginator"></ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endif %}
+{% endfor %}
+{% endif %}

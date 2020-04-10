@@ -1,0 +1,46 @@
+<section class="section-block thac-mac">
+    <div class="headline-block">
+        <h4 class="headline__regular">CÙNG CHUYÊN GIA VINAMILK</h4>
+        <h4 class="headline__bold">GIẢI ĐÁP THẮC MẮC THƯỜNG GẶP</h4>
+    </div>
+    <div class="container">
+        <div class="btn-block text-center">
+            <a href="#" class="btn-common"><span>GỬI CÂU HỎI NGAY</span></a>
+        </div>
+        <div class="list-ct-1-thumb">
+            <div class="list-ct-1-thumb__thumbnail">
+                <div class="img-thumb" style="background: url('{{ assets_url }}/images/thumbnails/thumbnail-big-1.jpg')"></div>
+                <div class="img-detail img-detail--right">
+                    <div class="img-detail__wrapper">
+                        <h4 class="headline">BS. Nguyễn Hữu Toản</h4>
+                        <div class="desc">
+                            Giám đốc, trưởng Trung tâm Dinh Dưỡng
+                            Phòng khám đa khoa An Khang - Vinamilk
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="list-ct-1-thumb__list">
+                <div class="title-block">
+                    Các câu hỏi thường gặp
+                </div>
+                <ul data-module="custom-scroll" class="js-custom-scroll custom-scroll--common">
+                    {% for i in 0..3 %}
+                        <li>
+                            <a href="#">
+                                    <span class="thumbnail"
+                                          style="background: url('{{ assets_url }}/images/thumbnails/avatar-square-1.jpg')"></span>
+                                <div class="desc"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore?</p>
+                                    <div class="line"><span class="line-dot"></span></div>
+                                </div>
+                            </a>
+                        </li>
+                    {% endfor %}
+                </ul>
+                <div class="btn-block text-right">
+                    <a href="#" class="btn-underline"><span>Xem tất cả câu hỏi</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

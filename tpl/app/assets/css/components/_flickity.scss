@@ -1,0 +1,151 @@
+.flickity-viewport{
+	position: relative;
+}
+.flickity-lozad{
+	opacity: 0;
+	@include TransitionWithDurationAndEase(0.25s, $EasingSineInOut);
+	&.flickity-lazyloaded{
+		opacity: 1;
+	}
+}
+.flickity-prev-next-button{
+	position: absolute;
+	top : -9%;
+	bottom : 0;
+	margin : auto;
+	width: 23px;
+	height: 60px;
+	z-index: 2;
+	cursor: pointer;
+	$x : 42px;
+	$x-1320 : 30px;
+	$x-1200 : -10px;
+	$x-tablet : 0px;
+	$x-mobile : 20px;
+	svg {
+		display: none;
+	}
+	&:disabled{
+		opacity: 0;
+	}
+	@include screen(1201px) {
+		transform: none;
+	}
+	@include screen(mobile) {
+		//display: none;
+		height: 25px;
+		transform: none;
+	}
+	-webkit-tap-highlight-color: transparent;
+	&.previous{
+		left : $x;
+		background: url("../images/icons/ico-prev.png") no-repeat center;
+		background-size: contain !important;
+		@include screen(mobile) {
+			left: 0 !important;
+			&:active{
+				left : calc(#{$x} - 5px);
+			}
+		}
+	}
+	&.next{
+		right : $x;
+		left: unset;
+		background: url("../images/icons/ico-next.png") no-repeat center;
+		background-size: contain !important;
+		@include screen(mobile) {
+			right: 0px !important;
+			&:active{
+				right : calc(#{$x} - 5px);
+			}
+		}
+	}
+	@media screen and (max-width:  1320px){
+		&.previous{
+			left : $x-1320;
+		}
+		&.next{
+			right : $x-1320;
+		}
+	}
+	@include screen(desktop) {
+		&.previous{
+			left : 10px;
+		}
+		&.next{
+			right : 10px;
+		}
+	}
+	
+	@include screen(mobile) {
+		&.previous{
+			left : $x-mobile;
+		}
+		&.next{
+			right : $x-mobile;
+		}
+	}
+}
+.flickity-page-dots{
+	@include NumberChild(1,'.dot') {
+		display: none;
+	}
+}
+.flickity-effect-fade{
+	.flickity-slider{
+		transform: none !important;
+	}
+	.flickity-item{
+		left: 0 !important;
+		opacity: 0;
+		@include TransitionWithDurationAndEase(0.35s, $EasingSineInOut);
+		z-index: -1;
+		&.swipe-effect-wrapper{
+			$delay : 0.5s;
+			-webkit-transition-delay: $delay;
+			-moz-transition-delay: $delay;
+			-ms-transition-delay: $delay;
+			-o-transition-delay: $delay;
+			transition-delay: $delay;
+		}
+		&.is-selected {
+			opacity: 1;
+			z-index: 0;
+			.swipe-effect{
+				$y : 0px;
+				$delay : 0.35s;
+				opacity: 1;
+				-webkit-transform: translateY($y);
+				-moz-transform: translateY($y);
+				-ms-transform: translateY($y);
+				-o-transform: translateY($y);
+				transform: translateY($y);
+				-webkit-transition-delay: $delay;
+				-moz-transition-delay: $delay;
+				-ms-transition-delay: $delay;
+				-o-transition-delay: $delay;
+				transition-delay: $delay;
+			}
+		}
+	}
+}
+.swipe-effect{
+	@include TransitionWithDurationAndEase(0.45s, $EasingSineInOut);
+	opacity: 0;
+	&[swipe="down"]{
+		$y : 10px;
+		-webkit-transform: translateY($y);
+		-moz-transform: translateY($y);
+		-ms-transform: translateY($y);
+		-o-transform: translateY($y);
+		transform: translateY($y);
+	}
+	&[swipe="up"]{
+		$y : -10px;
+		-webkit-transform: translateY($y);
+		-moz-transform: translateY($y);
+		-ms-transform: translateY($y);
+		-o-transform: translateY($y);
+		transform: translateY($y);
+	}
+}

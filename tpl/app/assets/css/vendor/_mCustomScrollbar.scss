@@ -1,0 +1,18 @@
+@import "../../vendor/mCustomScrollbar/jquery.mCustomScrollbar.scss";
+.mCSB_scrollTools {
+    opacity: 1;
+}
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    width: 5px;
+    background: #000 !important;
+    border-radius: 0;
+    &:hover {
+        background: #000;
+    }
+}
+.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+    background: #000;
+}
+.mCSB_scrollTools .mCSB_draggerRail {
+    background: #E2E2E2;
+}

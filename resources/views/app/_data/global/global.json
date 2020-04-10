@@ -1,0 +1,7 @@
+{
+    "assetPath": "assets",
+    "assets_url": "assets",
+    "title": "Climax - The Best Creatology Agency",
+    "wp_head": "<link rel=\"stylesheet\" href=\"assets/css/app.css\">",
+    "wp_footer": "<script src=\"assets/js/app.js\"></script>"
+}

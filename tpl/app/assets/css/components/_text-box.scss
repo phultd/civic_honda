@@ -1,0 +1,90 @@
+.text-box {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    h2 {
+        font-size: rem(16);
+        color: #73FEFE;
+        text-transform: uppercase;
+        margin: 0;
+        font-weight: 400;
+        letter-spacing: 0.5px;
+    }
+    h3 {
+        margin: 0;
+        color:#fff;
+        font-weight: 600;
+        line-height: 1.23;
+        font-size: rem(38);
+        margin-top: 11px;
+        letter-spacing: 1.5px;
+        @include screen(1441px) {
+            letter-spacing: 1px;
+            margin-top: 8px;
+        }
+    }
+    img {
+        margin: 0;
+        @include screen(1441px) {
+            margin-top: -2px;
+        }
+    }
+    p {
+        margin: 0;
+        line-height: 1.5;
+        color:#fff;
+        margin-top: 10px;
+        letter-spacing: 0.5px;
+        @include screen(1441px) {
+            letter-spacing: 0.3px;
+            margin-top: 7px;
+        }
+    }
+    .btn {
+        margin-top: 20px;
+        @include screen(1441px) {
+            margin-top: 15px;
+        }
+    }
+    &--message {
+        top: 17%;
+        left:50%;
+        transform: translateX(-50%);
+    }
+    &--exterior {
+        top: 27%;
+        left: 8.2%;
+        max-width: 475px;
+        @include screen(1441px) {
+            max-width: 410px;
+        }
+    }
+    &--interior {
+        top: 21%;
+        left: 8.2%;
+        max-width: 520px;
+    }
+    &--operation {
+        left: 50%;
+        top: 0;
+        transform: translateX(-50%);
+        margin-top: 5.5%;
+    }
+    &--safe {
+        top: 24.5%;
+        left: 8.2%;
+        max-width: 520px;
+        @include screen(1441px) {
+            max-width: 460px;
+        }
+    }
+    &--accessory {
+        top: 30.5%;
+        left: 64.7%;
+        max-width: 520px;
+        @include screen(1441px) {
+            max-width: 445px;
+            top:30%;
+        }
+    }
+}

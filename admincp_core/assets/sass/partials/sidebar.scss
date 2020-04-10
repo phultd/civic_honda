@@ -1,0 +1,82 @@
+#sidebar{
+    width: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: 1020;
+    background: $gray-300;
+	overflow: hidden;
+	transition: left .3s;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+
+	&.collapsed{
+		left: -250px;
+	}
+
+	.btn-toolbar {
+		padding: .5rem 1rem;
+		transition: padding 0.5s ease-in-out;
+		.btn {
+			i {
+				font-size: 1.20rem;
+			}
+		}
+	}
+
+	ul.menu-list{
+		position: relative;
+		width: calc(100% + 18px);
+		padding: 0 0 15px 0;
+		height: 100%;
+		overflow-y: scroll;
+		li{
+			position: relative;
+			a{
+				display: block;
+				width: 100%;
+				padding: 0 25px 0 10px;
+				color: $dark;
+				font-size: rem(13);
+				line-height: 40px;
+				font-weight: 400;
+				text-decoration: none;
+				transition: all 0s;
+				i{
+					font-size: rem(16);
+					width: 22px;
+				}
+				&:hover {
+					color: $primary;
+				}
+			}
+			&.has-submenu{
+				&::after{
+					content: "\f107";
+					font: normal normal normal 1rem/1 "FontAwesome";
+					display: block;
+					width: 15px;
+					height: 15px;
+					position: absolute;
+					top: 12px;
+					right: 10px;
+					font-size: 1rem;
+					line-height: 15px;
+					pointer-events: none;
+					z-index: 1;
+					transition: .15s;
+					color: $gray-300;
+					text-align: center;
+				}
+			}
+			&.active{
+				background: $gray-500;
+				> a{
+					color: $white;
+					font-weight: bold;
+				}
+			}
+		}
+	}
+
+}

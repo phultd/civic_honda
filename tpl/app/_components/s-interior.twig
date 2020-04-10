@@ -1,0 +1,50 @@
+<section class="s-interior section-tabs  section-holder js-snap-item js-navigator-item" data-module="tabs" id="interior">
+    <div class="title-common">NỘI THẤT</div>
+    <div class="tab-pane s-interior__content">
+        <div class="tab-pane__left">
+            <div class="tab-pane__item tab-pane__item--image active js-tab-stage js-tab-stage1">
+                <img class="hidden-xs lozad" src="{{ assets_url }}/images/dummy/1144x675.png" data-src="{{ interior.section_background }}" alt="">
+                <img class="visible-xs lozad" src="{{ assets_url }}/images/dummy/830x420.png" data-src="{{ interior.section_background_mobile }}" alt="">
+            </div>
+			{% if interior_categories|length > 0 %}
+            {% for category in interior_categories %}
+            <div class="tab-pane__item tab-pane__item--image js-tab-stage js-tab-stage{{ loop.index + 1 }}">
+                <img class="hidden-xs lozad" src="{{ assets_url }}/images/dummy/1144x675.png" data-src="{{ category.image }}" alt="">
+                <img class="visible-xs lozad" src="{{ assets_url }}/images/dummy/830x420.png" data-src="{{ category.image_mobile }}" alt="">
+            </div>
+			{% endfor %}
+            {% endif %}
+        </div>
+        <div class="tab-pane__right">
+            <ul class="list-tabs js-tab-list">
+                <li class="list-tabs__item active" data-tab="1">TỔNG QUAN</li>
+				{% if interior_categories|length > 0 %}
+                {% for category in interior_categories %}
+                    <li class="list-tabs__item" data-tab="{{ loop.index + 1 }}">{{ category.title }}</li>
+                {% endfor %}
+                {% endif %}
+            </ul>
+            <div class="tab-pane__content">
+                <div class="active tab-pane__item js-tab-stage js-tab-stage1">
+                    <div class="tab-pane__content__title text-uppercase">{{ interior.section_title|raw }}</div>
+                    <div class="tab-pane__content__desc">{{ interior.section_description|raw }}</div>
+                </div>
+				{% if interior_categories|length > 0 %}
+                {% for category in interior_categories %}
+					<div class="tab-pane__item js-tab-stage js-tab-stage{{ loop.index + 1 }}">
+	                    <div class="tab-pane__content__title text-uppercase">{{ category.heading|raw }}</div>
+	                    <div class="tab-pane__content__desc">{{ category.description|raw }}</div>
+						{% if category.items|length > 0 %}
+	                    <div class="btn-detail" onclick="myApp['openPopup']('#popup-interior-{{ loop.index + 1 }}')">
+	                        <span class="btn-detail__text">CHI TIẾT {{ category.title }}</span>
+	                        <img class="btn-detail__img" src="{{ assets_url }}/images/icon/arrow-right.png" alt="">
+	                    </div>
+						{% endif %}
+	                </div>
+				{% endfor %}
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</section>
+{% include '_components/s-interior-popup.twig' %}

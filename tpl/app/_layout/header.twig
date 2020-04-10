@@ -1,0 +1,72 @@
+<header class="header" data-module="header">
+	<div class="container">
+		<div class="header__logo">
+			<a href="#/">{{ source('app/assets/images/global/logo-honda.twig') }}</a>
+		</div>
+		<div class="header__menu">
+			<ul class="main-menu" data-module="navigator">
+				<li><a href="#message" data-text="Thông điệp">Thông điệp</a></li>
+				<li><a href="#exterior" data-text="Ngoại thất">Ngoại thất</a></li>
+				<li><a href="#interior" data-text="Nội thất">Nội thất</a></li>
+				<li><a href="#operation" data-text="Vận hành">Vận hành</a></li>
+				<li><a href="#safe" data-text="An toàn">An toàn</a></li>
+				<li><a href="#accessory" data-text="Phụ kiện">Phụ kiện</a></li>
+				<li><a href="#specifications" data-text="Thông số kỹ thuật">Thông số kỹ thuật</a></li>
+				<li><a href="#gallery" data-text="Thư viện">Thư viện</a></li>
+			</ul>
+		</div>
+		<div class="header__hbg-button">
+			<div class="header__hbg-button__open">
+				<span></span><span></span><span></span>
+			</div>
+			<div class="header__hbg-button__close">
+				<span></span><span></span>
+				<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve"> <g id="Layer_2"> <path class="st2" d="M41.7,41.6c-4.3,4.3-10.1,6.9-16.7,6.9C12,48.5,1.5,38,1.5,25S12,1.5,25,1.5S48.5,12,48.5,25 c0,3.2-0.7,6.3-1.8,9.1"/> </g> </svg>
+			</div>
+		</div>
+        <div class="header__extra-button">
+			<div class="header__extra-button__open"><span></span><span></span><span></span>
+			</div>
+			<div class="header__extra-button__close">
+				<span></span><span></span>
+				<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve"> <g id="Layer_2"> <path class="st2" d="M41.7,41.6c-4.3,4.3-10.1,6.9-16.7,6.9C12,48.5,1.5,38,1.5,25S12,1.5,25,1.5S48.5,12,48.5,25 c0,3.2-0.7,6.3-1.8,9.1"/> </g> </svg>
+			</div>
+		</div>
+		<div class="header__honda-tools visible-xs visible-sm">
+			<div class="honda-tools">
+			    <ul>
+					{% if hyperlinks.test_drive.title and hyperlinks.test_drive.url %}
+			        <li class="honda-tools__item"><a href="{{ hyperlinks.test_drive.url }}" target="_blank">
+			            <div class="honda-tools__item__icon">{{ source('app/assets/images/icon/icon-drive.twig') }}</div>
+			            <span class="honda-tools__item__title">{{ hyperlinks.test_drive.title }}</span>
+			        </a></li>
+					{% endif %}
+					{% if hyperlinks.download_catalog.title and hyperlinks.download_catalog.url %}
+			        <li class="honda-tools__item"><a href="{{ hyperlinks.download_catalog.url }}" target="_blank">
+			            <div class="honda-tools__item__icon">{{ source('app/assets/images/icon/icon-catalog.twig') }}</div>
+			            <span class="honda-tools__item__title">{{ hyperlinks.download_catalog.title }}</span>
+			        </a></li>
+					{% endif %}
+					{% if hyperlinks.price_table.title and hyperlinks.price_table.url %}
+			        <li class="honda-tools__item"><a href="{{ hyperlinks.price_table.url }}" target="_blank">
+			            <div class="honda-tools__item__icon">{{ source('app/assets/images/icon/icon-price-tag.twig') }}</div>
+			            <span class="honda-tools__item__title">{{ hyperlinks.price_table.title }}</span>
+			        </a></li>
+					{% endif %}
+					{% if hyperlinks.cost_estimate.title and hyperlinks.cost_estimate.url %}
+			        <li class="honda-tools__item"><a href="{{ hyperlinks.cost_estimate.url }}" target="_blank">
+			            <div class="honda-tools__item__icon">{{ source('app/assets/images/icon/icon-calculator.twig') }}</div>
+			            <span class="honda-tools__item__title">{{ hyperlinks.cost_estimate.title }}</span>
+			        </a></li>
+					{% endif %}
+					{% if hyperlinks.find_agency.title and hyperlinks.find_agency.url %}
+			        <li class="honda-tools__item"><a href="{{ hyperlinks.find_agency.url }}">
+			            <div class="honda-tools__item__icon">{{ source('app/assets/images/icon/icon-map-marker.twig') }}</div>
+			            <span class="honda-tools__item__title">{{ hyperlinks.find_agency.title }}</span>
+			        </a></li>
+					{% endif %}
+			    </ul>
+			</div>
+		</div>
+	</div>
+</header>

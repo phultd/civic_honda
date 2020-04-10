@@ -1,0 +1,421 @@
+.slider__rotate {
+	//background-image: url(../images/page/sua-nuoc/detail/adm1-2.jpg) !important;
+	background-size: cover!important;
+	background-position: bottom center!important;
+	img {
+		max-width: 100%;
+	}
+	@include screen(tablet) {
+		.container {
+			width: 100%;
+		}
+	}
+	.rotateslider-container {
+	    position: relative;
+	    margin-left: auto;
+	    margin-right: auto;
+	    min-height: calc(100vh - 200px);
+	    text-align: center;
+	    padding: 45px 0;
+	    @include screen(1367px) {
+	    	min-height: calc(100vh - 100px);
+	    }
+	    @include screen(mobile) {
+	    	min-height: 300px;
+	    	width: 100%;
+	    }
+	}
+	&__title {
+		padding-bottom: 20px;
+		transform: translateY(80px);
+		transition: all .4s $EasingBackOut;
+		transition-delay: 0s;
+		opacity: 0;
+		//margin-bottom: 20px;
+		margin-top: 5px;
+	}
+	.rotateslider-item {
+		text-align: center;
+	    position: absolute;
+	    height: 300px;
+	    width: 25%;
+	    left: 50%;
+	    top: 50%;
+	    transform: translateY(-50%) translateX(-50%) scale(0.3);
+	    opacity: 0;
+	    transition: all .7s cubic-bezier(.215,.61,.355,1);
+	    display: table;
+	    z-index: 0;
+	    @include screen(tablet) {
+    		width: 100%;
+    		height: auto;
+    	}
+	    img {
+	    	border: 1px solid #fff;
+	    }
+
+		&__img {
+			position: relative;
+			img {
+				width: rem(280);
+			    height: rem(240);
+			    object-fit: cover;
+			}
+			iframe {
+				max-width: 100%;
+				max-height: 300px;
+				@include screen(mobile) {
+					max-height: 200px;
+				}
+			}
+		}
+	    &__desc {
+			transform: translateY(-100px);
+			transition: all .4s $EasingBackOut;
+			transition-delay: 0s;
+			font-size: 24px;
+			margin: 30px auto;
+			opacity: 0;
+			position: relative;
+			z-index: -1;
+			@include screen(1367px) {
+				margin: 20px auto;
+				font-size: 18px;
+				margin-top: 5px;
+			}
+			@include screen(tablet,true) {
+				width: 500px;
+			}
+			@include screen(tablet) {
+				font-size: 18px;
+			}
+			@include screen(mobile) {
+				font-size: 14px;
+			}
+			@include screen(361px) {
+				font-size: 12px;
+			}
+		}
+	    h4 {
+	    	max-width: 280px;
+		    margin-left: auto;
+		    margin-right: auto;
+		    position: relative;
+		    transition: all .3s cubic-bezier(.47,0,.745,.715);
+		    opacity: 0;
+		    bottom: -50px;
+		}
+		& > img {
+		    max-width: 80%;
+		    vertical-align: middle;
+			margin-right: 5px;
+			margin-bottom: 50px;
+			@include screen(mobile) {
+				max-height: 190px;
+				//display: block;
+			}
+		}
+		&.next {
+		    left: 88%;
+		    opacity: 1;
+		    z-index: 2;
+		    transform: translateY(-50%) translateX(-50%) scale(1);
+		    transition: all .7s cubic-bezier(.215,.61,.355,1);
+		    @include screen(tablet) {
+		    	opacity: 0;
+		    	transform: translateY(-50%) translateX(-50%) scale(0.3);
+		    }
+		    @include screen(mobile) {
+		    	left: 100%;
+		    }
+		}
+		&.prev {
+		    left: 12%;
+		    opacity: 1;
+		    z-index: 2;
+		    transform: translateY(-50%) translateX(-50%) scale(1);
+		    transition: all .7s cubic-bezier(.215,.61,.355,1);
+		    @include screen(tablet) {
+		    	opacity: 0;
+		    	transform: translateY(-50%) translateX(-50%) scale(0.3);
+		    }
+		    @include screen(mobile) {
+		    	//left: 0;
+		    	left: 0%;
+		    	//right: 100%;
+		    }
+		}
+		&.now {
+			opacity: 1;
+		    top: 50%;
+		    left: 50%;
+		    height: 500px;
+	    	width: 50%;
+		    z-index: 3;
+		    transform: translateY(-50%) translateX(-50%) scale(.9);
+		    transition: all .7s cubic-bezier(.215,.61,.355,1);
+		    @include screen(desktop) {
+				//top: 55%;
+				//transform: translateY(-40%) translateX(-50%) scale(.9);
+		    }
+		    @include screen(1367px) {
+		    	height: calc(100vh - 250px);
+		    }
+		    @include screen(tablet) {
+		    	top: 44%;
+		    	width: 100%;
+		    	height: auto;
+		    }
+		    h4 {
+			    opacity: 1;
+			    line-height: 1.8;
+			     @include screen(mobile) {
+			     	line-height: 1.5;
+			     }
+			}
+			.rotateslider-item__img {
+				img {
+					width: auto;
+				    height: auto;
+				    object-fit: cover;
+				    @include screen(mobile) {
+				    	width: calc(100vw - 50px)
+				    }
+				}
+				iframe {
+					max-width: 100%;
+					max-height: 600px;
+					@include screen(tablet) {
+						max-height: 400px;
+					}
+					@include screen(mobile) {
+				    	max-height: 200px;
+				    }
+				}
+			}
+			.rotateslider-item__desc {
+				transform: translateY(0px);
+				//padding-bottom: 20px;
+				transition-delay: 0.5s;
+				opacity: 1;
+			}
+			.button__order {
+			    display: inline-block;
+				opacity: 1;
+				pointer-events: auto;
+			}
+			.slider__rotate__title {
+				transform: translateY(0px);
+				padding-bottom: 20px;
+				transition-delay: 0.3s;
+				opacity: 1;
+			}
+		}
+		&--inline {
+	    	position: relative;
+	    	width: 48%;
+	    	display: inline-block;
+	    	transform : none;
+	    	left: auto;
+	    	transition : none;
+	    	top: auto;
+	    	height: auto;
+	    	opacity: 1;
+	    	padding: 2%;
+	    	h4 {
+	    		opacity: 1 !important;
+	    		bottom: 0 !important;
+	    	}
+	    	.button__order {
+				display: inline-block !important;
+	    	}
+	    	.slider__rotate__title,.rotateslider-item__desc {
+	    		transform: none;
+	    		opacity: 1;
+	    		width: auto;
+	    	}
+	    	.rotateslider__inner {
+	    		display: block !important;
+	    		margin: 0 auto;
+	    		margin-bottom: 40px;
+	    	}
+	    	img {
+	    		width: auto;
+	    		height: auto;
+	    		max-width: 90%;
+	    	}
+	    	@include screen(mobile) {
+	    		width: 100%;
+	    		margin: 0 auto;
+	    		margin-bottom: 30px;
+	    	}
+	    }
+		.rotateslider__inner {
+		    display: table-cell;
+		    vertical-align: top;
+		    @include screen(desktop) {
+		    	display: block;
+		    	margin: 0 auto;
+		    }
+			& > img {
+				max-width: 80%;
+			    vertical-align: middle;
+    			margin-right: 5px;
+				margin-bottom: 50px;
+    			@include screen(mobile) {
+    				//max-height: 190px;
+    				//display: block;
+    			}
+			}
+		}
+		@include screen(xs) {
+			max-width: calc(100% - 100px);
+		    display: block;
+		    height: auto;
+		}
+	}
+	.c-arrow-left {
+	    left:  2%;
+	    @include screen(mobile) {
+			left: -35px;
+	    }
+	    span {
+
+		    left: 16px;
+		    transition: transform .3s cubic-bezier(.6,.04,.98,.335);
+		    &:after {
+			    content: '';
+			    display: block;
+			    width: 0;
+			    height: 100%;
+			    background: #fff;
+			    position: absolute;
+			    overflow: hidden;
+			    transition: all .3s cubic-bezier(.47,0,.745,.715);
+			}
+		    &:nth-child(1) {
+			    transform: rotate(-45deg);
+			    top: 19px;
+			}
+			&:nth-child(2) {
+			    transform: rotate(45deg);
+			    top: 28px;
+			}
+		}
+	}
+	.c-arrow-right {
+	    right: 2%;
+	    @include screen(desktop) {
+			right: 7px;
+	    }
+	    @include screen(mobile) {
+			right: -35px;
+	    }
+	    span {
+	    	transform: rotate(45deg);
+	    	right: 16px;
+	    	&:after {
+			    content: '';
+			    display: block;
+			    width: 0;
+			    height: 100%;
+			    background: #fff;
+			    position: absolute;
+			    overflow: hidden;
+			    transition: all .3s cubic-bezier(.47,0,.745,.715);
+			}
+			&:nth-child(1) {
+			    top: 19px;
+			}
+	    	&:nth-child(2) {
+			    transform: rotate(-45deg);
+			    top: 28px;
+			}
+	    }
+	}
+	.o-arrow {
+	    display: block;
+	    height: rem(300);
+	    width: rem(300);
+	    //border-radius: 50%;
+	    border: 1px solid #fd343a;
+	    cursor: pointer;
+	    position: absolute;
+	    top: 25%;
+	    margin-top: -25px;
+	    z-index: 7;
+	    opacity: 0;
+	    //transition: all .3s cubic-bezier(.39,.575,.565,1);
+	    @include screen(tablet) {
+	    	opacity: 1;
+	    	height: 50px;
+    		width: 50px;
+    		top: calc(50% - 25px);
+    		border: 1px solid #fff;
+    		background-color: #fd343a;
+    		span {
+    			&:after {
+    				background: #fff;
+    				width: 100%;
+    			}
+    		}
+	    }
+	    @include screen(mobile) {
+	    	//height: 40px;
+    		//width: 40px;
+    		transform : scale(0.7);
+    		top: calc(50% - 15px);
+	    }
+	    span, &:hover {
+		    background-color: #fd343a;
+		}
+		span {
+			height: 2px;
+		    width: 14px;
+		    position: absolute;
+		    border-radius: 2px;
+		    display: block;
+			&:after {
+			    left: 0;
+			}
+		}
+		&:hover span:after {
+		    width: 100%;
+		}
+	}
+	.rotateslider-paginator {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		z-index: 4;
+		padding: 0;
+		margin: 0;
+		left: 0;
+		@include screen(1367px) {
+			bottom: -11px;
+		}
+		li {
+			width: 30px;
+			height: 5px;
+			display: inline-block;
+			padding: 0px 5px;
+			background: white;
+			opacity: 0.3;
+			margin: 15px 5px;
+			position: relative;
+			cursor: pointer;
+			&:before {
+				content: "";
+				position: absolute;
+				width: 100%;
+				height: 40px;
+				top: -15px;
+				left: 0;
+				background: transparent;
+			}
+			&.active {
+				opacity: 1;
+			}
+		}
+	}
+}

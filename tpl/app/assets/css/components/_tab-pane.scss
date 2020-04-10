@@ -1,0 +1,144 @@
+.tab-pane {
+	@extend .clearfix;
+	@include SFProDisplay;
+	position: relative;
+	display: flex;
+	align-items: stretch;
+	// @include screen(1367px) {
+	// 	background: white;
+	// 	align-items: center;
+	// 	color: #fff;
+	// }
+	@include screen(1025px) {
+		flex-flow: row wrap;
+		align-content : stretch;
+	}
+	&__left {
+		//float: left;
+		width: 60%;
+		line-height: 0;
+		position: relative;
+		@include screen(1367px) {
+			img {
+				max-width: 100%;
+			}
+		}
+		@include screen(1025px) {
+			width: 100%;
+			img {
+				width: 100%;
+			}
+		}
+	}
+	&__right {
+		//float: left;
+		width: 40%;
+		padding: 50px 55px 30px 30px;
+		position: relative;
+		z-index: 2;
+		@include screen(1367px) {
+			padding: 30px 50px 15px 25px;
+		}
+		@include screen(1025px) {
+			width: 100%;
+		}
+		//min-height: 550px;
+	}
+	&__item {
+		opacity: 0;
+		pointer-events: none;
+		transition: 0s all;
+		position: absolute;
+		top: 141px;
+		height: 100%;
+		width: 100%;
+		&.active {
+			opacity: 1;
+			width: auto;
+			height: auto;
+			position: static;
+			pointer-events: all;
+			transition: 0.3s all;
+			//display: block;
+		}
+		&--image {
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: -1;
+			opacity: 0;
+			pointer-events: none;
+			transition: all 0.7s ease-out;
+			&.active {
+				pointer-events: none;
+				position: relative;
+				opacity: 1;
+				z-index: 1;
+			}
+		}
+	}
+	&__content {
+		&__title , &__desc {
+			opacity: 0;
+            transform: translateX(200px);   
+            transition: all 0.5s $EasingCubicOut;
+		}
+		&__title {
+			font-weight: 400;
+			font-size: 42px;
+			letter-spacing: 0.5px;
+			margin-bottom: 16px;
+			transition-delay : 0.5s;
+			@include screen(1800px) {
+				font-size: 30px;
+			}
+			@include screen(1367px) {
+				font-size: 26px;
+			}
+			@include screen(1025px) {
+				font-size: 20px;
+			}
+			@include screen(mobile) {
+				font-size: 16px;
+			}
+		}
+		
+		&__desc {
+			font-weight: 100;
+			font-size: 24px;
+			letter-spacing: 0.5px;
+			padding-bottom: 50px;
+			transition-delay : 0.65s;
+			@include screen(1800px) {
+				font-size: 22px;
+			}
+			@include screen(1367px) {
+				font-size: 20px;
+			}
+			@include screen(1025px) {
+				font-size: 16px;
+			}
+			@include screen(mobile) {
+				font-size: 14px;
+			}
+		}
+		.no-delay {
+			.tab-pane__content__title {
+				transition-delay : 0s;
+			}
+			.tab-pane__content__desc {
+				transition-delay : 0.1s;
+			}
+		}
+		.animation-text {
+			.tab-pane__content__title,.tab-pane__content__desc {
+				opacity: 1;
+	            transform: translateX(0px);
+			}
+			.tab-pane__content__title {}
+			.tab-pane__content__desc {
+			}
+		}
+	}
+
+}

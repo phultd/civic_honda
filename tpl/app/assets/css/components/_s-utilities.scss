@@ -1,0 +1,59 @@
+.s-utilities {
+	color: #fff;
+	.title-common {
+		//margin-bottom: 34px;
+	}
+	.list-tabs {
+		&__item {
+			margin-left: 16px;
+			margin-right: 16px;
+			@include screen(1500px) {
+	        	margin-left: 10px;
+				margin-right: 10px;
+	        }
+	        @include screen(mobile) {
+	        	margin-left: 6px;
+				margin-right: 6px;
+	        }
+	        @include screen(361px) {
+	        	margin-left: 5px;
+	        	margin-right: 5px;
+	        }
+		}
+	}
+	img {
+		width: 100%;
+	}
+	.btn-detail {
+		img {
+			width: auto;
+		}
+	}
+	.tab-pane {
+		
+		// &__right {
+		// 	background: #34506C;
+		// 	min-height: 603px;
+		// }
+	}
+	// 
+	// }
+	// .tab-pane__left {
+	// 	img {
+	// 		max-width: 135%;
+	// 		@include screen(tablet) {
+	//         	width: 100%;
+	//         }
+	// 	}
+	// }
+	
+	.tab-pane__right {
+        background: #34506C;
+        // @include screen(1367px) {
+        // 	min-height: 520px;
+        // }
+        // @include screen(mobile) {
+        // 	min-height: auto;
+        // }
+    }
+}

@@ -1,0 +1,28 @@
+<section class="s-message section-block section-block--message  section-holder  js-snap-item js-navigator-item"  data-module="message" id="message">
+    <div class="section-holder__container">
+        <div class="section-holder__holder">
+            <img class="hidden-xs car-holder" src="{{ assets_url }}/images/s-message/car-holder.png" alt="" class="">
+            <img class="hidden-xs fullscreen-img lozad"  src="{{ assets_url }}/images/dummy/1920x1145.png" data-src="{{ assets_url }}/images/s-message/civic_without_light.jpg" alt="" class="">
+            <img class="visible-xs lozad "  src="{{ assets_url }}/images/dummy/640x728.png" data-src="{{ assets_url }}/images/s-message/img-mb@2x.jpg" alt="" class="">
+            <div class="car-move hidden-xs">
+                <img class="hidden-xs car" src="{{ assets_url }}/images/s-message/car.png" alt="" class="">
+                <div class="car-move--mask">
+                    <img class="hidden-xs" src="{{ assets_url }}/images/s-message/banh-xe.png" alt="" class="">
+                </div>
+                <div class="la-zang">
+                    <img class="hidden-xs" src="{{ assets_url }}/images/s-message/la-zang.png" alt="" class="">
+                </div>
+                <div class="la-zang-after-mask">
+                    <img class="hidden-xs" src="{{ assets_url }}/images/s-message/banh-xe-sau.png" alt="" class="">
+                </div>
+                <div class="la-zang-after">
+                    <img class="hidden-xs" src="{{ assets_url }}/images/s-message/la-zang.png" alt="" class="">
+                </div>
+            </div>
+        </div>
+        <div class="text-center section-block__content">
+            <h3 class="section-block__title">{{ message.section_title|raw }}</h3>
+            <p class="section-block__desc">{{ message.section_description|raw }}</p>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,115 @@
+.box-review{
+	width: 432px;
+	height: 115px;
+	border : 2px solid $color-gold;
+	position: relative;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	@include TransitionWithDurationAndEase(0.15s, $EasingSineInOut);
+	&:after{
+		content :'';
+		display: block;
+		background-color: #fff;
+		position: absolute;
+		height: 2px;
+		width: 41px;
+		bottom: -2px;
+		left: 97px;
+	}
+	.triangle-down{
+		width: 40px;
+		height: 40px;
+		display: block;
+		position: absolute;
+		bottom : -20px;
+		left : 23%;
+		border : 2px solid $color-gold;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		$transform : rotate(235deg) skewX(20deg);
+		-webkit-transform: $transform;
+		-moz-transform: $transform;
+		-ms-transform: $transform;
+		-o-transform: $transform;
+		transform: $transform;
+	}
+	&__content{
+		background-color: #fff;
+		width: 100%;
+		height: 100%;
+		position: relative;
+		z-index: 5;
+		text-align: center;
+		@include Roboto;
+		line-height: 1.4;
+		color : #888888;
+		font-size: 17px;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		padding: 20px 30px;
+		p{
+			margin: 0px;
+			@include line-clamp(3, 1.4);
+		}
+
+	}
+	.dot-line-top, .dot-line-bottom{
+		position: absolute;
+		width: 37px;
+		background-color: #fff;
+		font-size: 0;
+		z-index: 6;
+		text-align: center;
+		@include TransitionWithDurationAndEase(0.45s, $EasingSineInOut);
+		&:before, &:after{
+			content : '';
+			vertical-align: middle;
+			width: 4px;
+			height: 4px;
+			-webkit-border-radius: 50%;
+			-moz-border-radius: 50%;
+			border-radius: 50%;
+			background-color: $color-gold;
+			display: inline-block;
+			margin-top: -1px;
+		}
+		&:before{
+			margin-right : 8px;
+		}
+	}
+	.dot-line-top{
+		top : -2px;
+		left : 10%;
+		animation: spring-top 3s infinite alternate;
+	}
+	.dot-line-bottom{
+		bottom : -3px;
+		right : 10%;
+		animation: spring-bottom 3s infinite alternate;
+		&:before{
+			margin-right: 0;
+		}
+		&:after{
+			display: none;
+		}
+	}
+}
+@include keyframes(spring-top){
+	from {
+		left : 10%;
+	}
+	to {
+		left : 80%;
+	}
+}
+@include keyframes(spring-bottom){
+	from {
+		right : 10%;
+	}
+	to {
+		right : 50%;
+	}
+}

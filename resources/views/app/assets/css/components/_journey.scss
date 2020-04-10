@@ -1,0 +1,76 @@
+.journey{
+	position: relative;
+	.ufo-float{
+		&__item{
+			$delay : 0.15s;
+			@include TransitionWithDurationAndEase(0.35s, $EasingSineInOut);
+			-webkit-transition-delay: $delay;
+			-moz-transition-delay: $delay;
+			-ms-transition-delay: $delay;
+			-o-transition-delay: $delay;
+			transition-delay: $delay;
+		}
+	}
+	.ba-bau{
+		&.active{
+			.ufo-float{
+				&__item{
+					opacity: 1;
+					visibility: visible;
+					&:nth-child(1){
+						top: 25%;
+						left: 1%;
+					}
+					&:nth-child(2){
+						top: -2%;
+						left: 61%;
+					}
+					&:nth-child(3){
+						top: 43%;
+						left: 66%;
+					}
+				}
+			}
+		}
+	}
+	.moi-sinh{
+		&.active{
+			.ufo-float{
+				&__item{
+					opacity: 1;
+					visibility: visible;
+					&:nth-child(1){
+						top: 3%;
+						left: 4%;
+					}
+					&:nth-child(2){
+						top: 0%;
+						left: 60%;
+					}
+					&:nth-child(3){
+						top: 46%;
+						left: 0%;
+					}
+					&:nth-child(4){
+						top: 38%;
+						left: 67%;
+					}
+				}
+			}
+		}
+	}
+	.em-be{
+		&.active{
+			.ufo-float{
+				&__item{
+					opacity: 1;
+					visibility: visible;
+					&:nth-child(1){
+						top: 7%;
+						left: 1%;
+					}
+				}
+			}
+		}
+	}
+}

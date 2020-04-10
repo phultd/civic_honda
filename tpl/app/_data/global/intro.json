@@ -1,0 +1,11 @@
+{
+	"banner" : {
+		"banner": "assets/images/s-intro/top-banner.jpg",
+		"banner_mobile" : "assets/images/s-intro/top-banner-mb@2x.jpg",
+		"popup_type": "image",
+		"popup_image": "assets/images/popup/img-banner.jpg",
+		"popup_video": "",
+		"explore_link": "https://www.honda.com.vn/",
+		"trial_link": "https://www.honda.com.vn/"
+	}
+}

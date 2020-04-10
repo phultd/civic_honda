@@ -1,0 +1,65 @@
+{
+    "safe_parts": [
+        {
+            "title" : "Hệ thống cảnh báo chống buồng ngủ",
+            "description" : "Màn hình cảm ứng 8 inch độ phân giải cao và góc nhìn rộng, mang lại hình ảnh sắc nét cùng thao tác cảm ứng mượt mà như trên máy tính bảng. Hệ thống đồng bộ với Smartphone sử dụng hệ điều hành iOS và Android qua kết nối USB, giúp bạn tương tác hiệu quả và tận hưởng hành trình dễ dàng hơn bao giờ hết.",
+            "thumb" : "assets/images/parts/safe/thumb-1.jpg",
+            "image" : "assets/images/parts/safe/img-1.jpg"
+        },{
+            "title" : "Chế độ quan sát làn đường",
+            "description" : "Màn hình cảm ứng 8 inch độ phân giải cao và góc nhìn rộng, mang lại hình ảnh sắc nét cùng thao tác cảm ứng mượt mà như trên máy tính bảng. Hệ thống đồng bộ với Smartphone sử dụng hệ điều hành iOS và Android qua kết nối USB, giúp bạn tương tác hiệu quả và tận hưởng hành trình dễ dàng hơn bao giờ hết.",
+            "thumb" : "assets/images/parts/safe/thumb-2.jpg",
+            "image" : "assets/images/parts/safe/img-2.jpg"
+        },{
+            "title" : "Đèn báo phanh khẩn cấp",
+            "description" : "Màn hình cảm ứng 8 inch độ phân giải cao và góc nhìn rộng, mang lại hình ảnh sắc nét cùng thao tác cảm ứng mượt mà như trên máy tính bảng. Hệ thống đồng bộ với Smartphone sử dụng hệ điều hành iOS và Android qua kết nối USB, giúp bạn tương tác hiệu quả và tận hưởng hành trình dễ dàng hơn bao giờ hết.",
+            "thumb" : "assets/images/parts/safe/thumb-3.jpg",
+            "image" : "assets/images/parts/safe/img-3.jpg"
+        },{
+            "title" : "Camera lùi 3 góc",
+            "description" : "Màn hình cảm ứng 8 inch độ phân giải cao và góc nhìn rộng, mang lại hình ảnh sắc nét cùng thao tác cảm ứng mượt mà như trên máy tính bảng. Hệ thống đồng bộ với Smartphone sử dụng hệ điều hành iOS và Android qua kết nối USB, giúp bạn tương tác hiệu quả và tận hưởng hành trình dễ dàng hơn bao giờ hết.",
+            "thumb" : "assets/images/parts/safe/thumb-1.jpg",
+            "image" : "assets/images/parts/safe/img-1.jpg"
+        },{
+            "title" : "Cảm biến va chạm góc trước và cảm biến lùi",
+            "description" : "Màn hình cảm ứng 8 inch độ phân giải cao và góc nhìn rộng, mang lại hình ảnh sắc nét cùng thao tác cảm ứng mượt mà như trên máy tính bảng. Hệ thống đồng bộ với Smartphone sử dụng hệ điều hành iOS và Android qua kết nối USB, giúp bạn tương tác hiệu quả và tận hưởng hành trình dễ dàng hơn bao giờ hết.",
+            "thumb" : "assets/images/parts/safe/thumb-2.jpg",
+            "image" : "assets/images/parts/safe/img-2.jpg"
+        },{
+            "title" : "Hệ thống hỗ trợ khởi hành ngang dốc (HSA)",
+            "description" : "Màn hình cảm ứng 8 inch độ phân giải cao và góc nhìn rộng, mang lại hình ảnh sắc nét cùng thao tác cảm ứng mượt mà như trên máy tính bảng. Hệ thống đồng bộ với Smartphone sử dụng hệ điều hành iOS và Android qua kết nối USB, giúp bạn tương tác hiệu quả và tận hưởng hành trình dễ dàng hơn bao giờ hết.",
+            "thumb" : "assets/images/parts/safe/thumb-3.jpg",
+            "image" : "assets/images/parts/safe/img-3.jpg"
+        },{
+            "title" : "Cảm biến gạt mưa tự động",
+            "description" : "Màn hình cảm ứng 8 inch độ phân giải cao và góc nhìn rộng, mang lại hình ảnh sắc nét cùng thao tác cảm ứng mượt mà như trên máy tính bảng. Hệ thống đồng bộ với Smartphone sử dụng hệ điều hành iOS và Android qua kết nối USB, giúp bạn tương tác hiệu quả và tận hưởng hành trình dễ dàng hơn bao giờ hết.",
+            "thumb" : "assets/images/parts/safe/thumb-2.jpg",
+            "image" : "assets/images/parts/safe/img-2.jpg"
+        },{
+            "title" : "Phanh tay điện tử",
+            "description" : "Màn hình cảm ứng 8 inch độ phân giải cao và góc nhìn rộng, mang lại hình ảnh sắc nét cùng thao tác cảm ứng mượt mà như trên máy tính bảng. Hệ thống đồng bộ với Smartphone sử dụng hệ điều hành iOS và Android qua kết nối USB, giúp bạn tương tác hiệu quả và tận hưởng hành trình dễ dàng hơn bao giờ hết.",
+            "thumb" : "assets/images/parts/safe/thumb-2.jpg",
+            "image" : "assets/images/parts/safe/img-2.jpg"
+        },{
+            "title" : "Chế độ giữa phanh tự động",
+            "description" : "Màn hình cảm ứng 8 inch độ phân giải cao và góc nhìn rộng, mang lại hình ảnh sắc nét cùng thao tác cảm ứng mượt mà như trên máy tính bảng. Hệ thống đồng bộ với Smartphone sử dụng hệ điều hành iOS và Android qua kết nối USB, giúp bạn tương tác hiệu quả và tận hưởng hành trình dễ dàng hơn bao giờ hết.",
+            "thumb" : "assets/images/parts/safe/thumb-2.jpg",
+            "image" : "assets/images/parts/safe/img-2.jpg"
+        },{
+            "title" : "Hệ thống cân bằng điện tử",
+            "description" : "Màn hình cảm ứng 8 inch độ phân giải cao và góc nhìn rộng, mang lại hình ảnh sắc nét cùng thao tác cảm ứng mượt mà như trên máy tính bảng. Hệ thống đồng bộ với Smartphone sử dụng hệ điều hành iOS và Android qua kết nối USB, giúp bạn tương tác hiệu quả và tận hưởng hành trình dễ dàng hơn bao giờ hết.",
+            "thumb" : "assets/images/parts/safe/thumb-2.jpg",
+            "image" : "assets/images/parts/safe/img-2.jpg"
+        },{
+            "title" : "Khung xe thép và công nghệ tương thích với các dạng va chạm",
+            "description" : "Màn hình cảm ứng 8 inch độ phân giải cao và góc nhìn rộng, mang lại hình ảnh sắc nét cùng thao tác cảm ứng mượt mà như trên máy tính bảng. Hệ thống đồng bộ với Smartphone sử dụng hệ điều hành iOS và Android qua kết nối USB, giúp bạn tương tác hiệu quả và tận hưởng hành trình dễ dàng hơn bao giờ hết.",
+            "thumb" : "assets/images/parts/safe/thumb-2.jpg",
+            "image" : "assets/images/parts/safe/img-2.jpg"
+        },{
+            "title" : "Chế độ khoá cửa tự động",
+            "description" : "Màn hình cảm ứng 8 inch độ phân giải cao và góc nhìn rộng, mang lại hình ảnh sắc nét cùng thao tác cảm ứng mượt mà như trên máy tính bảng. Hệ thống đồng bộ với Smartphone sử dụng hệ điều hành iOS và Android qua kết nối USB, giúp bạn tương tác hiệu quả và tận hưởng hành trình dễ dàng hơn bao giờ hết.",
+            "thumb" : "assets/images/parts/safe/thumb-2.jpg",
+            "image" : "assets/images/parts/safe/img-2.jpg"
+        }
+    ]
+}

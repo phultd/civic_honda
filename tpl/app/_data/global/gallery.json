@@ -1,0 +1,73 @@
+{
+    "gallery_categories" : [
+        {
+            "title" : "Hình ảnh ngoại thất",
+            "heading" : "ĐỊNH NGHĨA MỚI VỀ SỰ HOÀN MỸ",
+            "description" : "Vượt trên kiểu dáng phá cách , khả năng vận hành và những công nghệ hiện đại giúp Civic định nghĩa lại chuẩn mực cho phân khúc Compact Sedan.",
+            "image" : "assets/images/s-gallery/thumb.jpg",
+            "items" : [
+                {
+					"type" : "image",
+                    "image" : "assets/images/popup/front.jpg",
+					"video" : "tiTspPHwPUY"
+                },
+                {
+					"type" : "video",
+                    "image" : "assets/images/popup/front.jpg",
+					"video" : "tiTspPHwPUY"
+                },
+                {
+					"type" : "image",
+                    "image" : "assets/images/popup/front.jpg",
+					"video" : "tiTspPHwPUY"
+                }
+            ]
+        },
+		{
+            "title" : "Hình ảnh nội thất",
+            "heading" : "ĐỊNH NGHĨA MỚI VỀ SỰ HOÀN MỸ",
+            "description" : "Vượt trên kiểu dáng phá cách , khả năng vận hành và những công nghệ hiện đại giúp Civic định nghĩa lại chuẩn mực cho phân khúc Compact Sedan.",
+            "image" : "assets/images/s-gallery/thumb.jpg",
+            "items" : [
+                {
+					"type" : "image",
+                    "image" : "assets/images/popup/front.jpg",
+					"video" : "tiTspPHwPUY"
+                },
+                {
+					"type" : "video",
+                    "image" : "assets/images/popup/front.jpg",
+					"video" : "tiTspPHwPUY"
+                },
+                {
+					"type" : "image",
+                    "image" : "assets/images/popup/front.jpg",
+					"video" : "tiTspPHwPUY"
+                }
+            ]
+        },
+		{
+            "title" : "Video",
+            "heading" : "ĐỊNH NGHĨA MỚI VỀ SỰ HOÀN MỸ",
+            "description" : "Vượt trên kiểu dáng phá cách , khả năng vận hành và những công nghệ hiện đại giúp Civic định nghĩa lại chuẩn mực cho phân khúc Compact Sedan.",
+            "image" : "assets/images/s-gallery/thumb.jpg",
+            "items" : [
+                {
+					"type" : "image",
+                    "image" : "assets/images/popup/front.jpg",
+					"video" : "tiTspPHwPUY"
+                },
+                {
+					"type" : "video",
+                    "image" : "assets/images/popup/front.jpg",
+					"video" : "tiTspPHwPUY"
+                },
+                {
+					"type" : "image",
+                    "image" : "assets/images/popup/front.jpg",
+					"video" : "tiTspPHwPUY"
+                }
+            ]
+        }
+    ]
+}

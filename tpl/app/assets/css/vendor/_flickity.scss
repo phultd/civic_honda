@@ -1,0 +1,94 @@
+@import 'flickity/dist/flickity.min';
+.flickity-viewport,
+.flickity-enabled.is-draggable .flickity-viewport {
+    cursor: default;
+}
+.flickity-prev-next-button {
+    width: auto;
+    height: auto;
+    background: none;
+    border:0;
+    border-radius: 0;
+    padding: 15px;
+    left:50%;
+    transform: translate(-50%, -50%);
+    svg {
+        width: 54px;
+    }
+    // &.previous {
+    //     margin-left: -767px;
+    //     left:50%;
+    //     right: auto;
+    // }
+    // &.next {
+    //     margin-left: 767px;
+    //     left:50%;
+    //     right: auto;
+    // }
+    &:hover {
+        background: none;
+    }
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+.flickity-page-dots {
+    position: absolute;
+    bottom:36px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    @include screen(1367px) {
+        bottom: 42px;
+    }
+    @include screen(mobile) {
+        bottom: 10px;
+    }
+    .dot {
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        position: relative;
+        background: none;
+        margin: 5px 12px;
+        opacity: 1;
+        border: 0;
+        &:before {
+            content:"";
+            display: inline-block;
+            width: 5px;
+            height: 5px;
+            position: absolute;
+            left:50%;
+            top:50%;
+            background: #fff;
+            border-radius: 50%;
+            transform: translate(-50%,-50%);
+            opacity: 1;
+        }
+        &:after {
+            content:"";
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            position: absolute;
+            border-radius: 50%;
+            opacity: 0;
+            border: 1px solid #fff;
+            transition: 0.3s;
+        }
+        &.is-selected {
+            border-color: #fff;
+            &:before {
+                opacity: 1;
+            }
+            &:after {
+                opacity: 1;
+            }
+        }
+    }
+}

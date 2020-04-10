@@ -1,0 +1,62 @@
+{
+    "exterior_categories" : [
+        {
+            "title" : "Kiểu dáng",
+            "heading" : "ĐỊNH NGHĨA MỚI VỀ SỰ HOÀN MỸ",
+            "description" : "Civic thế hệ mới được phát triển trên tinh thần “OTOKOMAE”.<br>Đẹp không đơn thuần chỉ là một dáng vẻ bên ngoài cuốn hút.",
+            "image" : "assets/images/s-exterior/img-left.png",
+            "image_mobile" : "assets/images/s-exterior/img-left-mb@2x.jpg",
+            "items" : [
+                {
+                    "image" : "assets/images/popup/front.jpg",
+                    "title" : "Nội thất",
+                    "description" : "Mặt trước xe nổi bật với thanh crom hình cánh chim kết nối với hai bên cụm đèn trước tạo nên phong cách mạnh mẽ đầy khí thế."
+                },
+                {
+                    "image" : "assets/images/popup/front.jpg",
+                    "title" : "Nội thất",
+                    "description" : "Mặt trước xe nổi bật với thanh crom hình cánh chim kết nối với hai bên cụm đèn trước tạo nên phong cách mạnh mẽ đầy khí thế."
+                },
+                {
+                    "image" : "assets/images/popup/front.jpg",
+                    "title" : "Nội thất",
+                    "description" : "Mặt trước xe nổi bật với thanh crom hình cánh chim kết nối với hai bên cụm đèn trước tạo nên phong cách mạnh mẽ đầy khí thế."
+                },
+                {
+                    "image" : "assets/images/popup/front.jpg",
+                    "title" : "Nội thất",
+                    "description" : "Mặt trước xe nổi bật với thanh crom hình cánh chim kết nối với hai bên cụm đèn trước tạo nên phong cách mạnh mẽ đầy khí thế."
+                }
+            ]
+        },
+        {
+            "title" : "Kiểu dáng",
+            "heading" : "ĐỊNH NGHĨA MỚI VỀ SỰ HOÀN MỸ",
+            "description" : "Civic thế hệ mới được phát triển trên tinh thần “OTOKOMAE”.<br>Đẹp không đơn thuần chỉ là một dáng vẻ bên ngoài cuốn hút.",
+            "image" : "assets/images/s-exterior/img-left.png",
+            "image_mobile" : "assets/images/s-exterior/img-left-mb@2x.jpg",
+            "items" : [
+                {
+                    "image" : "assets/images/popup/front.jpg",
+                    "title" : "Nội thất",
+                    "description" : "Mặt trước xe nổi bật với thanh crom hình cánh chim kết nối với hai bên cụm đèn trước tạo nên phong cách mạnh mẽ đầy khí thế."
+                },
+                {
+                    "image" : "assets/images/popup/front.jpg",
+                    "title" : "Nội thất",
+                    "description" : "Mặt trước xe nổi bật với thanh crom hình cánh chim kết nối với hai bên cụm đèn trước tạo nên phong cách mạnh mẽ đầy khí thế."
+                },
+                {
+                    "image" : "assets/images/popup/front.jpg",
+                    "title" : "Nội thất",
+                    "description" : "Mặt trước xe nổi bật với thanh crom hình cánh chim kết nối với hai bên cụm đèn trước tạo nên phong cách mạnh mẽ đầy khí thế."
+                },
+                {
+                    "image" : "assets/images/popup/front.jpg",
+                    "title" : "Nội thất",
+                    "description" : "Mặt trước xe nổi bật với thanh crom hình cánh chim kết nối với hai bên cụm đèn trước tạo nên phong cách mạnh mẽ đầy khí thế."
+                }
+            ]
+        }
+    ]
+}

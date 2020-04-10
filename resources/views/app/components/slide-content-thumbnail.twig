@@ -1,0 +1,37 @@
+<section class="slider-content-thumb slide-chungnhan" data-module="slider-fn">
+    <div class="slider-content-thumb__wrapper container js-set-dots"
+         data-flickity='{   "imagesLoaded": true,
+                            "draggable": {{ slide_content|length == 1 ?  'false' : 'true' }},
+                            "prevNextButtons": {{ slide_content|length == 1 ?  'false' : 'true' }},
+                            "pageDots": {{ 'true' }}
+                        }'
+         data-dots = '[
+         {% for content in slide_content %}
+         { "active" : "{{ content.icon_active.url }}", "inactive" : "{{ content.icon.url }}" },
+            {% endfor %}
+        ]'>
+        {% for content in slide_content %}
+            <div class="slider-content-thumb__item">
+                <div class="slider-content-thumb__content text-center">
+                    <div class="wrapper-block">
+                        <div class="headline-block">
+                            {{ content.headline }}
+                        </div>
+                        <div class="desc-block">
+                            {{ content.content }}
+                        </div>
+                        <div class="btn-block">
+                            <a href="#" class="btn-common"><span>{{ __('TÌM HIỂU THÊM', TEXT_DOMAIN) }}</span></a>
+                        </div>
+                        <a href="#" class="btn-underline"><span>{{ __('Truy xuất nguồn gốc sản phẩm', TEXT_DOMAIN) }}</span></a>
+                    </div>
+                </div>
+                {% if content.image is defined %}
+                    <div class="slider-content-thumb__thumbnail">
+                        <img src="{{ content.image.url }}" alt="{{ content.image.alt }}">
+                    </div>
+                {% endif %}
+            </div>
+        {% endfor %}
+    </div>
+</section>

@@ -1,0 +1,166 @@
+@mixin TransitionWithDurationAndEase($duration, $easing) {
+    -webkit-transition: all $duration $easing;
+    -moz-transition: all $duration $easing;
+    -ms-transition: all $duration $easing;
+    -o-transition: all $duration $easing;
+    transition: all $duration $easing;
+}
+@mixin TransitionWithDurationAndEase_delay($duration, $easing, $delay) {
+    -webkit-transition: all $duration $easing $delay;
+    -moz-transition: all $duration $easing $delay;
+    -ms-transition: all $duration $easing $delay;
+    -o-transition: all $duration $easing $delay;
+    transition: all $duration $easing $delay;
+}
+.clearfix {
+    clear: both;
+
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+.lozad {
+    opacity: 0;
+    &.loaded {
+        opacity: 1;
+    }
+}
+.fade {
+    animation: fade 0.5s alternate forwards;
+}
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.color-white {
+    color: #fff !important;
+}
+.color-green {
+    color:$color-green !important;
+}
+.color-blue {
+    color:$color-blue !important;
+}
+
+.fixed {
+    position: fixed !important;
+}
+
+.bg-grey {
+    position: relative;
+    &:before {
+        content:"";
+        background: #f7f7f7;
+        display: block;
+        position: absolute;
+        left: -4000px;
+        right: -4000px;
+        bottom: 0;
+        top: 0;
+        z-index: -1;
+    }
+}
+.bg-grey2 {
+    position: relative;
+    &:before {
+        content:"";
+        background: #f2f2f2;
+        display: block;
+        position: absolute;
+        left: -4000px;
+        right: -4000px;
+        bottom: 0;
+        top: 0;
+        z-index: -1;
+    }
+}
+
+.w-100 {
+    width: 100%;
+}
+.h-100 {
+    height: 100%;
+}
+.w-auto {
+    width: auto !important;
+}
+.font-noto {
+    font-family: 'Noto Sans', sans-serif;
+}
+.font-simsun {
+    font-family: 'SimSun', sans-serif;
+}
+.main {
+    font-family: 'SFProDisplay',sans-serif;
+}
+@include screen(1025px,true) {
+    &.hidden-1024 {
+        display: inline;
+    }
+    &.visible-1024 {
+        display: none;
+    }
+}
+@include screen(1025px) {
+    &.hidden-1024 {
+        display: none;
+    }
+    &.visible-1024 {
+        display: inline;
+    }
+}
+@keyframes updown {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(10px);
+    }
+}
+.scroll-down-btn {
+    font-family: 'SFProDisplay',sans-serif;
+    font-size: rem(18);
+    text-transform: uppercase;
+    color: #fff;
+    bottom: 50px;
+    left: 0;
+    right: 0;
+    position: absolute;
+    animation: updown .7s ease-in-out forwards alternate infinite;
+    @include screen(1440px) {
+        bottom: 30px;
+        img {
+            max-width: 18px;
+        }
+    }
+    @include screen(mobile) {
+        display: none;
+    }
+    // p {
+    //     margin-top: 10px;
+    // }
+    &__icon {
+        animation: updown .7s ease-in-out forwards alternate infinite;
+    }
+}
+.snap-scroll {
+    overflow: hidden;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    @include screen(desktop) {
+        //position: static;
+        overflow: auto;
+    }
+}

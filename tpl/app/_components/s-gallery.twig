@@ -1,0 +1,44 @@
+{% if gallery_categories|length > 0 %}
+
+<section class="s-gallery section-holder  js-snap-item js-navigator-item" id="gallery">
+    <div class="title-common"> Thư viện</div>
+    <div class="s-gallery__container container">
+        <div class="s-gallery__list">
+			{% for category in gallery_categories %}
+			{% if category.items|length > 0 %}
+            <div class="s-gallery__item">
+                <div class="bg-black">
+                    <div class="img">
+                        <img  src="{{ category.image }}" alt="">
+                        {# <img class="visible-xs" src="{{ assets_url }}/images/s-gallery/thumb-mb@2x.jpg" alt=""> #}
+                    </div>
+                    <div class="s-gallery__item__content">
+                        <div class="s-gallery__item__title">
+                            {{ category.heading|raw }}
+                        </div>
+                        <div class="s-gallery__item__desc">
+                            {{ category.description|raw }}
+                        </div>
+                        <div class="btn-w-radius" onclick="myApp['openPopup']('#popup-gallery-{{ loop.index }}')">
+                            <a href="javascript:;">
+                                <span class="btn-detail__text">XEM {{ category.title }}</span>
+                                <span>
+                                   {{ source('app/assets/images/icon/arrow-btn.twig') }}
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+			{% endif %}
+			{% endfor %}
+		</div>
+    </div>
+</section>
+
+{% include '_components/popup-gallery.twig' %}
+{% endif %}
+
+{# include '_components/popup-gallery-exterior.twig' #}
+{# include '_components/popup-gallery-interior.twig' #}
+{# include '_components/popup-gallery-video.twig' #}

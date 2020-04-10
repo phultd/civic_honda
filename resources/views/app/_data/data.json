@@ -1,0 +1,236 @@
+{
+	"assetPath": "assets",
+	"assets_url": "assets",
+	"title": "Climax - The Best Creatology Agency",
+	"wp_head": "<link rel=\"stylesheet\" href=\"assets/css/app.css\">",
+	"wp_footer": "<script src=\"assets/js/app.js\"></script>",
+	"menu": [
+		{
+			"title": "About Us",
+			"url": "/about-us.html"
+		},
+		{
+			"title": "Our Work",
+			"url": "/our-work.html"
+		},
+		{
+			"title": "Services",
+			"url": "/services.html"
+		},
+		{
+			"title": "Carees",
+			"url": "/carees.html"
+		},
+		{
+			"title": "Contact",
+			"url": "/contact.html"
+		}
+	],
+	"step_blocks": [
+		{
+			"desc": "Khởi đầu tự nhiên<br/>cho cả mẹ và bé",
+			"image": "/images/can/hop-sua-ba-bau.png",
+			"icon": "/images/icons/icon-ba-bau.png",
+			"headline_regular": "Sữa bột bà bầu",
+			"headline_bold": "organic mama",
+			"href": "#",
+			"bg_btn": "bg-pink",
+			"class": "ba-bau",
+			"floats": [
+				{
+					"image": "/images/hanhtrinh/it-ngot.png",
+					"detail": "<p>Vị thanh, ít ngọt<br/><b>phù hợp với khẩu vị mẹ bầu,<br/>tránh tăng cân</b></p>"
+				},
+				{
+					"image": "/images/hanhtrinh/dha.png",
+					"detail": "<p>Tăng cường phát triển<br/> não bộ thai nhi</p>"
+				},
+				{
+					"image": "/images/hanhtrinh/tieu-hoa.png",
+					"detail": "<p>Hỗ trợ sức khỏe<br/> hệ tiêu hóa</p>"
+				}
+			]
+		},
+		{
+			"desc": "Món quà tự nhiên<br/>cho khoảnh khắc chào đời",
+			"image": "/images/can/hop-sua-gold.png",
+			"icon": "/images/icons/icon-moisinh.png",
+			"headline_regular": "Sữa bột trẻ em",
+			"headline_bold": "organic gold",
+			"href": "#",
+			"bg_btn": "bg-green",
+			"class": "moi-sinh",
+			"floats": [
+				{
+					"image": "/images/hanhtrinh/dha.png",
+					"detail": "<p>100% DHA từ tảo tinh khiết<br/><b>hỗ trợ sự phát triển não bộ</b></p>"
+				},
+				{
+					"image": "/images/hanhtrinh/chuan-eu.png",
+					"detail": "<p>Dưỡng chất chuẩn EU tăng cường<br/><b>giúp phát triển toàn diện</b></p>"
+				},
+				{
+					"image": "/images/hanhtrinh/tieu-hoa.png",
+					"detail": "<p>Đạm Whey, Probiotic<br/><b>hỗ trợ tiêu hóa, tăng chiều cao<br/>và sức đề kháng</b></p>"
+				},
+				{
+					"image": "/images/hanhtrinh/3-khong.png",
+					"detail": "<p>Tiêu chuẩn “3 KHÔNG”<br/><b>giúp phát triển tự nhiên</b></p>"
+				}
+			]
+		},
+		{
+			"desc": "Nguồn dinh dưỡng tự nhiên<br/>cho bước chân tự lập đầu đời",
+			"image": "/images/can/hop-an-dam.png",
+			"icon": "/images/icons/icon-baby.png",
+			"headline_regular": "Bột ăn dặm",
+			"headline_bold": "organic gold",
+			"href": "#",
+			"bg_btn": "bg-orange",
+			"class": "em-be",
+			"floats": [
+				{
+					"image": "/images/hanhtrinh/3-khong.png",
+					"detail": "<ul><li>Không chất tăng trưởng</li><li>Không biến đổi gen</li><li>Không dư lượng<br/>kháng sinh.</li></ul>"
+				}
+			]
+		}
+	],
+	"top_banner": {
+		"index": [
+			{
+				"image": "/images/banner/top-banner-index.jpg"
+			}
+		]
+	},
+	"gallery": [
+		{
+			"id": 1,
+			"title": "Product 1",
+			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum suscipit, et corporis iusto natus modi dignissimos totam fugit sed eligendi sit odio consectetur officia perferendis neque quasi recusandae dolorum ipsam!",
+			"image": "assets/images/dummy/article-img-1.jpg"
+		},
+		{
+			"id": 2,
+			"title": "Product 2",
+			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum suscipit, et corporis iusto natus modi dignissimos totam fugit sed eligendi sit odio consectetur officia perferendis neque quasi recusandae dolorum ipsam!",
+			"image": "assets/images/dummy/article-img-1.jpg"
+		},
+		{
+			"id": 3,
+			"title": "Product 3",
+			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum suscipit, et corporis iusto natus modi dignissimos totam fugit sed eligendi sit odio consectetur officia perferendis neque quasi recusandae dolorum ipsam!",
+			"image": "assets/images/dummy/article-img-1.jpg"
+		},
+		{
+			"id": 4,
+			"title": "Product 4",
+			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum suscipit, et corporis iusto natus modi dignissimos totam fugit sed eligendi sit odio consectetur officia perferendis neque quasi recusandae dolorum ipsam!",
+			"image": "assets/images/dummy/article-img-1.jpg"
+		},
+		{
+			"id": 5,
+			"title": "Product 5",
+			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum suscipit, et corporis iusto natus modi dignissimos totam fugit sed eligendi sit odio consectetur officia perferendis neque quasi recusandae dolorum ipsam!",
+			"image": "assets/images/dummy/article-img-1.jpg"
+		},
+		{
+			"id": 6,
+			"title": "Product 6",
+			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum suscipit, et corporis iusto natus modi dignissimos totam fugit sed eligendi sit odio consectetur officia perferendis neque quasi recusandae dolorum ipsam!",
+			"image": "assets/images/dummy/article-img-1.jpg"
+		}
+	],
+	"articles": [
+		{
+			"id": 1,
+			"title": "Climax - We are a Creatology Agency",
+			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum suscipit, et corporis iusto natus modi dignissimos totam fugit sed eligendi sit odio consectetur officia perferendis neque quasi recusandae dolorum ipsam!",
+			"image": "assets/images/dummy/article-img-1.jpg"
+		},
+		{
+			"id": 2,
+			"title": "Climax - We are a Creatology Agency",
+			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum suscipit, et corporis iusto natus modi dignissimos totam fugit sed eligendi sit odio consectetur officia perferendis neque quasi recusandae dolorum ipsam!",
+			"image": "assets/images/dummy/article-img-1.jpg"
+		},
+		{
+			"id": 3,
+			"title": "Climax - We are a Creatology Agency",
+			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum suscipit, et corporis iusto natus modi dignissimos totam fugit sed eligendi sit odio consectetur officia perferendis neque quasi recusandae dolorum ipsam!",
+			"image": "assets/images/dummy/article-img-1.jpg"
+		}
+	],
+	"heroBanners": [
+		{
+			"id": 1,
+			"title": "Climax - We are a Creatology Agency",
+			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum suscipit, et corporis iusto natus modi dignissimos totam fugit sed eligendi sit odio consectetur officia perferendis neque quasi recusandae dolorum ipsam!",
+			"image": "assets/images/dummy/article-img-1.jpg"
+		}
+	],
+	"products": [
+		{
+			"id": 1,
+			"title": "Product 1",
+			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum suscipit, et corporis iusto natus modi dignissimos totam fugit sed eligendi sit odio consectetur officia perferendis neque quasi recusandae dolorum ipsam!",
+			"image": "assets/images/dummy/article-img-1.jpg"
+		},
+		{
+			"id": 2,
+			"title": "Product 2",
+			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum suscipit, et corporis iusto natus modi dignissimos totam fugit sed eligendi sit odio consectetur officia perferendis neque quasi recusandae dolorum ipsam!",
+			"image": "assets/images/dummy/article-img-1.jpg"
+		},
+		{
+			"id": 3,
+			"title": "Product 3",
+			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum suscipit, et corporis iusto natus modi dignissimos totam fugit sed eligendi sit odio consectetur officia perferendis neque quasi recusandae dolorum ipsam!",
+			"image": "assets/images/dummy/article-img-1.jpg"
+		},
+		{
+			"id": 4,
+			"title": "Product 4",
+			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum suscipit, et corporis iusto natus modi dignissimos totam fugit sed eligendi sit odio consectetur officia perferendis neque quasi recusandae dolorum ipsam!",
+			"image": "assets/images/dummy/article-img-1.jpg"
+		},
+		{
+			"id": 5,
+			"title": "Product 5",
+			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum suscipit, et corporis iusto natus modi dignissimos totam fugit sed eligendi sit odio consectetur officia perferendis neque quasi recusandae dolorum ipsam!",
+			"image": "assets/images/dummy/article-img-1.jpg"
+		}
+	],
+	"quizz": [
+		{
+			"id": 1,
+			"title": "Product 1",
+			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum suscipit, et corporis iusto natus modi dignissimos totam fugit sed eligendi sit odio consectetur officia perferendis neque quasi recusandae dolorum ipsam!",
+			"image": "assets/images/dummy/article-img-1.jpg"
+		},
+		{
+			"id": 2,
+			"title": "Product 2",
+			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum suscipit, et corporis iusto natus modi dignissimos totam fugit sed eligendi sit odio consectetur officia perferendis neque quasi recusandae dolorum ipsam!",
+			"image": "assets/images/dummy/article-img-1.jpg"
+		},
+		{
+			"id": 3,
+			"title": "Product 3",
+			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum suscipit, et corporis iusto natus modi dignissimos totam fugit sed eligendi sit odio consectetur officia perferendis neque quasi recusandae dolorum ipsam!",
+			"image": "assets/images/dummy/article-img-1.jpg"
+		},
+		{
+			"id": 4,
+			"title": "Product 4",
+			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum suscipit, et corporis iusto natus modi dignissimos totam fugit sed eligendi sit odio consectetur officia perferendis neque quasi recusandae dolorum ipsam!",
+			"image": "assets/images/dummy/article-img-1.jpg"
+		},
+		{
+			"id": 5,
+			"title": "Product 5 nhaz",
+			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum suscipit, et corporis iusto natus modi dignissimos totam fugit sed eligendi sit odio consectetur officia perferendis neque quasi recusandae dolorum ipsam!",
+			"image": "assets/images/dummy/article-img-1.jpg"
+		}
+	]
+}

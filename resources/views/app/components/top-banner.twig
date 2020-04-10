@@ -1,0 +1,29 @@
+
+<section class="top-banner" data-module="slider-fn"
+         data-flickity='{   "imagesLoaded": true,
+                            "draggable": {{ top_banner.index|length == 1 ?  false : true }},
+                            "prevNextButtons": {{ top_banner.index|length == 1 ?  false : true }},
+                            "pageDots": {{ top_banner.index|length == 1 ?  false : true }}
+                        }'>
+    {% for banner in top_banner %}
+        <div class="top-banner__item">
+            <div class="top-banner__bg">
+                {% if banner.image_pc is defined %}
+                    <img src="{{ banner.image_pc.url }}" alt="{{ banner.image_pc.alt }}">
+                {% else %}
+                    <img src="{{ banner.image }}" alt="">
+                {% endif %}
+            </div>
+            <div class="top-banner__content">
+                <div class="top-banner__detail">
+                    {% if banner.content is defined %}
+                        {{ banner.content }}
+                    {% else %}
+                        <h4 class="headline headline--small">CHO BÉ LỚN KHÔN CÙNG</h4>
+                        <h4 class="headline headline--big padl">TỰ NHIÊN</h4>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+</section>

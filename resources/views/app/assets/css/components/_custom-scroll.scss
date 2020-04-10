@@ -1,0 +1,10 @@
+.custom-scroll{
+    &--common{
+        .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
+            background-color: $color-gold;
+        }
+        .mCSB_scrollTools .mCSB_dragger:hover{
+            background-color: transparent;
+        }
+    }
+}

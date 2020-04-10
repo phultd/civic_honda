@@ -1,0 +1,37 @@
+{% if banner.popup_image or banner.popup_video %}
+<section class="popup" data-module="popup youtubeAPI" id="popup_enter">
+    <div class="popup__table">
+        <div class="popup__table-cell">
+            <div class="popup__container">
+                <div class="popup__content popup-enter">
+                    <div class="popup__close  js-pause-all">
+                        <img src="{{ assets_url }}/images/icon/close-button.png" alt="">
+                    </div>
+                    <div class="popup-enter__img">
+                        {# img #}
+						{% if banner.popup_type == 'image' and banner.popup_image %}
+                        <img class="lozad" src="{{ assets_url }}/images/dummy/1453x750.png" data-src="{{ banner.popup_image }}" alt="">
+						{% endif %}
+						{# video youtube #}
+						{% if banner.popup_type == 'tvc' and banner.popup_video %}
+                        <div class="popup__video">
+                            <img src="{{ assets_url }}/images/dummy/1453x750.png">
+                            <div class="js-youtube" id-video="{{ banner.popup_video }}" id="enter-video"
+                                hide-stop = 'true'
+                                inline="true"
+                                start-from="0"
+                                >
+                            </div>
+                        </div>
+						{% endif %}
+                    </div>
+                    <div class="popup-enter__actions">
+						{% if banner.explore_link %}<a href="{{ banner.explore_link }}" target="_blank" class="btn">KHÁM PHÁ NGAY</a>{% endif %}
+                        {% if banner.trial_link %}<a href="{{ banner.trial_link }}" target="_blank" class="btn">ĐĂNG KÝ TRẢI NGHIỆM</a>{% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endif %}

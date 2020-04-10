@@ -1,0 +1,167 @@
+// @keyframes menu {
+//     0% {
+//         opacity: 0;
+//         transform: translateY(-20px);
+//     }
+//     100% {
+//         opacity: 1;
+//         transform: translateY(0px);
+//     }
+// }
+.main-menu {
+    @include resetUl;
+    display: table;
+    width: calc(100% + 60px);
+    height: 75px;
+    margin-left: -30px;
+    margin-right: -30px;
+    @include screen(1441px) {
+        height: 60px;
+    }
+    @include screen(tablet) {
+        display: inline-block;
+        width: calc(100% - 10px);
+        vertical-align: middle;
+        height: auto;
+        margin: 0;
+    }
+    li {
+        text-align: center;
+        padding: 0 15px;
+        display: table-cell;
+        vertical-align: middle;
+        position: relative;
+        opacity: 0;
+        transform: translateY(-20px);
+        @include TransitionWithDurationAndEase(0.2s, $EasingSineInOut);
+        @for $i from 1 through 20 {
+            &:nth-child(#{$i}) {
+               transition-delay: $i*0.05s ;
+            }
+        }
+        @include screen(tablet) {
+            width: 100%;
+            text-align: right;
+            display: block;
+            padding: 0;
+            // transform : none;
+            // opacity: 1;
+            // transition: none;
+        }
+
+        &:before {
+            content: "";
+            width: 0%;
+            left: 50%;
+            position: absolute;
+            bottom: 0;
+            height: 2px;
+            background: white;
+            transition: all 0.3s ease-in-out;
+        }
+        a {
+            color:#fff;
+            font-size: rem(16);
+            text-transform: uppercase;
+            white-space: nowrap;
+            position: relative;
+            color: transparent;
+            overflow: hidden;
+            display: block;
+            height: 75px;
+            line-height: 75px;
+            @include screen(1441px) {
+                height: 23px;
+                line-height: 23px;
+            }
+            @include screen(tablet) {
+                display: block;
+                font-size: 16px;
+                padding:13px 15px;
+                line-height: normal;
+                height: auto;
+                color: #fff;
+            }
+            &:after, &:before {
+                content:attr(data-text);
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                color:#fff;
+                transition: 0.3s ease-out;
+                @include screen(tablet) {
+                    display: none;
+                }
+            }
+            &:before {
+                top: 0;
+                opacity: 1;
+                transform: translateX(-50%) scaleY(1);
+            }
+            &:after {
+                top: -15%;
+                opacity: 0;
+                transform: translateX(-50%) scaleY(0.5);
+            }
+            &:hover {
+                &:before {
+                    top: 15%;
+                    opacity: 0;
+                    transform: translateX(-50%) scaleY(0.5)
+                }
+                &:after {
+                    top: 0%;
+                    opacity: 1;
+                    transition-delay: 0s;
+                    text-shadow: 0px 0px 10px #fff, 0px 0px 10px rgba(#fff,0.5) ;
+                    //transition: text-shadow 0.3s ease-out 0.2s, top 0.3s ease-out 0s, transform 0.3s ease-out 0s;
+                    transform: translateX(-50%) scaleY(1)
+                }
+            }
+        }
+        &.active {
+            &:before {
+                left: 5%;
+                width: 90%;
+                @include screen(tablet) {
+                    display: none;
+                    left: 50%;
+                    width: 50%;
+                }
+            }
+            a {
+                @include screen(tablet) {
+                    color: #ff0000;
+                    font-weight: bold;
+                }
+                &:before, &:after {
+                    //transition: 0s !important;
+                }
+                &:before {
+                    top: 15%;
+                    opacity: 0;
+                    transform: translateX(-50%) scaleY(0.5)
+                }
+                &:after {
+                    top: 0%;
+                    opacity: 1;
+                    transition-delay: 0s;
+                    text-shadow: 0px 0px 10px #fff, 0px 0px 10px rgba(#fff,0.5) ;
+                    transform: translateX(-50%) scaleY(1)
+                }
+            }
+        }
+    }
+    &.animation-li {
+        li {
+           // @include TransitionWithDurationAndEase(0s, $EasingSineInOut);
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    }
+    &__virtual-logo {
+        @include screen(tablet) {
+            display: none !important;
+        }
+    }
+}

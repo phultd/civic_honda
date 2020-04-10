@@ -1,0 +1,37 @@
+<section class="section-block review">
+    <div class="headline-block">
+        <h4 class="headline__regular">NHỮNG MẸ KHÁC NÓI GÌ VỀ</h4>
+        <h4 class="headline__bold">ORGANIC GOLD?</h4>
+    </div>
+    <div class="container">
+        <div class="circles-slide js-circles-slide" data-module="slider-fn">
+            {% for i in 0..4 %}
+                <div class="circles-slide-item js-circle-item">
+                    <div class="circles-slide-item__wrapper">
+                        <div class="box-review">
+                            <div class="box-review__content">
+                                <p>
+                                    Mình luôn ưu tiên Organic Gold cho bé yêu để đảm bảo an toàn và cho con phát triển tốt nhất những năm đầu đời.
+                                </p>
+                            </div>
+                            <span class="triangle-down"></span>
+                            <span class="dot-line-top"></span>
+                            <span class="dot-line-bottom"></span>
+                        </div>
+                        <div class="circles-slide-item__thumbnail">
+                            <div class="img-wrapper">
+                                <div class="img-block">
+                                    <img src="{{ assets_url }}/images/thumbnails/avatar-square-5.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="circles-slide-item__detail">
+                            <h4 class="headline">TĂNG THANH HÀ</h4>
+                            <p class="job">Diễn viên, người mẫu</p>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

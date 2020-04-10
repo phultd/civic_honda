@@ -1,0 +1,86 @@
+.s-safe {
+	@include SFProDisplay;
+    @include screen(1367px) {
+        .title-common {
+            margin-top: 55px;
+        }
+    }
+   .main-carousel {
+   		position: relative;
+   		line-height: 0;
+   		img {
+   			max-width: 100%;
+   		}
+   		&__item {
+   			width: 100%;
+   		}
+   		.flickity-button-icon {
+			 display: none;
+   		}
+
+   		.flickity-page-dots {
+   			li {
+   				background: white;
+   				width: 96px;
+   				height: 10px;
+   				border-radius: 0px;
+                @include screen(tablet) {
+                    width: 45px;
+                    height: 5px;
+                }
+   				&:before, &:after {
+   					display: none;
+   				}
+   				&.is-selected {
+   					background: $civic-red;
+   				}
+   			}
+   		}
+   }
+   &__text {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		left: 0;
+		background: rgba(0 , 0 , 0 , 0.3);
+		color: white;
+		padding: 55px 0;
+		line-height: 1.2;
+        overflow-x: hidden;
+        @include screen(tablet) {
+            padding: 10px 0;
+        }
+		h4,.desc {
+			max-width: 750px;
+			margin: 0 auto;
+            @include screen(tablet) {
+                max-width: 100%;
+                padding: 0px 15px;
+            }
+		}
+		h4 {
+			font-size: rem(40);
+			font-weight: 400;
+			margin-bottom: 20px;
+            @include screen(tablet) {
+                font-size: 25px;
+
+             }
+            @include screen(mobile) {
+               font-size: 16px;
+               margin-bottom: 10px;
+            }
+		}
+		.desc {
+			font-weight: 100;
+			font-size: rem(24);
+			margin-bottom: 32px;
+            @include screen(tablet) {
+                font-size: 16px;
+             }
+            @include screen(mobile) {
+               font-size: 14px;
+            }
+		}
+   }
+}

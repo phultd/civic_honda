@@ -1,0 +1,23 @@
+// Font Awesome 4.7.0
+@import '~font-awesome/scss/font-awesome';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// Bootstrap Material Design
+@import 'bundles/mdb/scss/mdb';
+
+$box-shadow-1 : 0 .2rem .6rem rgba(0, 0, 0, .2);
+$box-shadow-2 : 0 .35rem .85rem rgba(0, 0, 0, .2);
+$box-shadow-3 : 0 .5rem 1rem rgba(0, 0, 0, .2);
+$box-shadow-4 : 0 .65rem 1.15rem rgba(0, 0, 0, .2);
+$box-shadow-5 : 0 .8rem 1.3rem rgba(0, 0, 0, .2);
+
+// Navbar
+@import "partials/navbar";
+
+// Sidebar
+@import "partials/sidebar";
+
+// Content
+@import "partials/content";

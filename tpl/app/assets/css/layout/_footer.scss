@@ -1,0 +1,51 @@
+.footer {
+    height: rem(70);
+    background: #7F0707;
+    color:#fff;
+    margin-top: 40px;
+    @include SFProDisplay;
+    font-size: rem(16);
+    font-weight: bold;
+    position: relative;
+    &__social {
+        @include resetUl;
+        margin-top: 15px;
+        font-size: 0;
+        li {
+            display: inline-block;
+            margin-left: rem(15);
+            vertical-align: middle;
+            a {
+                display: inline-block;
+                svg {
+                    display: inline-block;
+                    max-width: rem(41);
+                    max-height: rem(41);
+                }
+            }
+            &.youtube {
+                svg {
+                    path {
+                        fill : $civic-red-blood;
+                    }
+                }
+            }
+        }
+    }
+    .go-to-top {
+        position: absolute;
+        right: 30px;
+        top: 50%;
+        color: white;
+        transform: translateY(-50%);
+        img {
+            width: rem(46);
+        }
+        @include screen(mobile) {
+            display: none;
+        }
+        a {
+            color: white;
+        }
+    }
+}

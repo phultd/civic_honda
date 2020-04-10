@@ -1,0 +1,47 @@
+.section-block {
+	position: relative;
+	&__content {
+		position: absolute;
+	    width: 100%;
+	    text-align: center;
+	    top: 14%;
+	    @include screen(tablet) {
+	    	top: 8%;
+	    }
+	    @include screen(mobile) {
+	    	top: 4%;
+	    }
+	}
+	&__title {
+		font-size: rem(37);
+		color: white;
+		@include SFProDisplay;
+		font-weight: 500;
+		line-height: 1.5;
+		letter-spacing: 1px;
+	}
+	&__desc {
+		font-size: rem(24);
+		color: white;
+		@include SFProDisplay;
+		font-weight: normal;
+		letter-spacing: 1px;
+		@include screen(tablet) {
+			font-size: 15px;
+		}
+	}
+	&--message {
+		.section-block__content {
+			top: 10%;
+			@include screen(1600px) {
+				top: 7%;
+			}
+			@include screen(1367px) {
+				top: 4%;
+			}
+			@include screen(tablet) {
+				top: 0%;
+			}
+		}
+	}
+}

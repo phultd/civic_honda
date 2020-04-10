@@ -1,0 +1,482 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    // width: calc(100% - 17px);
+    height: 75px;
+    background: $civic-red-blood;
+    z-index: 5;
+    backdrop-filter: blur(20px);
+    @include screen(1441px) {
+        height: 60px;
+    }
+    @include screen(tablet) {
+        backdrop-filter: none;
+    }
+    @include screen(mobile) {
+        height: 48px;
+    }
+    &__logo {
+        position: absolute;
+        left:0;
+        top:50%;
+        width: 210px;
+        //margin-left: -10px;
+        z-index: 1;
+        font-size: 0;
+        transform: translateY(-50%);
+        @include screen(1441px) {
+            width: 170px;
+        }
+        @include screen(tablet) {
+            left: 50%;
+            margin-left: 0;
+            transform: translate(-50%, -50%);
+        }
+        @include screen(mobile) {
+            width: 135px;
+            top:50%;
+            margin-left: 0px;
+        }
+        svg {
+            max-width: 100%;
+            path {
+                transition: 0.5s;
+            }
+        }
+        a {
+            display: inline-block;
+            transition: 0.5s $EasingExpoOut;
+            transform: scale(1) rotate(0.00002deg);
+            &:hover {
+                transform: scale(1.1) rotate(0.00002deg);
+                svg path {
+                }
+            }
+        }
+    }
+    &__menu {
+        width: 100%;
+        width: calc(100% - 240px);
+        float: right;
+        position: relative;
+        @include screen(1441px) {
+            width: calc(100% - 200px);
+        }
+        @include screen(tablet) {
+            display: block;
+            background: rgba(#000,0.9);
+            margin: 0;
+            height: auto;
+            width: 100%;
+            position: fixed;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+            transition: 0.3s;
+            overflow: auto;
+            vertical-align: middle;
+            white-space: nowrap;
+            &:before {
+                content: "";
+                display: inline-block;
+                height: 100%;
+                vertical-align: middle;
+            }
+            &.open {
+                pointer-events: auto;
+                opacity: 1;
+                visibility: visible;
+                z-index: 10;
+            }
+        }
+        &__line {
+            display: block;
+            height: 2px;
+            width: 110px;
+            background: #fff;
+            position: absolute;
+            bottom: 0;
+            left:0;
+            opacity: 1;
+        }
+    }
+
+
+    &__hbg-button {
+        position: absolute;
+        left: 20px;
+        top:50%;
+        transform: translateY(-50%);
+        width: 28px;
+        height: 20px;
+        display: inline-block;
+        display: none !important;
+        cursor: pointer;
+        z-index: 2;
+        @include screen(mobile) {
+            left:15px;
+        }
+        &:before {
+            content:"";
+            display: inline-block;
+            left:-10px;
+            top: -10px;
+            bottom: -10px;
+            right: -10px;
+            background: none;
+            position: absolute;
+        }
+        @include screen(tablet) {
+            display: inline-block !important;
+        }
+
+        & > div {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+
+            span {
+                display: inline-block;
+                position: absolute;
+                width: 100%;
+                height: 3px;
+                background: #fff;
+                left: 50%;
+                transition: 0.3s;
+            }
+        }
+
+        &__open {
+            span {
+                &:nth-child(1) {
+                    top: 0;
+                    transform: translateX(-50%);
+                    transition-delay: 0.1s;
+                }
+
+                &:nth-child(2) {
+                    top: 50%;
+                    transform: translate(-50%,-50%);
+                    transition-delay: 0.15s;
+                }
+
+                &:nth-child(3) {
+                    bottom: 0;
+                    transform: translateX(-50%);
+                    transition-delay: 0.2s;
+                }
+            }
+        }
+
+        &__close {
+            span {
+                height: 2px !important;
+                &:nth-child(1) {
+                    top: 50%;
+                    transform: translate(-50%,-50%) rotate(45deg);
+                    width: 0;
+                    transition-delay: 0s;
+                }
+
+                &:nth-child(2) {
+                    top: 50%;
+                    transform: translate(-50%,-50%) rotate(-45deg);
+                    width: 0;
+                    transition-delay: 0.1s;
+                }
+            }
+            svg {
+                width: 40px;
+                height: 40px;
+                position: absolute;
+                left:50%;
+                top:50%;
+                margin-left: -20px;
+                margin-top: -20px;
+                transform: rotate(-90deg);
+                transition: 0.5s;
+                path {
+                    fill: transparent;
+                    stroke: #fff;
+                    stroke-width:2;
+                    stroke-linecap:round;
+                    stroke-miterlimit:10;
+                    stroke-dasharray: 140;
+                    stroke-dashoffset: 140;
+                    transition: 0s;
+                    // stroke-dasharray: 100;
+                    //fill : #fff;
+                }
+            }
+        }
+
+        &.open {
+            z-index: 11;
+            .header__hbg-button__open {
+                span {
+                    &:nth-child(1) {
+                        width: 0;
+                        transition-delay: 0s;
+                    }
+
+                    &:nth-child(2) {
+                        width: 0;
+                        transition-delay: 0.05s;
+                    }
+
+                    &:nth-child(3) {
+                        width: 0;
+                        transition-delay: 0.1s;
+                    }
+                }
+            }
+
+            .header__hbg-button__close {
+                span {
+                    &:nth-child(1) {
+                        width: 80%;
+                        transition-delay: 0.1s;
+                    }
+
+                    &:nth-child(2) {
+                        width: 80%;
+                        transition-delay: 0.2s;
+                    }
+                }
+                svg {
+                    transform: rotate(0deg);
+                    transition: 0.5s;
+                    transition-delay: 0.3s;
+                    path {
+                        stroke-dashoffset: 10;
+                        transition: 0.5s;
+                        transition-delay: 0.3s;
+                    }
+                }
+            }
+        }
+    }
+    &__extra-button {
+        position: absolute;
+        right: 20px;
+        top:50%;
+        transform: translateY(-50%);
+        width: 28px;
+        height: 20px;
+        display: inline-block;
+        display: none !important;
+        z-index: 2;
+        cursor: pointer;
+        &:before {
+            content:"";
+            display: inline-block;
+            left:-10px;
+            top: -10px;
+            bottom: -10px;
+            right: -10px;
+            background: none;
+            position: absolute;
+        }
+        @include screen(tablet) {
+            display: inline-block !important;
+        }
+
+        & > div {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+
+            span {
+                display: inline-block;
+                position: absolute;
+                width: 3px;
+                height: 3px;
+                background: #fff;
+                left: 50%;
+                transition: 0.3s;
+            }
+        }
+
+        &__open {
+            //left: auto !important;
+            span {
+                left:100% !important;
+                &:nth-child(1) {
+                    top: 0;
+                    transform: translateX(-50%);
+                    transition-delay: 0.1s;
+                }
+
+                &:nth-child(2) {
+                    top: 50%;
+                    transform: translate(-50%,-50%);
+                    transition-delay: 0.15s;
+                }
+
+                &:nth-child(3) {
+                    bottom: 0;
+                    transform: translateX(-50%);
+                    transition-delay: 0.2s;
+                }
+            }
+        }
+
+        &__close {
+            span {
+                height: 2px !important;
+                &:nth-child(1) {
+                    top: 50%;
+                    transform: translate(-50%,-50%) rotate(45deg);
+                    width: 0;
+                    transition-delay: 0s;
+                }
+
+                &:nth-child(2) {
+                    top: 50%;
+                    transform: translate(-50%,-50%) rotate(-45deg);
+                    width: 0;
+                    transition-delay: 0.1s;
+                }
+            }
+            svg {
+                width: 40px;
+                height: 40px;
+                position: absolute;
+                left:50%;
+                top:50%;
+                margin-left: -20px;
+                margin-top: -20px;
+                transform: rotate(-90deg);
+                transition: 0.5s;
+                path {
+                    fill: transparent;
+                    stroke: #fff;
+                    stroke-width:2;
+                    stroke-linecap:round;
+                    stroke-miterlimit:10;
+                    stroke-dasharray: 140;
+                    stroke-dashoffset: 140;
+                    transition: 0s;
+                    // stroke-dasharray: 100;
+                    //fill : #fff;
+                }
+            }
+        }
+
+        &.open {
+            z-index: 11;
+            .header__extra-button__open {
+                span {
+                    left:0 !important;
+                    opacity: 0;
+                    &:nth-child(1) {
+                        width: 0;
+                        transition-delay: 0s;
+                        left: 0;
+                    }
+
+                    &:nth-child(2) {
+                        width: 0;
+                        transition-delay: 0.05s;
+                        left: 0;
+                    }
+
+                    &:nth-child(3) {
+                        width: 0;
+                        transition-delay: 0.1s;
+                        left: 0;
+                    }
+                }
+            }
+
+            .header__extra-button__close {
+                span {
+                    &:nth-child(1) {
+                        width: 80%;
+                        transition-delay: 0.1s;
+                    }
+
+                    &:nth-child(2) {
+                        width: 80%;
+                        transition-delay: 0.2s;
+                    }
+                }
+                svg {
+                    transform: rotate(0deg);
+                    transition: 0.5s;
+                    transition-delay: 0.3s;
+                    path {
+                        stroke-dashoffset: 10;
+                        transition: 0.5s;
+                        transition-delay: 0.3s;
+                    }
+                }
+            }
+        }
+    }
+    &__plus {
+        display: none;
+        @include screen(tablet) {
+            display: inline-block;
+            position: absolute;
+            right:15px;
+            top:10px;
+            i {
+                display: inline-block;
+            }
+        }
+    }
+    &__honda-tools {
+        @include screen(tablet) {
+            display: block;
+            background: rgba(#000,0.9);
+            margin: 0;
+            height: auto;
+            width: 100%;
+            position: fixed;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+            transition: 0.3s;
+            overflow: auto;
+            vertical-align: middle;
+            white-space: nowrap;
+            &:before {
+                content: "";
+                display: inline-block;
+                height: 100%;
+                vertical-align: middle;
+            }
+            &.open {
+                pointer-events: auto;
+                opacity: 1;
+                visibility: visible;
+                z-index: 10;
+            }
+            .honda-tools {
+                padding-left: 15px;
+            }
+        }
+
+    }
+    .container {
+        position: relative;
+        @include screen(tablet) {
+            position: static;
+        }
+    }
+}

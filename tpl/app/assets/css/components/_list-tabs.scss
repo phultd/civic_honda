@@ -1,0 +1,66 @@
+.list-tabs {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	@include SFProDisplay;
+	font-weight: 500;
+	font-size: 24px;
+	margin-bottom: 33px;
+	@include screen(1800px) {
+		font-size: 20px;
+	}
+	@include screen(1441px) {
+		font-size: 16px;
+		margin-bottom: 20px;
+	}
+	@include screen(mobile) {
+		font-size: 14px;
+		margin-bottom: 20px;
+	}
+	li {
+		display: inline-block;
+		text-transform: uppercase;
+		margin: 0px 39px;
+		padding-bottom: 25px;
+		position: relative;
+		cursor: pointer;
+		opacity: 0;
+		@include screen(1500px) {
+			margin: 0px 25px;
+			padding-bottom: 15px;
+		}
+		@include screen(1025px) {
+			margin: 0px 15px;
+			padding-bottom: 15px;
+		}
+		@include screen(1025px) {
+			margin: 0px 10px;
+			padding-bottom: 10px;
+		}
+		@include screen(361px) {
+	        font-size: 12px;
+	    }
+		&:first-child {
+			margin-left: 0;
+		}
+		&:last-child {
+			margin-right: 0;
+		}
+		&:before {
+			content: "";
+			width: 0%;
+			left: 50%;
+			position: absolute;
+			bottom: 0;
+			height: 6px;
+			background: white;
+			transition: all 0.25s ease-in-out;
+		}
+		&.active {
+			&:before {
+				left: 0%;
+				width: 100%;
+			}
+		}
+	}
+}

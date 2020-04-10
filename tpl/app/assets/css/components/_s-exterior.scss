@@ -1,0 +1,40 @@
+.s-exterior {
+    background: #fff;
+    position: relative;
+    &__content {
+        background: $civic-red-blood;
+        color: white;
+
+    }
+    .tab-pane {
+        @include screen(1367px) {
+            background: $civic-red-blood;
+        }
+    }
+    .tab-pane__left {
+        @include screen(1367px) {
+            background: $civic-red-blood;
+        }
+        img {
+            max-width: 106%;
+            @include screen(1700px) {
+                width: 100%;
+            }
+        }
+    }
+
+    .tab-pane__right {
+        //background: 
+        margin-left: -75px;
+        width: calc( 40% + 75px);
+        
+        @include screen(1700px) {
+            width: 40%;
+            margin-left: -40px;
+        }
+        @include screen(1025px) {
+            width: 100%;
+            margin-left: 0px;
+        }
+    }
+}

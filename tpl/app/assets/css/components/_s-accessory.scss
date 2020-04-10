@@ -1,0 +1,15 @@
+.s-accessory {
+    //background: #262626;
+    &__content {
+        color: white;
+        background: #262626;
+    }
+    .tab-pane__right {
+        background: #262626;
+    }
+    .tab-pane__left {
+        img {
+            max-width: 100% ;
+        }
+    }
+}

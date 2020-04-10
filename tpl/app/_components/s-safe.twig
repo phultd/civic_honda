@@ -1,0 +1,19 @@
+<section class="s-safe section-holder  js-snap-item js-navigator-item" data-module="flickity-slider" id="safe">
+    <div class="title-common">an toàn</div>
+     <div class="main-carousel s-safe__wrapper">
+		{% if safety_parts|length > 0 %}
+		{% for item in safety_parts %}
+		<div class="main-carousel__item">
+            <img class="hidden-xs" src="{{ item.image }}" alt="">
+            <img class="visible-xs" src="{{ item.image_mobile }}" alt="">
+            <div class="s-safe__text">
+                <h4>{{ item.title }}</h4>
+                <div class="desc">
+					{{ item.description|raw }}
+                </div>
+            </div>
+        </div>
+		{% endfor %}
+		{% endif %}
+    </div>
+</section>

@@ -1,0 +1,35 @@
+@mixin font-face($src, $font-family ,$font-weight : normal, $font-style : normal){
+    font-family: $font-family;
+    src: url('#{$src}.eot');
+    src: url('#{$src}.eot?#iefix') format('embedded-opentype'),
+    url('#{$src}.woff2') format('woff2'),
+    url('#{$src}.woff') format('woff'),
+    url('#{$src}.ttf') format('truetype'),
+    url('#{$src}.svg#SimSun') format('svg');
+    font-weight: $font-weight;
+    font-style: $font-style;
+}
+@font-face {
+    @include font-face('../fonts/Roboto-Regular', 'Roboto');
+}
+@font-face {
+    @include font-face('../fonts/Roboto-Bold', 'Roboto Bold');
+}
+@font-face {
+    @include font-face('../fonts/Roboto-Black', 'Roboto Black');
+}
+@font-face {
+    @include font-face('../fonts/Roboto-Italic', 'Roboto Italic');
+}
+@mixin Roboto {
+    font-family: 'Roboto',sans-serif;
+}
+@mixin Roboto-bold {
+    font-family: 'Roboto Bold',sans-serif;
+}
+@mixin Roboto-black {
+    font-family: 'Roboto Black',sans-serif;
+}
+@mixin Roboto-Italic {
+    font-family: 'Roboto Italic',sans-serif;
+}

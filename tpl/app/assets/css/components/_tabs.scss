@@ -1,0 +1,12 @@
+.tabs {
+    &__nav {
+    }
+    &__content {
+        &__item {
+            display: none;
+            &.active {
+                display: block;
+            }
+        }
+    }
+}

@@ -1,0 +1,126 @@
+.popup-parts {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    &__menu {
+        width: 24%;
+        padding: 30px 20px;
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        align-content: center;
+    }
+    &__list {
+        max-height: calc(100vh - 60px);
+        ul {
+            @include resetUl;
+            padding-left: 30px;
+            li {
+                margin-bottom: 35px;
+                a {
+                    font-size: rem(20);
+                    line-height: 1.4;
+                    position: relative;
+                    display: block;
+                    color:#000;
+                    &:before {
+                        content:"";
+                        display: inline-block;
+                        width: 0;
+                        height: 0;
+                        border-top: 10px solid transparent;
+                        border-bottom: 10px solid transparent;
+                        border-left: 13px solid #000;
+                        position: absolute;
+                        left: -30px;
+                        top: 3px;
+                        opacity: 0;
+                    }
+                }
+                &.active {
+                    a {
+                        font-weight: bold;
+                        &:before {
+                            opacity: 1;
+                        }
+                    }
+                }
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    &__content {
+        width: 76%;
+        display: flex;
+    	flex-direction: row;
+    	flex-wrap: nowrap;
+    	justify-content: flex-start;
+    	align-items: center;
+    	align-content: center;
+
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#030a15+0,2c465b+100 */
+        background: rgb(3,10,21); /* Old browsers */
+        background: -moz-linear-gradient(45deg,  rgba(3,10,21,1) 0%, rgba(44,70,91,1) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(45deg,  rgba(3,10,21,1) 0%,rgba(44,70,91,1) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(45deg,  rgba(3,10,21,1) 0%,rgba(44,70,91,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#030a15', endColorstr='#2c465b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    }
+    &__carousel {
+        display: block;
+        width: 100%;
+        &__item {
+            text-align: center;
+            width: 61%;
+            margin: 0;
+            min-height: 100%;
+            &__img {
+                font-size: 0;
+                transform: scale(0.6);
+                transition: 0.5s;
+                // .popup.open & {
+                //     transition: 0.5s;
+                // }
+                img {
+                    width: 100%;
+                }
+            }
+            &__desc {
+                color:#fff;
+                margin-top: 100px;
+                line-height: 1.4;
+                opacity: 0;
+                transition: 0.5s;
+            }
+            &.is-selected {
+                .popup-parts__carousel__item__img {
+                    transform: scale(1);
+                }
+                .popup-parts__carousel__item__desc {
+                    opacity: 1;
+                    //transition-delay: 0.5s;
+                }
+            }
+        }
+        .flickity-prev-next-button{
+            top:0;
+            margin-top: 17%;
+            &.previous {
+                margin-left: -36%;
+            }
+            &.next {
+                margin-left: 36%;
+            }
+        }
+        .flickity-page-dots {
+            top:0;
+            bottom: auto;
+            margin-top: 37%;
+        }
+    }
+}

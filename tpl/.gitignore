@@ -1,0 +1,12 @@
+node_modules
+.tmp
+.DS_Store
+**/*/.DS_Store
+.vscode
+package-lock.json
+.idea
+*.zip
+**/*/*.zip
+app/assets/images/sprites@2x.png
+app/assets/images/sprites.png
+.git

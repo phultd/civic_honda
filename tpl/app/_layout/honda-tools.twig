@@ -1,0 +1,34 @@
+<div class="honda-tools hidden-xs hidden-sm">
+    <ul>
+		{% if hyperlinks.test_drive.title and hyperlinks.test_drive.url %}
+        <li class="honda-tools__item"><a href="{{ hyperlinks.test_drive.url }}" target="_blank">
+            <div class="honda-tools__item__icon">{{ source('app/assets/images/icon/icon-drive.twig') }}</div>
+            <span class="honda-tools__item__title">{{ hyperlinks.test_drive.title }}</span>
+        </a></li>
+		{% endif %}
+		{% if hyperlinks.download_catalog.title and hyperlinks.download_catalog.url %}
+        <li class="honda-tools__item"><a href="{{ hyperlinks.download_catalog.url }}" target="_blank">
+            <div class="honda-tools__item__icon">{{ source('app/assets/images/icon/icon-book.twig') }}</div>
+            <span class="honda-tools__item__title">{{ hyperlinks.download_catalog.title }}</span>
+        </a></li>
+		{% endif %}
+		{% if hyperlinks.price_table.title and hyperlinks.price_table.url %}
+        <li class="honda-tools__item"><a href="{{ hyperlinks.price_table.url }}" target="_blank">
+            <div class="honda-tools__item__icon">{{ source('app/assets/images/icon/icon-price-tag.twig') }}</div>
+            <span class="honda-tools__item__title">{{ hyperlinks.price_table.title }}</span>
+        </a></li>
+		{% endif %}
+		{% if hyperlinks.cost_estimate.title and hyperlinks.cost_estimate.url %}
+        <li class="honda-tools__item"><a href="{{ hyperlinks.cost_estimate.url }}" target="_blank">
+            <div class="honda-tools__item__icon">{{ source('app/assets/images/icon/icon-calculator.twig') }}</div>
+            <span class="honda-tools__item__title">{{ hyperlinks.cost_estimate.title }}</span>
+        </a></li>
+		{% endif %}
+		{% if hyperlinks.find_agency.title and hyperlinks.find_agency.url %}
+        <li class="honda-tools__item"><a href="{{ hyperlinks.find_agency.url }}">
+            <div class="honda-tools__item__icon">{{ source('app/assets/images/icon/icon-map-marker.twig') }}</div>
+            <span class="honda-tools__item__title">{{ hyperlinks.find_agency.title }}</span>
+        </a></li>
+		{% endif %}
+    </ul>
+</div>

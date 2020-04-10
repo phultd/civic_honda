@@ -1,0 +1,14 @@
+.container {
+    @include screen(1200px,true) {
+        width: 1210px;
+    }
+    @include screen(1500px,true) {
+        width: 1350px;
+    }
+    @include screen(1601px,true) {
+        width: 1500px;
+    }
+    @include screen(1921px,true) {
+        width: 88%;
+    }
+}

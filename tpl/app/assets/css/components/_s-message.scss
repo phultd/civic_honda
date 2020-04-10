@@ -1,0 +1,177 @@
+.s-message {
+    position: relative;
+    background: #000;
+    .car-holder {
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        height: auto;
+        left: 0;
+    }
+    .car-move {
+       position: absolute;
+        top: 0;
+        left: 0;
+        width: 61%;
+        top: 40%;
+        left: 26%;
+        transform: translate(-11%, -2%) scale(0.9) ;
+        transition: 0s $EasingExpoOut;
+        transition-delay: 0.5s;
+        z-index: 2;
+        &--mask {
+            position: absolute;
+            top: 40%;
+            left: 20.3%;
+            transform: none;
+            width: 9.6%;
+            height: 55%;
+            transition: 1.5s $EasingExpoOut;
+            transform: rotate(0deg);
+            transition-delay: 0;
+            z-index: 2;
+            img {
+                width: 100% !important;
+                height: auto !important;
+            }
+        }
+    }
+    .car {
+        width: 100%;
+    }
+    .la-zang {
+        position: absolute;
+        top: 45.8%;
+        left: 17.3%;
+        transform: scaleX(0.4);
+        width: 14.7%;
+        height: 40%;
+        z-index: 0;
+        img {
+            width: auto;
+            height: 100%;
+            transform: rotate(-19deg);
+            transition: 1.5s $EasingExpoOut;
+            opacity: 1;
+        }
+    }
+    .la-zang-after {
+        position: absolute;
+        top: 47%;
+        left: 1.2%;
+        transform: scaleX(0.35) rotate(-100deg);
+        width: 9%;
+        height: 25%;
+        z-index: 0;
+        img {
+            width: auto;
+            height: 100%;
+            transform: rotate(-19deg);
+            transition: 1.5s $EasingExpoOut;
+            opacity: 1;
+        }
+
+        
+    }
+    .la-zang-after-mask {
+        position: absolute;
+        top: 31%;
+        left: 0.6%;
+        /* opacity: 0; */
+        width: 12.3%;
+        z-index: 2;
+        img {
+            width: 100%;
+        }
+    }
+    .section-block {
+        &__title {
+            opacity: 0;
+        }
+        &__desc {
+            opacity: 0;
+        }
+    }
+    @include screen(tabet) {
+        .section-block {
+            &__title {
+                font-size: 16px;
+            }
+            &__desc {
+                font-size: 14px;
+                padding: 0px 15px;
+            }
+        }
+    }
+    @include screen(mobile) {
+        .section-block {
+            &__title {
+                font-size: 22px;
+                opacity: 1 !important;
+                transform: none !important;
+            }
+            &__desc {
+                opacity: 1 !important;
+                transform: none !important;
+                font-size: 18px;
+                padding: 0px 15px;
+                br {
+                    display: none;
+                }
+            }
+            &__content {
+                top: 1%;
+            }
+        }
+    }
+    @include screen(500px) {
+        .section-block {
+            &__title {
+                font-size: 17px;
+            }
+            &__desc {
+                font-size: 14px;
+            }
+        }
+    }
+    @include screen(361px) {
+        .section-block {
+            &__title {
+                font-size: 14px;
+            }
+            &__desc {
+                font-size: 12px;
+            }
+        }
+    }
+    &.active {
+        .car-move {
+            transform: translate(0%, 0%) scale(1) rotate(0.000002deg);
+            transition: 1.5s $EasingExpoOut;
+            //transition-delay: 0s;
+            //opacity: 1;
+            transition-delay: 0s;
+            //transform: scale(1,1);
+            &--mask {
+              transform: rotate(0deg);
+            }
+        }
+        .la-zang {
+            img {
+                transform: rotate(341deg);
+                opacity: 0;
+                transition: transform 1.5s $EasingExpoOut, opacity 5s linear 1.2s;
+
+            }
+        }
+        .la-zang-after {
+            img {
+                transform: rotate(341deg);
+                opacity: 0;
+                transition: transform 1.5s $EasingExpoOut, opacity 3s linear 1.2s;
+                //transition: transform 1.5s $EasingSineOut;
+
+            }
+        }
+    }
+}

@@ -1,0 +1,10 @@
+.section-block{
+	padding-top: 103px;
+	padding-bottom: 10px;
+	@media screen and ($res-tablet){
+		padding-top: 45px;
+	}
+}
+#main{
+	padding-top: $h-header;
+}
