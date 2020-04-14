@@ -56,7 +56,7 @@ final class TestResultCacheTest extends TestCase
         // Create a cache with one result and store it
         $cacheFile = \tempnam(\sys_get_temp_dir(), 'phpunit_');
         $cache     = new DefaultTestResultCache($cacheFile);
-        $testName  = 'test' . \uniqid();
+        $testName  = 'test' . \random_int(0, 2147483647);
         $cache->setState($testName, BaseTestRunner::STATUS_SKIPPED);
         $cache->persist();
         unset($cache);

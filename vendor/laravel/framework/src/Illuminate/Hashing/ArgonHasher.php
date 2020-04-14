@@ -60,11 +60,7 @@ class ArgonHasher extends AbstractHasher implements HasherContract
      */
     public function make($value, array $options = [])
     {
-        $hash = password_hash($value, $this->algorithm(), [
-            'memory_cost' => $this->memory($options),
-            'time_cost' => $this->time($options),
-            'threads' => $this->threads($options),
-        ]);
+        $hash = password_hash($value, $this->algorithm());
 
         if ($hash === false) {
             throw new RuntimeException('Argon2 hashing not supported.');
@@ -111,11 +107,7 @@ class ArgonHasher extends AbstractHasher implements HasherContract
      */
     public function needsRehash($hashedValue, array $options = [])
     {
-        return password_needs_rehash($hashedValue, $this->algorithm(), [
-            'memory_cost' => $this->memory($options),
-            'time_cost' => $this->time($options),
-            'threads' => $this->threads($options),
-        ]);
+        return password_needs_rehash($hashedValue, $this->algorithm());
     }
 
     /**

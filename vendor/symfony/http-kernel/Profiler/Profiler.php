@@ -151,7 +151,7 @@ class Profiler implements ResetInterface
             return null;
         }
 
-        $profile = new Profile(substr(hash('sha256', uniqid(random_int(0, 2147483647), true)), 0, 6));
+        $profile = new Profile(substr(hash('sha256', random_int(0, 2147483647)), 0, 6));
         $profile->setTime(time());
         $profile->setUrl($request->getUri());
         $profile->setMethod($request->getMethod());

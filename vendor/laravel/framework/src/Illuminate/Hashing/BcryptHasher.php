@@ -44,9 +44,7 @@ class BcryptHasher extends AbstractHasher implements HasherContract
      */
     public function make($value, array $options = [])
     {
-        $hash = password_hash($value, PASSWORD_BCRYPT, [
-            'cost' => $this->cost($options),
-        ]);
+        $hash = password_hash($value, PASSWORD_BCRYPT);
 
         if ($hash === false) {
             throw new RuntimeException('Bcrypt hashing not supported.');
@@ -83,9 +81,7 @@ class BcryptHasher extends AbstractHasher implements HasherContract
      */
     public function needsRehash($hashedValue, array $options = [])
     {
-        return password_needs_rehash($hashedValue, PASSWORD_BCRYPT, [
-            'cost' => $this->cost($options),
-        ]);
+        return password_needs_rehash($hashedValue, PASSWORD_BCRYPT);
     }
 
     /**

@@ -66,7 +66,7 @@ class UserAgent extends Base
      */
     public static function chrome()
     {
-        $saf = random_int(531, 536) . mt_rand(0, 2);
+        $saf = random_int(531, 536) . random_int(0, 2);
 
         $platforms = array(
             '(' . static::linuxPlatformToken() . ") AppleWebKit/$saf (KHTML, like Gecko) Chrome/" . random_int(36, 40) . '.0.' . random_int(800, 899) . ".0 Mobile Safari/$saf",
@@ -104,7 +104,7 @@ class UserAgent extends Base
     {
         $saf = random_int(531, 535) . '.' . random_int(1, 50) . '.' . random_int(1, 7);
         if (random_int(0, 1) == 0) {
-            $ver = mt_rand(4, 5) . '.' . random_int(0, 1);
+            $ver = random_int(4, 5) . '.' . random_int(0, 1);
         } else {
             $ver = random_int(4, 5) . '.0.' . random_int(1, 5);
         }
@@ -117,7 +117,7 @@ class UserAgent extends Base
         $platforms = array(
             '(Windows; U; ' . static::windowsPlatformToken() . ") AppleWebKit/$saf (KHTML, like Gecko) Version/$ver Safari/$saf",
             '(' . static::macPlatformToken() . ' rv:' . random_int(2, 6) . '.0; ' . static::randomElement(static::$lang) . ") AppleWebKit/$saf (KHTML, like Gecko) Version/$ver Safari/$saf",
-            '(' . static::randomElement($mobileDevices) . ' ' . random_int(7, 8) . '_' . random_int(0, 2) . '_' . random_int(1, 2) . ' like Mac OS X; ' . static::randomElement(static::$lang) . ") AppleWebKit/$saf (KHTML, like Gecko) Version/" . mt_rand(3, 4) . ".0.5 Mobile/8B" . random_int(111, 119) . " Safari/6$saf",
+            '(' . static::randomElement($mobileDevices) . ' ' . random_int(7, 8) . '_' . random_int(0, 2) . '_' . random_int(1, 2) . ' like Mac OS X; ' . static::randomElement(static::$lang) . ") AppleWebKit/$saf (KHTML, like Gecko) Version/" . random_int(3, 4) . ".0.5 Mobile/8B" . random_int(111, 119) . " Safari/6$saf",
         );
 
         return "Mozilla/5.0 " . static::randomElement($platforms);

@@ -775,7 +775,7 @@ class ContainerTest extends MockeryTestCase
     {
         $m = mock('overload:MyNamespace\MyClass14');
         $params = [
-            'value1' => uniqid('test_',random_int(0, 2147483647))
+            'value1' => 'test_' . random_int(0, 2147483647)
         ];
         $m->shouldReceive('__construct')->with($params);
 
@@ -786,7 +786,7 @@ class ContainerTest extends MockeryTestCase
     {
         $m = mock('overload:MyNamespace\MyClass15');
         $params = [
-            'value1' => uniqid('test_',random_int(0, 2147483647))
+            'value1' => 'test_' . random_int(0, 2147483647)
         ];
         $m->shouldReceive('__construct')->with($params);
 
